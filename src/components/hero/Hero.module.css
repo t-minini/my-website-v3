@@ -2,7 +2,6 @@
   width: 100vw;
   height: 100dvh;
   background-color: var(--gray-lighter);
-
   padding: 10rem 4rem;
   display: flex;
   justify-content: space-evenly;
@@ -84,3 +83,16 @@
     opacity: 0;
   }
 }
+
+/* @media (min-width: 1440px) {
+  .hero__img img {
+    height: 75rem;
+  }
+} */
+
+/* @media (min-width: 768px) {
+  .hero__img img {
+    height: 60rem;
+    
+  }
+} */

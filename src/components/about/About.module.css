@@ -1,0 +1,31 @@
+.about {
+  width: 100vw;
+  height: 100dvh;
+  background-color: var(--green-dark);
+  padding: 10rem 10%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  
+
+}
+
+.about p {
+  font-size: 4.5rem;
+}
+
+.about__char {
+  font-size: 4.5rem;
+  font-weight: var(--medium-500);
+  transition: color 0.5s ease-in-out;
+}
+
+.about__char:hover {
+  color: var(--green-darker);
+}
+
+.about__char.transition {
+  /* transition-delay: 2s; */
+}

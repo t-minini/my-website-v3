@@ -1,4 +1,5 @@
 import style from './Hero.module.css';
+import { Link } from 'react-scroll';
 import photo from './../../assets/images/photo.jpeg';
 
 export function Hero() {
@@ -14,11 +15,16 @@ export function Hero() {
           alt="a black and white photograph of me siting on a bench, smiling, wearing a grey shirt, black trousers and a watch"
         />
       </div>
-      <div id="hero" className={style.hero__arrow}>
-        <a href="#about">
-          <span></span>
-        </a>
-      </div>
+      <Link
+        to="about"
+        //   offset={-70}
+
+        smooth={true}
+        className={style.hero__arrow}
+        //   onClick={showNavbar}
+      >
+        <span></span>
+      </Link>
     </section>
   );
 }

@@ -38,3 +38,7 @@ html {
 ::-webkit-scrollbar {
   display: none;
 }
+
+.app__about {
+  /* visibility: hidden; */
+}
