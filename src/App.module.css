@@ -1,5 +1,5 @@
 :root {
-  --gray-lighter: #eff1ed;
+  --gray-lighter: #eff1ed; /* used */
   --gray-light: #dce0d9;
   --gray-medium: #d2d2c8;
   --gray-dark: #b6b7b2;
@@ -9,7 +9,12 @@
   --green-dark: #bcbd8b;
   --green-darker: #606c38;
 
-  --font-dar: #252525;
+  --font-dark: #252525;
+
+  --light-300: 300; /* used */
+  --regular-400: 400;
+  --medium-500: 500;
+  --semiBold-600: 600;
 }
 
 html {
@@ -17,6 +22,7 @@ html {
   width: 100%;
   /* background-color: var(--color2-blue); */
   cursor: default;
+  color: var(--font-dark);
 }
 
 *,
