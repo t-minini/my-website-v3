@@ -1,0 +1,34 @@
+:root {
+  --gray-lighter: #eff1ed;
+  --gray-light: #dce0d9;
+  --gray-medium: #d2d2c8;
+  --gray-dark: #b6b7b2;
+
+  --green-light: #e9edc9;
+  --green-medium: #ccd5ae;
+  --green-dark: #bcbd8b;
+  --green-darker: #606c38;
+
+  --font-dar: #252525;
+}
+
+html {
+  min-height: 100%;
+  width: 100%;
+  /* background-color: var(--color2-blue); */
+  cursor: default;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%; /* base font size to 10px, to facilitate using REM unit */
+  font-family: 'Inter', sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
