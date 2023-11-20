@@ -1,0 +1,13 @@
+.vertical {
+  position: fixed;
+  bottom: 50%;
+  right: -5.5rem;
+  display: flex;
+  gap: 2rem;
+  transform: rotate(-90deg);
+}
+
+.vertical h3 {
+  font-size: 1.8rem;
+  font-weight: var(--light-300);
+}

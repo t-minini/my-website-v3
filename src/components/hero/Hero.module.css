@@ -1,4 +1,4 @@
-.heroContainer {
+.hero {
   width: 100vw;
   height: 100dvh;
   background-color: var(--gray-lighter);
@@ -9,37 +9,35 @@
   align-items: center;
 }
 
-.heroContainer__text {
+.hero__text {
+  margin-bottom: 10rem;
 }
 
-.heroContainer__text h1 {
+.hero__text h1 {
   font-size: 8rem;
   font-weight: var(--regular-400);
 }
 
-.heroContainer__text p {
+.hero__text p {
   font-size: 2.4rem;
   font-weight: var(--light-300);
   width: 50rem;
   padding-left: 0.5rem;
 }
 
-.heroContainer__img {
-}
-
-.heroContainer__img img {
+.hero__img img {
   height: 60rem;
   box-shadow: 2rem 2rem 0 0 var(--green-dark);
 }
 
-.heroContainer__arrow {
+.hero__arrow {
   position: absolute;
   bottom: 2rem;
   height: 3rem;
 }
 
 /* arrow down */
-.heroContainer__arrow {
+.hero__arrow {
   position: absolute;
   bottom: 2rem;
 
@@ -48,7 +46,7 @@
   cursor: pointer;
 }
 
-.heroContainer__arrow span {
+.hero__arrow span {
   position: absolute;
   left: 25%;
   width: 2.4rem;
