@@ -31,19 +31,19 @@
 
 .skills a {
   font-size: 2rem;
-  color: var(--green-darker);
+  color: var(--green-dark);
   text-decoration: none;
 }
 
 .skills__ul svg {
-  stroke: var(--green-darker);
-  fill: var(--green-darker);
+  stroke: var(--green-dark);
+  fill: var(--green-dark);
 }
 
 .skills__ul .link:hover a,
 .skills__ul .link:hover svg {
-  color: var(--green-dark);
-  stroke: var(--green-dark);
-  fill: var(--green-dark);
+  color: var(--green-darker);
+  stroke: var(--green-darker);
+  fill: var(--green-darker);
   transition: color 0.5s ease, stroke 0.5s ease, fill 0.5s ease;
 }
