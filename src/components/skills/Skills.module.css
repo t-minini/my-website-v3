@@ -1,0 +1,9 @@
+.skills {
+    width: 100vw;
+    height: 100dvh;
+    background-color: var(--gray-lighter);
+    padding: 10rem 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}

@@ -39,6 +39,8 @@ html {
   display: none;
 }
 
-.app__about {
+.app__vertical {
   /* visibility: hidden; */
+  /* display: flex; */
+  /* z-index: auto; */
 }
