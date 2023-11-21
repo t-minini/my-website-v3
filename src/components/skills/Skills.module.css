@@ -1,9 +1,49 @@
 .skills {
-    width: 100vw;
-    height: 100dvh;
-    background-color: var(--gray-lighter);
-    padding: 10rem 4rem;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  width: 100vw;
+  height: 100dvh;
+  background-color: var(--gray-lighter);
+  padding: 10rem 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills__ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.skills__ul ul {
+  list-style: none;
+}
+
+.skills__ul ul li:first-child {
+  font-size: 2.4rem;
+  font-weight: var(--semiBold-600);
+}
+
+.skills__ul li {
+  font-size: 2rem;
+  font-weight: var(--light-300);
+  padding-top: 1rem;
+}
+
+.skills a {
+  font-size: 2rem;
+  color: var(--green-darker);
+  text-decoration: none;
+}
+
+.skills__ul svg {
+  stroke: var(--green-darker);
+  fill: var(--green-darker);
+}
+
+.skills__ul .link:hover a,
+.skills__ul .link:hover svg {
+  color: var(--green-dark);
+  stroke: var(--green-dark);
+  fill: var(--green-dark);
+  transition: color 0.5s ease, stroke 0.5s ease, fill 0.5s ease;
 }
