@@ -36,6 +36,8 @@ export function Skills() {
         <ul>
           <li>OTHER SKILLS</li>
           <li>Node.js</li>
+          <li>Restful API</li>
+          <li>Node.js</li>
           <li>MongoDB</li>
           <li>Portuguese (Native)</li>
           <li className={style.link}>

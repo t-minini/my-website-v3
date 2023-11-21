@@ -12,10 +12,11 @@ function App() {
       <Navbar />
       <Vertical />
       <Hero />
-      <div className={style.app__vertical}>
-        <About />
-        <Skills />
+      <div>
+      <About className={style.app__about}/>
+      <Skills/>
       </div>
+      
     </div>
   );
 }
