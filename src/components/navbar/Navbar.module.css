@@ -7,19 +7,31 @@
   height: 5rem;
   padding: 0 3.5rem;
   z-index: 1;
-}
-
-.navbar p,
-li {
-  font-size: 1.8rem;
+  color: var(--gray-medium);
+  transition: color 1.5s ease;
   font-weight: var(--light-300);
 }
 
 .navbar li {
   cursor: pointer;
+  font-size: 1.8rem;
+  transition: color 1.5s ease;
+}
+
+.navbar li:hover {
+  color: var(--font-dark); 
+}
+
+.navbar p {
+  color: var(--font-dark);
+  font-size: 1.8rem;
 }
 
 .navbar ul {
   display: flex;
   list-style: none;
+}
+
+.navbar .navbar__active {
+  color: var(--font-dark);
 }

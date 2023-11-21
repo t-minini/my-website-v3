@@ -1,5 +1,6 @@
-import style from './Hero.module.css';
 import { Link } from 'react-scroll';
+import style from './Hero.module.css';
+// import { useRef, useState } from "react";
 import photo from './../../assets/images/photo.jpeg';
 
 export function Hero() {
