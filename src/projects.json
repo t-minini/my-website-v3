@@ -1,5 +1,21 @@
 [
   {
+    "id": "005",
+    "img": "/images/portfolio-imgs/modern-art-gallery.jpg",
+    "project": "Modern Art Gallery",
+    "github": "https://github.com/t-minini/art-gallery-website",
+    "website": "https://modern-art-gallery-tm.netlify.app/",
+    "description": "Frontend Developer challenge: I built this landing page using CSS, HTML, React, Flexbox, CSS Grid, CSS Variables, and a mobile-first workflow. The goal was to develop the website as closely as possible to the Figma design."
+  },
+  {
+    "id": "004",
+    "img": "/images/portfolio-imgs/skilled.png",
+    "project": "Skilled e-learning",
+    "github": "https://github.com/t-minini/skilled-elearning-landing-page",
+    "website": "https://t-minini.github.io/skilled-elearning-landing-page/",
+    "description": "Frontend Developer challenge: I built this landing page using CSS, HTML, Flexbox, CSS Grid, CSS Variables, and a mobile-first workflow. The goal was to develop the website as closely as possible to the Figma design."
+  },
+  {
     "id": "001",
     "img": "/images/portfolio-imgs/quiz-game.jpg",
     "project": "Quiz Game",
@@ -31,22 +47,8 @@
     "website": "https://tulio-minini-v1.netlify.app/",
     "description": "My very first website/portfolio featuring a mix of CSS, HTML, React, and some cool animations created with vanilla JavaScript and React.js."
   },
-  {
-    "id": "004",
-    "img": "/images/portfolio-imgs/skilled.png",
-    "project": "Skilled e-learning",
-    "github": "https://github.com/t-minini/skilled-elearning-landing-page",
-    "website": "https://t-minini.github.io/skilled-elearning-landing-page/",
-    "description": "Frontend Developer challenge: I built this landing page using CSS, HTML, Flexbox, CSS Grid, CSS Variables, and a mobile-first workflow. The goal was to develop the website as closely as possible to the Figma design."
-  },
-  {
-    "id": "005",
-    "img": "/images/portfolio-imgs/modern-art-gallery.jpg",
-    "project": "Modern Art Gallery",
-    "github": "https://github.com/t-minini/art-gallery-website",
-    "website": "https://modern-art-gallery-tm.netlify.app/",
-    "description": "Frontend Developer challenge: I built this landing page using CSS, HTML, React, Flexbox, CSS Grid, CSS Variables, and a mobile-first workflow. The goal was to develop the website as closely as possible to the Figma design."
-  },
+  
+  
   {
     "id": "006",
     "img": "/images/portfolio-imgs/tulio-minini-website.png",
