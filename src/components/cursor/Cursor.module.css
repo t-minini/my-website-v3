@@ -1,0 +1,7 @@
+.cursor {
+    /* position: fixed; */
+    pointer-events: none;
+    opacity: 0.5;
+    fill: #606c38;
+    z-index: 1000; /* Adjust the value as needed */
+  }
