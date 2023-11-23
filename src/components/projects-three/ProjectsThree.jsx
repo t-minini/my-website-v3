@@ -1,11 +1,11 @@
-import style from './ProjectsTwo.module.css';
+import style from './ProjectsThree.module.css';
 import projectsJSON from '../../projects.json';
 
-export function ProjectsTwo() {
+export function ProjectsThree({toValues}) {
   return (
-    <section id="projects-two" className={style.projectsTwo}>
+    <section id="projects" className={style.projectsTwo}>
       <div className={style.projectsTwo__container}>
-        {projectsJSON.slice(2, 5).map((projectsJSON) => {
+        {projectsJSON.slice(5, 7).map((projectsJSON) => {
           return (
             <div key={projectsJSON.id} className={style.projectsTwo__project}>
               <div className={style.projectsTwo__name}>

@@ -2,6 +2,8 @@ import { Link } from 'react-scroll';
 import style from './Navbar.module.css';
 
 export function Navbar() {
+
+  // const toValues = ["projects", "projects-two", "projects-three"]
   return (
     <nav className={style.navbar}>
       <p>&lt;</p>
