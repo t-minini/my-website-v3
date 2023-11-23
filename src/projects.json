@@ -16,12 +16,20 @@
     "description": "Frontend Developer challenge: I built this landing page using CSS, HTML, Flexbox, CSS Grid, CSS Variables, and a mobile-first workflow. The goal was to develop the website as closely as possible to the Figma design."
   },
   {
-    "id": "001",
-    "img": "/images/portfolio-imgs/quiz-game.jpg",
-    "project": "Quiz Game",
-    "github": "https://github.com/t-minini/project-one-the-game",
-    "website": "https://t-minini.github.io/quiz-game/",
-    "description": "My very first web project, which I crafted during an exciting bootcamp journey. This site was brought to life using a combination of HTML, CSS, and JavaScript, showcasing my early coding endeavors."
+    "id": "006",
+    "img": "/images/portfolio-imgs/tulio-minini-website-v2.png",
+    "project": "My Website V2",
+    "github": "https://github.com/t-minini/my-website-v2",
+    "website": "https://tuliominini.com/",
+    "description": "The second version of my website/portfolio was created with CSS, HTML, and React. It was also the project where I had my first experience using Figma for design practice."
+  },
+  {
+    "id": "007",
+    "img": "/images/portfolio-imgs/tulio-minini-website-v1.jpg",
+    "project": "My Website V1",
+    "github": "https://github.com/t-minini/my-website",
+    "website": "https://tulio-minini-v1.netlify.app/",
+    "description": "My very first website/portfolio featuring a mix of CSS, HTML, React, and some cool animations created with vanilla JavaScript and React.js."
   },
   {
     "id": "002",
@@ -40,21 +48,11 @@
     "description": "For our bootcamp final project, two classmates and I created a full-stack e-commerce website using CSS, HTML, React.js, Ant Design, Express.js, MongoDB, and Node.js."
   },
   {
-    "id": "007",
-    "img": "/images/portfolio-imgs/tulio-minini-website-v1.jpg",
-    "project": "My Website V1",
-    "github": "https://github.com/t-minini/my-website",
-    "website": "https://tulio-minini-v1.netlify.app/",
-    "description": "My very first website/portfolio featuring a mix of CSS, HTML, React, and some cool animations created with vanilla JavaScript and React.js."
-  },
-  
-  
-  {
-    "id": "006",
-    "img": "/images/portfolio-imgs/tulio-minini-website.png",
-    "project": "My Website V2",
-    "github": "https://github.com/t-minini/my-website-v2",
-    "website": "https://tuliominini.com/",
-    "description": "The second version of my website/portfolio was created with CSS, HTML, and React. It was also the project where I had my first experience using Figma for design practice."
+    "id": "001",
+    "img": "/images/portfolio-imgs/quiz-game.jpg",
+    "project": "Quiz Game",
+    "github": "https://github.com/t-minini/project-one-the-game",
+    "website": "https://t-minini.github.io/quiz-game/",
+    "description": "My very first web project, which I crafted during an exciting bootcamp journey. This site was brought to life using a combination of HTML, CSS, and JavaScript, showcasing my early coding endeavors."
   }
 ]
