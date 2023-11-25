@@ -1,11 +1,11 @@
-.projectsTwo {
+.projectsThree {
   width: 100vw;
   height: fit-content;
   background-color: var(--gray-lighter);
   padding: 10rem 10%;
 }
 
-.projectsTwo__container {
+.projectsThree__container {
   display: grid;
   gap: 15rem;
   grid-template-columns: 1fr;
@@ -28,24 +28,24 @@
   transform: scale(1.05);
 }
 
-.projectsTwo__name,
-.projectsTwo__links {
+.projectsThree__name,
+.projectsThree__links {
   display: flex;
   justify-content: space-between;
 }
 
-.projectsTwo__name p,
-.projectsTwo__links a {
+.projectsThree__name p,
+.projectsThree__links a {
   font-size: 1.6rem;
   color: var(--font-dark);
   font-weight: var(--medium-500);
 }
 
-.projectsTwo__links a {
+.projectsThree__links a {
   text-decoration: none;
 }
 
-.projectsTwo__links svg {
+.projectsThree__links svg {
   stroke: var(--font-dark);
   fill: var(--font-dark);
 }

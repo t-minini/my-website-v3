@@ -1,21 +1,21 @@
 import style from './ProjectsThree.module.css';
 import projectsJSON from '../../projects.json';
 
-export function ProjectsThree({toValues}) {
+export function ProjectsThree() {
   return (
-    <section id="projects" className={style.projectsTwo}>
-      <div className={style.projectsTwo__container}>
+    <section id="projects" className={style.projectsThree}>
+      <div className={style.projectsThree__container}>
         {projectsJSON.slice(5, 7).map((projectsJSON) => {
           return (
-            <div key={projectsJSON.id} className={style.projectsTwo__project}>
-              <div className={style.projectsTwo__name}>
+            <div key={projectsJSON.id} className={style.projectsThree__project}>
+              <div className={style.projectsThree__name}>
                 <p>{projectsJSON.project}</p>
                 <p>{projectsJSON.project}</p>
               </div>
               <div className={style.img_hover_zoom}>
                 <img src={projectsJSON.img} alt="projects screenshot" />
               </div>
-              <div className={style.projectsTwo__links}>
+              <div className={style.projectsThree__links}>
                 <a href={projectsJSON.github}>
                   Github
                   <svg viewBox="0 0 34 32" width="27" height="19">

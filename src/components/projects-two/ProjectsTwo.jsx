@@ -3,7 +3,7 @@ import projectsJSON from '../../projects.json';
 
 export function ProjectsTwo() {
   return (
-    <section id="projects-two" className={style.projectsTwo}>
+    <section id="projects" className={style.projectsTwo}>
       <div className={style.projectsTwo__container}>
         {projectsJSON.slice(2, 5).map((projectsJSON) => {
           return (
