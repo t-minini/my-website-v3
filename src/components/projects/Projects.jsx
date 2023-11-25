@@ -1,11 +1,11 @@
-import style from './ProjectsOne.module.css';
-import projectsJSON from './../../projects.json';
+import style from './Projects.module.css';
+import projectsJSON from '../../projects.json';
 
-export function ProjectsOne() {
+export function Projects() {
   return (
     <section id="projects" className={style.projectsOne}>
       <div className={style.projectsOne__container}>
-        {projectsJSON.slice(0, 2).map((projectsJSON) => {
+        {projectsJSON.map((projectsJSON) => {
           return (
             <div key={projectsJSON.id} className={style.projectsOne__project}>
               <div className={style.projectsOne__name}>

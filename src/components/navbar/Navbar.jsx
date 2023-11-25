@@ -1,9 +1,8 @@
-import { Link } from 'react-scroll';
+import { Link} from 'react-scroll';
+import React from 'react';
 import style from './Navbar.module.css';
 
 export function Navbar() {
-
-  // const toValues = ["projects", "projects-two", "projects-three"]
   return (
     <nav className={style.navbar}>
       <p>&lt;</p>
@@ -29,6 +28,7 @@ export function Navbar() {
           spy={true}
           smooth={true}
           activeClass={style.navbar__active}
+          onSetActive={() => {}}
         >
           <li>Projects,&nbsp;</li>
         </Link>

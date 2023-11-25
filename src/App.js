@@ -5,9 +5,9 @@ import { Navbar } from './components/navbar/Navbar';
 import { About } from './components/about/About';
 import { Vertical } from './components/name-vertical/Vertical';
 import { Skills } from './components/skills/Skills';
-import { ProjectsOne } from './components/projects-one/ProjectsOne';
-import { ProjectsTwo } from './components/projects-two/ProjectsTwo';
-import { ProjectsThree } from './components/projects-three/ProjectsThree';
+import { Projects } from './components/projects/Projects';
+// import { ProjectsTwo } from './components/projects-two/ProjectsTwo';
+// import { ProjectsThree } from './components/projects-three/ProjectsThree';
 // import { Cursor } from './components/cursor/Cursor';
 
 function App() {
@@ -21,9 +21,9 @@ function App() {
         <About className={style.app__about} />
         <Skills />
       </div>
-      <ProjectsOne />
-      <ProjectsTwo />
-      <ProjectsThree />
+      <Projects />
+      {/* <ProjectsTwo /> */}
+      {/* <ProjectsThree /> */}
     </div>
   );
 }
