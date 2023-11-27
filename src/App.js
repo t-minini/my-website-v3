@@ -6,6 +6,7 @@ import { About } from './components/about/About';
 import { Vertical } from './components/name-vertical/Vertical';
 import { Skills } from './components/skills/Skills';
 import { Projects } from './components/projects/Projects';
+import { Contact } from './components/contact/Contact';
 // import { ProjectsTwo } from './components/projects-two/ProjectsTwo';
 // import { ProjectsThree } from './components/projects-three/ProjectsThree';
 // import { Cursor } from './components/cursor/Cursor';
@@ -22,6 +23,7 @@ function App() {
         <Skills />
       </div>
       <Projects />
+      <Contact />
       {/* <ProjectsTwo /> */}
       {/* <ProjectsThree /> */}
     </div>
