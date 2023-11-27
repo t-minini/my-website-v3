@@ -1,0 +1,34 @@
+.contact {
+  width: 100vw;
+  height: 100dvh;
+  background-color: var(--green-dark);
+  padding: 10rem 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  /* z-index: -1; */
+}
+
+.contact section {
+  width: 100vw;
+  height: 100dvh;
+  background-color: red;
+}
+
+.contact__first {
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* background-color: red; */
+}
+
+.contact__second {
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  /* background-color: red; */
+}
