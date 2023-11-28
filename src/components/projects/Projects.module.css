@@ -38,6 +38,7 @@
 .projects__links a {
   font-size: 2.2rem;
   color: var(--font-dark);
+  transition: color 0.5s ease, stroke 0.5s ease, fill 0.5s ease;
 }
 
 .projects__links a {
@@ -47,4 +48,21 @@
 .projects__links svg {
   stroke: var(--font-dark);
   fill: var(--font-dark);
+  transition: color 0.5s ease, stroke 0.5s ease, fill 0.5s ease;
+}
+
+.first__link:hover svg,
+.first__link:hover a {
+  color: var(--green-dark);
+  stroke: var(--green-dark);
+  fill: var(--green-dark);
+  transition: color 0.5s ease, stroke 0.5s ease, fill 0.5s ease;
+}
+
+.second__link:hover svg,
+.second__link:hover a {
+  color: var(--green-dark);
+  stroke: var(--green-dark);
+  fill: var(--green-dark);
+  transition: color 0.5s ease, stroke 0.5s ease, fill 0.5s ease;
 }

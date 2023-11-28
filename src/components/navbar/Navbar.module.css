@@ -14,6 +14,11 @@
   transition: color 1.5s ease;
 }
 
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
 .navbar li {
   cursor: pointer;
   font-size: 1.8rem;
@@ -21,19 +26,9 @@
 }
 
 .navbar li:hover {
-  color: var(--font-dark);
-}
-
-.navbar p {
-  color: var(--font-dark);
-  font-size: 1.8rem;
-}
-
-.navbar ul {
-  display: flex;
-  list-style: none;
+  color: var(--green-darker);
 }
 
 .navbar .navbar__active {
-  color: var(--font-dark);
+  color: var(--green-darker);
 }

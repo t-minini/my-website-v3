@@ -9,8 +9,8 @@
 
 .skills__ul {
   width: 100%;
-   display: flex;
-   justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .skills__ul ul {
@@ -32,11 +32,13 @@
   font-size: 2rem;
   color: var(--green-dark);
   text-decoration: none;
+  transition: color 0.5s ease, stroke 0.5s ease, fill 0.5s ease;
 }
 
 .skills__ul svg {
   stroke: var(--green-dark);
   fill: var(--green-dark);
+  transition: color 0.5s ease, stroke 0.5s ease, fill 0.5s ease;
 }
 
 .skills__ul .link:hover a,
@@ -45,5 +47,4 @@
   stroke: var(--green-darker);
   fill: var(--green-darker);
   transition: color 0.5s ease, stroke 0.5s ease, fill 0.5s ease;
-  
 }

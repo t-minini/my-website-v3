@@ -1,4 +1,3 @@
-// import { Link } from 'react-scroll';
 import style from './Vertical.module.css';
 import line from './../../assets/icons/black-line.svg';
 

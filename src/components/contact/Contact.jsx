@@ -1,5 +1,4 @@
 import style from './Contact.module.css';
-// import cv from './../../assets/curriculum/tulio-minini-cv-dev.pdf';
 
 export function Contact() {
   return (
