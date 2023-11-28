@@ -14,7 +14,7 @@
 }
 
 .hero__text h1 {
-  width: fit-content;
+  width: 90%;
   font-size: 8rem;
   font-weight: var(--regular-400);
 }
@@ -22,7 +22,7 @@
 .hero__text p {
   font-size: 2.4rem;
   font-weight: var(--light-300);
-  width: 50rem;
+  width: 70%;
   padding-left: 0.5rem;
 }
 
