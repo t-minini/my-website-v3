@@ -1,6 +1,6 @@
 import { Link } from 'react-scroll';
 import style from './Hero.module.css';
-import photo from './../../assets/images/photo.jpeg';
+import photo from './../../assets/images/photo-two.jpg';
 
 export function Hero() {
   return (

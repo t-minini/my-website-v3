@@ -2,17 +2,19 @@
   width: 100vw;
   height: 100dvh;
   background-color: var(--gray-lighter);
-  padding: 10rem 4rem;
+  padding: 10rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
 .hero__text {
-  margin-bottom: 10rem;
+  /* margin-bottom: 10rem; */
+  width: 50vw;
 }
 
 .hero__text h1 {
+  width: fit-content;
   font-size: 8rem;
   font-weight: var(--regular-400);
 }
@@ -25,8 +27,11 @@
 }
 
 .hero__img img {
-  height: 60rem;
-  box-shadow: 2rem 2rem 0 0 var(--green-dark);
+  height: 100dvh;
+  width: 50vw;
+  margin: -10rem;
+  object-fit: cover;
+  object-position: top ;
 }
 
 .hero__arrow {
@@ -39,7 +44,6 @@
 .hero__arrow {
   position: absolute;
   bottom: 2rem;
-
   width: 5rem;
   height: 5rem;
   cursor: pointer;
