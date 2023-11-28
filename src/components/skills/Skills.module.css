@@ -2,16 +2,15 @@
   width: 100vw;
   height: 100dvh;
   background-color: var(--gray-lighter);
-  padding: 10rem 4rem;
+  padding: 10rem;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
 .skills__ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
+  width: 100%;
+   display: flex;
+   justify-content: space-between;
 }
 
 .skills__ul ul {
@@ -46,4 +45,5 @@
   stroke: var(--green-darker);
   fill: var(--green-darker);
   transition: color 0.5s ease, stroke 0.5s ease, fill 0.5s ease;
+  
 }

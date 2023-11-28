@@ -1,7 +1,7 @@
 .vertical {
   position: fixed;
   bottom: 50%;
-  right: -8.2rem;
+  right: -7.2rem;
   display: flex;
   gap: 2rem;
   transform: rotate(-90deg);

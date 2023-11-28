@@ -2,44 +2,45 @@
   width: 100vw;
   height: 100dvh;
   background-color: var(--green-dark);
-  padding: 5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
+  padding: 3rem 10rem;
 }
 
 .contact h2 {
   font-size: 13rem;
   font-weight: var(--regular-400);
-  text-align: center;
 }
 
-.contact__first {
+.contact__container {
+  height: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.contact__first a {
-  font-size: 2rem;
+.contact__links {
+  width: 100%;
+  margin-left: 1rem;
+}
+
+.contact__links a {
+  font-size: 3.3rem;
+  padding-right: 3rem;
   text-decoration: none;
+  color: var(--green-medium);
+  transition: color 1s ease;
+}
+
+.contact__links a:hover {
   color: var(--font-dark);
 }
 
-.contact__second {
+.copyright {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  /* background-color: red; */
+  justify-content: center;
 }
 
-.contact__second a {
-  font-size: 2rem;
-  text-decoration: none;
-  color: var(--font-dark);
-}
-
-.contact__second p, span {
-  font-size: 1rem;
+.copyright p,
+span {
+  font-size: 1.5rem;
   color: var(--gray-medium);
 }

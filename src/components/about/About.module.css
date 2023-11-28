@@ -2,24 +2,11 @@
   width: 100vw;
   height: 100dvh;
   background-color: var(--green-dark);
-  padding: 10rem 10%;
+  padding: 10rem;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
 .about p {
   font-size: 4.5rem;
-  /* width: fit-content; */
 }
-
-.about__char {
-  font-size: 4.5rem;
-  font-weight: var(--medium-500);
-  transition: color 0.5s ease-in-out;
-}
-
-.about__char:hover {
-  color: var(--green-darker);
-}
-

@@ -7,7 +7,7 @@
   --green-light: #e9edc9;
   --green-medium: #ccd5ae;
   --green-dark: #bcbd8b;
-  --green-darker: #8ea69b;
+  --green-darker: #606C38;
 
   --font-dark: #252525;
 
@@ -21,7 +21,7 @@ html {
   min-height: 100%;
   width: 100%;
   /* background-color: var(--color2-blue); */
-  /* cursor: default; */
+  cursor: default;
   color: var(--font-dark);
 }
 
