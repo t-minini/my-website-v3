@@ -2,33 +2,44 @@
   width: 100vw;
   height: 100dvh;
   background-color: var(--green-dark);
-  padding: 10rem 10%;
+  padding: 5rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  bottom: 0;
-  /* z-index: -1; */
+  flex-direction: column;
+  justify-content: space-between;
+
 }
 
-.contact section {
-  width: 100vw;
-  height: 100dvh;
-  background-color: red;
+.contact h2 {
+  font-size: 13rem;
+  font-weight: var(--regular-400);
+  text-align: center;
 }
 
 .contact__first {
-  /* width: 100%; */
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  /* background-color: red; */
+}
+
+.contact__first a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: var(--font-dark);
 }
 
 .contact__second {
-  /* width: 100%; */
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   /* background-color: red; */
+}
+
+.contact__second a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: var(--font-dark);
+}
+
+.contact__second p, span {
+  font-size: 1rem;
+  color: var(--gray-medium);
 }

@@ -10,6 +10,7 @@
 
 .about p {
   font-size: 4.5rem;
+  /* width: fit-content; */
 }
 
 .about__char {

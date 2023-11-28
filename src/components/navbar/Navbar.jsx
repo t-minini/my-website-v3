@@ -5,7 +5,6 @@ import style from './Navbar.module.css';
 export function Navbar() {
   return (
     <nav className={style.navbar}>
-      <p>&lt;</p>
       <ul>
         <Link
           to="about"
@@ -41,7 +40,6 @@ export function Navbar() {
           <li>Contact</li>
         </Link>
       </ul>
-      <p>&gt;</p>
     </nav>
   );
 }

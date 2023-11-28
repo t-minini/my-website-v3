@@ -11,7 +11,7 @@ import { Contact } from './components/contact/Contact';
 // import { ProjectsThree } from './components/projects-three/ProjectsThree';
 // import { Cursor } from './components/cursor/Cursor';
 
-import { Parallax, ParallaxLayer } from '@react-spring/parallax';
+// import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 
 function App() {
   return (
@@ -24,16 +24,16 @@ function App() {
         <About className={style.app__about} />
         <Skills />
       </div>
-      <Parallax pages={2}>
-          <Projects />
-        <ParallaxLayer offset={0}
-          speed={8}>
-        </ParallaxLayer>
-        <ParallaxLayer offset={1}
-          speed={1}>
-          <Contact />
-        </ParallaxLayer>
-      </Parallax>
+      {/* <Parallax pages={2}> */}
+      <Projects />
+      {/* <ParallaxLayer offset={0} */}
+      {/* speed={8}> */}
+      {/* </ParallaxLayer> */}
+      {/* <ParallaxLayer offset={1} */}
+      {/* speed={1}> */}
+      <Contact />
+      {/* </ParallaxLayer> */}
+      {/* </Parallax> */}
       {/* <ProjectsTwo /> */}
       {/* <ProjectsThree /> */}
     </div>
