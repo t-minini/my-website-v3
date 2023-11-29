@@ -1,80 +1,65 @@
-import style from './Cursor.module.css';
-import React, { useEffect, useState, useCallback, useRef } from 'react';
 import gsap from 'gsap';
+import style from './Cursor.module.css';
+import React, { useEffect, useRef } from 'react';
 
 export function Cursor() {
+  // Ref for the big ball element
   const bigBallRef = useRef(null);
-  const [hoverables, setHoverables] = useState([]);
-  const isCursorMoving = useRef(false);
 
-  const updateCursorPosition = useCallback((e) => {
+  // Function to update cursor position based on mouse movement
+  const updateCursorPosition = (e) => {
     if (bigBallRef.current) {
-      isCursorMoving.current = true;
-  
-      gsap.to(bigBallRef.current, { duration: 0.4, x: e.pageX - 15, y: e.pageY - 15, onComplete: () => {
-        isCursorMoving.current = false;
-      } });
+      // Use gsap to smoothly update position
+      gsap.to(bigBallRef.current, { duration: 0.4, x: e.clientX - 15, y: e.clientY - 15 });
     }
-  }, []);
+  };
 
-  const onMouseHover = useCallback(() => {
+  // Function to handle hover events with a specified scale
+  const handleHover = (scale) => () => {
     if (bigBallRef.current) {
-      gsap.to(bigBallRef.current, { duration: 0.3, scale: 4 });
+      // Use gsap to smoothly adjust the scale
+      gsap.to(bigBallRef.current, { duration: 0.3, scale });
     }
-  }, []);
+  };
 
-  const onMouseHoverOut = useCallback(() => {
-    if (bigBallRef.current) {
-      gsap.to(bigBallRef.current, { duration: 0.3, scale: 1 });
-    }
-  }, []);
-
-  const handleScroll = useCallback(() => {
-    if (bigBallRef.current && !isCursorMoving.current) {
-      const cursorRect = bigBallRef.current.getBoundingClientRect();
-  
-      const newPosX = window.scrollX + cursorRect.left;
-      const newPosY = window.scrollY + cursorRect.top;
-  
-      gsap.to(bigBallRef.current, { duration: 0.1, x: newPosX, y: newPosY, overwrite: true });
-    }
-  }, []);
-
+  // Effect to set up mouse event listeners
   useEffect(() => {
-    setHoverables(document.querySelectorAll('.hoverable'));
+    // Select all elements with the 'hoverable' class
+    const hoverables = document.querySelectorAll('.hoverable');
 
+    // Function to handle mouse enter with a scale of 3
+    const handleMouseEnter = handleHover(3);
+
+    // Function to handle mouse leave with a scale of 1
+    const handleMouseLeave = handleHover(1);
+
+    // Add mousemove event listener to update cursor position
     document.body.addEventListener('mousemove', updateCursorPosition);
 
+    // Attach mouse event listeners for hover and hover out on hoverable elements
+    hoverables.forEach((element) => {
+      element.addEventListener('mouseenter', handleMouseEnter);
+      element.addEventListener('mouseleave', handleMouseLeave);
+
+      // Cleanup: Remove the event listeners
+      return () => {
+        element.removeEventListener('mouseenter', handleMouseEnter);
+        element.removeEventListener('mouseleave', handleMouseLeave);
+      };
+    });
+
+    // Cleanup: Remove the mousemove event listener
     return () => {
       document.body.removeEventListener('mousemove', updateCursorPosition);
     };
-  }, [updateCursorPosition]);
+  }, []);
 
-  useEffect(() => {
-    hoverables.forEach((element) => {
-      element.addEventListener('mouseenter', onMouseHover);
-      element.addEventListener('mouseleave', onMouseHoverOut);
-
-      return () => {
-        element.removeEventListener('mouseenter', onMouseHover);
-        element.removeEventListener('mouseleave', onMouseHoverOut);
-      };
-    });
-  }, [hoverables, onMouseHover, onMouseHoverOut]);
-
-  useEffect(() => {
-    document.body.addEventListener('scroll', handleScroll);
-
-    return () => {
-      document.body.removeEventListener('scroll', handleScroll);
-    };
-  }, [handleScroll]);
-
+  // Render the cursor component
   return (
     <div className={style.cursor}>
       <div ref={bigBallRef} className={`${style.cursor__ball} ${style['cursor__ball--big']}`}>
         <svg height="30" width="30">
-          <circle cx="15" cy="15" r="12" strokeWidth="0"></circle>
+          <circle cx="12" cy="12" r="7" strokeWidth="0"></circle>
         </svg>
       </div>
     </div>

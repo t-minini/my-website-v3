@@ -1,22 +1,20 @@
 import style from './App.module.css';
 
 import { Hero } from './components/hero/Hero';
-import { Navbar } from './components/navbar/Navbar';
 import { About } from './components/about/About';
-import { Vertical } from './components/name-vertical/Vertical';
+import { Navbar } from './components/navbar/Navbar';
 import { Skills } from './components/skills/Skills';
-import { Projects } from './components/projects/Projects';
+import { Cursor } from './components/cursor/Cursor';
 import { Contact } from './components/contact/Contact';
-// import { ProjectsTwo } from './components/projects-two/ProjectsTwo';
-// import { ProjectsThree } from './components/projects-three/ProjectsThree';
-// import { Cursor } from './components/cursor/Cursor';
+import { Projects } from './components/projects/Projects';
+import { Vertical } from './components/name-vertical/Vertical';
 
 // import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 
 function App() {
   return (
     <div className={style.app}>
-      {/* <Cursor /> */}
+      <Cursor />
       <Navbar />
       <Vertical />
       <Hero />
