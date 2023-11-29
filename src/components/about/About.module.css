@@ -1,12 +1,21 @@
 .about {
   width: 100vw;
-  height: 100dvh;
+  height: 100vh;
   background-color: var(--green-dark);
   padding: 10rem;
   display: flex;
   align-items: center;
 }
 
-.about p {
-  font-size: 4.5rem;
+.about span.word {
+  font-size: 5rem;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out, color 1 0.3s ease-in-out; /* Increase the duration for color transition */
+  color: var(--font-dark); /* Default text color */
+  margin-right: 1.5rem; /* Add margin between words */
+}
+
+.about span.word:hover {
+  color: var(--green-darker); /* Your desired hover color */
+  transform: scale(0.99); /* Scale up on hover */
 }
