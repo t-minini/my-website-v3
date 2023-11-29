@@ -53,16 +53,16 @@
 
 .first__link:hover svg,
 .first__link:hover a {
-  color: var(--green-dark);
-  stroke: var(--green-dark);
-  fill: var(--green-dark);
+  color: var(--green-darker);
+  stroke: var(--green-darker);
+  fill: var(--green-darker);
   transition: color 0.5s ease, stroke 0.5s ease, fill 0.5s ease;
 }
 
 .second__link:hover svg,
 .second__link:hover a {
-  color: var(--green-dark);
-  stroke: var(--green-dark);
-  fill: var(--green-dark);
+  color: var(--green-darker);
+  stroke: var(--green-darker);
+  fill: var(--green-darker);
   transition: color 0.5s ease, stroke 0.5s ease, fill 0.5s ease;
 }
