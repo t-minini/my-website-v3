@@ -4,7 +4,11 @@ export function Contact() {
   return (
     <section id="contact" className={style.contact}>
       <div className={style.contact__container}>
-        <h2>Let's connect.</h2>
+        <h2>
+          Let's connect<span>.</span>
+          <span>.</span>
+          <span>.</span>
+        </h2>
         <div className={style.contact__links}>
           <a
             href="https://www.linkedin.com/in/tulio-minini/"
