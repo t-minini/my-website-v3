@@ -10,12 +10,12 @@
 .about span.word {
   font-size: 5rem;
   display: inline-block;
-  transition: transform 0.3s ease-in-out, color 1 0.3s ease-in-out; /* Increase the duration for color transition */
+  transition: color 0.3s ease-in-out; /* Increase the duration for color transition */
   color: var(--font-dark); /* Default text color */
   margin-right: 1.5rem; /* Add margin between words */
 }
 
 .about span.word:hover {
-  color: var(--green-darker); /* Your desired hover color */
+  color: var(--green-light); /* Your desired hover color */
   transform: scale(0.99); /* Scale up on hover */
 }
