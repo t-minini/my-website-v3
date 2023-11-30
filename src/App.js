@@ -9,8 +9,6 @@ import { Contact } from './components/contact/Contact';
 import { Projects } from './components/projects/Projects';
 import { Vertical } from './components/name-vertical/Vertical';
 
-// import { Parallax, ParallaxLayer } from '@react-spring/parallax';
-
 function App() {
   return (
     <div className={style.app}>
@@ -18,22 +16,10 @@ function App() {
       <Navbar />
       <Vertical />
       <Hero />
-      <div>
-        <About className={style.app__about} />
-        <Skills />
-      </div>
-      {/* <Parallax pages={2}> */}
+      <About />
+      <Skills />
       <Projects />
-      {/* <ParallaxLayer offset={0} */}
-      {/* speed={8}> */}
-      {/* </ParallaxLayer> */}
-      {/* <ParallaxLayer offset={1} */}
-      {/* speed={1}> */}
       <Contact />
-      {/* </ParallaxLayer> */}
-      {/* </Parallax> */}
-      {/* <ProjectsTwo /> */}
-      {/* <ProjectsThree /> */}
     </div>
   );
 }
