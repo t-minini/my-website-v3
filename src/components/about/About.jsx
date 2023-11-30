@@ -10,7 +10,10 @@ export function About() {
   const timeoutRef = useRef(null);
 
   const handleWordHover = (index) => {
-    setHoveredWords((prevHoveredWords) => ({ ...prevHoveredWords, [index]: true }));
+    setHoveredWords((prevHoveredWords) => ({
+      ...prevHoveredWords,
+      [index]: true,
+    }));
   };
 
   const handleWordLeave = () => {
@@ -19,7 +22,7 @@ export function About() {
     }
     timeoutRef.current = setTimeout(() => {
       setHoveredWords({});
-    }, 5000);
+    }, 2000);
   };
 
   return (
@@ -30,7 +33,9 @@ export function About() {
             key={index}
             className={style.word}
             style={{
-              color: hoveredWords[index] ? 'var(--green-light)' : 'var(--font-dark)',
+              color: hoveredWords[index]
+                ? 'var(--green-light)'
+                : 'var(--font-dark)',
             }}
             onMouseOver={() => handleWordHover(index)}
             onMouseLeave={handleWordLeave}
