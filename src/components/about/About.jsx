@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import style from './About.module.css';
 
 export function About() {
@@ -6,11 +6,35 @@ export function About() {
 
   const wordsArray = text.split(' ');
 
+  const [hoveredWords, setHoveredWords] = useState({});
+  const timeoutRef = useRef(null);
+
+  const handleWordHover = (index) => {
+    setHoveredWords((prevHoveredWords) => ({ ...prevHoveredWords, [index]: true }));
+  };
+
+  const handleWordLeave = () => {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+    timeoutRef.current = setTimeout(() => {
+      setHoveredWords({});
+    }, 5000);
+  };
+
   return (
     <section id="about" className={style.about}>
       <p>
         {wordsArray.map((word, index) => (
-          <span key={index} className={style.word}>
+          <span
+            key={index}
+            className={style.word}
+            style={{
+              color: hoveredWords[index] ? 'var(--green-light)' : 'var(--font-dark)',
+            }}
+            onMouseOver={() => handleWordHover(index)}
+            onMouseLeave={handleWordLeave}
+          >
             {index !== 0 && ' '}
             {word}
           </span>

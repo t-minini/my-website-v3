@@ -19,3 +19,7 @@
   color: var(--green-light); /* Your desired hover color */
   transform: scale(0.99); /* Scale up on hover */
 }
+
+.about span.word.hovered {
+  color: var(--green-light);
+}
