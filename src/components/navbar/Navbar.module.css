@@ -11,7 +11,7 @@
   padding-top: 3rem;
   margin-left: 15rem;
   margin-right: 15rem;
-  transition: color 1.5s ease;
+  transition: 0.9s;
 }
 
 .navbar ul {
@@ -31,4 +31,9 @@
 
 .navbar .navbar__active {
   color: var(--green-darker);
+}
+
+.navbar_show {
+  display: none;
+  transition: 0.9s;
 }

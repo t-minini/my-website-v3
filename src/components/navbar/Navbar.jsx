@@ -1,4 +1,3 @@
-// import React from 'react';
 import { Link } from 'react-scroll';
 import { useState, React } from 'react';
 import style from './Navbar.module.css';
@@ -6,9 +5,23 @@ import style from './Navbar.module.css';
 export function Navbar() {
   const [isHovered, setIsHovered] = useState(false);
 
+  // show navbar when scroll
+  const [showNav, setShowNav] = useState(false);
+  const showNavbar = () => {
+    if (window.scrollY >= 50) {
+      setShowNav(true);
+    } else {
+      setShowNav(false);
+    }
+  };
+
+  window.addEventListener("scroll", showNavbar);
+
   return (
     <nav
-      className={style.navbar}
+      className={`${
+        showNav ? style.navbar : style.navbar_show
+      }`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >

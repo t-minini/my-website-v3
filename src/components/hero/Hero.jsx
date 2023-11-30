@@ -4,7 +4,7 @@ import photo from './../../assets/images/photo-two.jpg';
 
 export function Hero() {
   return (
-    <section className={style.hero}>
+    <section id="hero" className={style.hero}>
       <div className={style.hero__text}>
         <h1>Hello, I'm Tulio</h1>
         <p>a former designer who found his passion for frontend development</p>
