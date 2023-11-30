@@ -15,13 +15,11 @@ export function Navbar() {
     }
   };
 
-  window.addEventListener("scroll", showNavbar);
+  window.addEventListener('scroll', showNavbar);
 
   return (
     <nav
-      className={`${
-        showNav ? style.navbar : style.navbar_show
-      }`}
+      className={`${showNav ? style.navbar : style.navbar_show}`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
