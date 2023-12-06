@@ -62,8 +62,8 @@
   cursor: pointer;
   width: 2.4rem;
   height: 2.4rem;
-  border-left: 0.1rem solid var(--font-dark);
-  border-bottom: 0.1rem solid var(--font-dark);
+  border-left: 0.1rem solid var(--black);
+  border-bottom: 0.1rem solid var(--black);
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   -webkit-animation: arrow 1.5s infinite;

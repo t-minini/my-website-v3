@@ -34,8 +34,8 @@ export function About() {
             className={style.word}
             style={{
               color: hoveredWords[index]
-                ? 'var(--green-light)'
-                : 'var(--font-dark)',
+                ? 'var(--orange)'
+                : 'var(--gray-lighter)',
             }}
             onMouseOver={() => handleWordHover(index)}
             onMouseLeave={handleWordLeave}

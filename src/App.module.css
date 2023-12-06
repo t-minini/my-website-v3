@@ -9,7 +9,7 @@
   --green-dark: #bcbd8b;
   --green-darker: #606c38;
 
-  --font-dark: #252525;
+  --black: #252525;
 
   --light-300: 300; /* used */
   --regular-400: 400;
@@ -27,7 +27,7 @@ html {
   width: 100%;
   /* background-color: var(--color2-blue); */
   cursor: default;
-  color: var(--font-dark);
+  color: var(--black);
 }
 
 *,

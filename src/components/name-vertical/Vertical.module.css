@@ -10,6 +10,6 @@
 .vertical h3 {
   font-size: 1.8rem;
   font-weight: var(--light-300);
-  color: var(--font-dark);
+  color: var(--orange);
   letter-spacing: 0.3rem;
 }
