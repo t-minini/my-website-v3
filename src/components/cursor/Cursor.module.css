@@ -2,6 +2,6 @@
   position: fixed;
   pointer-events: none;
   opacity: 0.5;
-  fill: #606c38;
+  fill: var(--orange);
   z-index: 1000;
 }
