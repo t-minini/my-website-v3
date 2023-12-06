@@ -6,8 +6,11 @@ export function Hero() {
   return (
     <section id="hero" className={style.hero}>
       <div className={style.hero__text}>
-        <h1>Hello, I'm Tulio</h1>
-        <p>a former designer who found his passion for frontend development</p>
+        <h1>tm</h1>
+        <p>
+          Hello, I am a former designer who found his passion for front-end
+          development.
+        </p>
       </div>
       <div className={style.hero__img}>
         <img

@@ -7,7 +7,7 @@
   --green-light: #e9edc9;
   --green-medium: #ccd5ae;
   --green-dark: #bcbd8b;
-  --green-darker: #606C38;
+  --green-darker: #606c38;
 
   --font-dark: #252525;
 
@@ -15,6 +15,11 @@
   --regular-400: 400;
   --medium-500: 500;
   --semiBold-600: 600;
+
+  --orange: #ffb270;
+
+  --inter: 'Inter', sans-serif;
+  --sugiyama: 'Dr Sugiyama', cursive;
 }
 
 html {
@@ -32,7 +37,7 @@ html {
   margin: 0;
   padding: 0;
   font-size: 62.5%; /* base font size to 10px, to facilitate using REM unit */
-  font-family: 'Inter', sans-serif;
+  font-family: var(--inter);
 }
 
 ::-webkit-scrollbar {
