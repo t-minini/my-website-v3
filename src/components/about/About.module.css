@@ -1,25 +1,23 @@
 .about {
   width: 100vw;
   height: 100vh;
-  /* height: fit-content; */
   background-color: var(--black);
   padding: 5%;
   display: flex;
   align-items: center;
-  /* color: var(--gray-lighter); */
 }
 
 .about span.word {
   font-size: 4.5rem;
   display: inline-block;
-  transition: color 0.3s ease-in-out; /* Increase the duration for color transition */
+  transition: color 0.3s ease-in-out;
 
-  margin-right: 1.5rem; /* Add margin between words */
+  margin-right: 1.5rem;
 }
 
 .about span.word:hover {
-  color: var(--orange); /* Your desired hover color */
-  transform: scale(0.99); /* Scale up on hover */
+  color: var(--orange); 
+  transform: scale(0.99);
 }
 
 .about span.word.hovered {
