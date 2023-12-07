@@ -15,12 +15,19 @@
 .hero__text h1 {
   color: var(--orange);
   font-size: 60rem;
+  line-height: 45rem;
   font-family: var(--sugiyama);
   font-weight: var(--regular-400);
   text-transform: uppercase;
   position: absolute;
-  bottom: -3%;
+  bottom:15rem;
   left: -0.2%;
+  /* background-color: blue; */
+}
+
+h1:hover {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.2rem var(--orange);
 }
 
 .hero__text p {
