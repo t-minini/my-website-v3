@@ -15,7 +15,7 @@ export function Projects() {
         {projectsJSON.map((projectsJSON) => {
           return (
             <div key={projectsJSON.id} className={style.projects__card}>
-              <div className={style.img_hover_zoom}>
+              <div className={style.projects__img}>
                 <img src={projectsJSON.img} alt="projects screenshot" />
               </div>
               <div className={style.projects__info}>
