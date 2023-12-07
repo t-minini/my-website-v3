@@ -2,7 +2,7 @@
   width: 100vw;
   height: 100dvh;
   background-color: var(--gray-lighter);
-  padding: 10rem;
+  padding: 5%;
   display: flex;
   align-items: center;
 }
@@ -30,21 +30,21 @@
 
 .skills a {
   font-size: 2rem;
-  color: var(--green-dark);
+  color: var(--gray-dark);
   text-decoration: none;
   transition: color 0.5s ease, stroke 0.5s ease, fill 0.5s ease;
 }
 
 .skills__ul svg {
-  stroke: var(--green-dark);
-  fill: var(--green-dark);
+  stroke: var(--gray-dark);
+  fill: var(--gray-dark);
   transition: color 0.5s ease, stroke 0.5s ease, fill 0.5s ease;
 }
 
 .skills__ul .link:hover a,
 .skills__ul .link:hover svg {
-  color: var(--green-darker);
-  stroke: var(--green-darker);
-  fill: var(--green-darker);
+  color: var(--orange);
+  stroke: var(--orange);
+  fill: var(--orange);
   transition: color 0.5s ease, stroke 0.5s ease, fill 0.5s ease;
 }
