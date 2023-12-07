@@ -4,7 +4,7 @@
   top: 0;
   right: 0;
   left: 0;
-  color: var(--gray-medium);
+  color: var(--gray-darker-inactive);
   font-weight: var(--light-300);
   display: flex;
   justify-content: center;
@@ -17,20 +17,25 @@
 .navbar ul {
   display: flex;
   list-style: none;
+  opacity: unset;
+  padding: 1rem 2rem;
+  background: var(--gray-dark-transparent);
+  border-radius: 2rem;
 }
 
 .navbar li {
   cursor: pointer;
   font-size: 1.8rem;
   transition: color 1.5s ease;
+  opacity: unset;
 }
 
 .navbar li:hover {
-  color: var(--green-darker);
+  color: var(--orange);
 }
 
 .navbar .navbar__active {
-  color: var(--green-darker);
+  color: var(--orange);
 }
 
 .navbar_show {

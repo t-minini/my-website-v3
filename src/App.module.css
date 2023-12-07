@@ -3,20 +3,16 @@
   --gray-light: #dce0d9;
   --gray-medium: #d2d2c8;
   --gray-dark: #b6b7b2;
-
-  --green-light: #e9edc9;
-  --green-medium: #ccd5ae;
-  --green-dark: #bcbd8b;
-  --green-darker: #606c38;
+  --gray-dark-transparent: rgba(182, 183, 179, 0.25);
+  --gray-darker-inactive: rgba(182, 183, 179, 0.4);
 
   --black: #252525;
+  --orange: #ffb270;
 
   --light-300: 300; /* used */
   --regular-400: 400;
   --medium-500: 500;
   --semiBold-600: 600;
-
-  --orange: #ffb270;
 
   --inter: 'Inter', sans-serif;
   --sugiyama: 'Dr Sugiyama', cursive;
