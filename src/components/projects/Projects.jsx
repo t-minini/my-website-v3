@@ -12,7 +12,7 @@ export function Projects() {
       onMouseLeave={() => setIsHovered(false)}
     >
       <div className={style.projects__container}>
-        {projectsJSON.map((projectsJSON) => {
+        {projectsJSON.toReversed().map((projectsJSON) => {
           return (
             <div key={projectsJSON.id} className={style.projects__card}>
               <div className={style.projects__img}>

@@ -1,8 +1,13 @@
 .projects {
   width: 100vw;
   height: fit-content;
-  background-color: var(--gray-lighter);
-  padding: 5%;
+  background-color: var(
+    --black
+  ); /* no. of projects is even = var(--black) OR no. of projects is odd = var(--gray-lighter) */
+  color: var(
+    --gray-lighter
+  ); /* no. of projects is even = var(--gray-lighter) OR no. of projects is odd = var(--black) */
+  padding: 0 5%;
 }
 
 .projects__container {
@@ -12,46 +17,34 @@
 }
 
 .projects__card {
+  height: 100vh;
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */
-  /* align-items: stretch; */
-  /* grid-template-columns: repeat(3, 1fr); */
-  height: 80rem;
   margin: 0 -10rem;
-  padding: 10rem;
+  padding: 15rem 10rem;
 }
 
 .projects__card:nth-child(even) {
   flex-direction: row-reverse;
-  background-color: var(--black);
-  color: white;
+  background-color: var(
+    --gray-lighter
+  ); /* no. of projects is even = var(--gray-lighter) OR no. of projects is odd = var(--black) */
+  color: var(
+    --black
+  ); /* no. of projects is even = var(--black) OR no. of projects is odd = var(--gray-lighter) */
   margin: -10rem;
-  padding: 10rem;
-  /* display: block; */
-  /* margin-left: 2rem; */
-  /* padding: 10rem; */
+  padding: 15rem 10rem;
 }
 
 .projects__card:nth-child(even) .projects__info {
- margin-right: 2rem;
- margin-left: unset;
+  margin-right: 2rem;
+  margin-left: unset;
 }
 
 .projects__img {
   overflow: hidden;
-  /* grid-column: span 2; */
   flex: 2;
   border-radius: 2rem;
-  /* margin-right: 2rem; */
-}
-
-.projects__img img:nth-child(even) {
-  /* opacity: 0.2; */
-  /* margin-right: 0; */
-  /* flex-direction: row-reverse; */
-  /* background-color: var(--black); */
-  /* padding: 10rem; */
 }
 
 .projects__img img {
@@ -59,7 +52,6 @@
   height: 100%;
   transition: transform 1s ease;
   object-fit: cover;
-
 }
 
 .projects__info {
@@ -79,7 +71,6 @@
 .info__top {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  /* background-color: red; */
 }
 
 .info__links {
@@ -87,11 +78,11 @@
   align-items: flex-end;
 }
 .info__links a {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: var(--medium-500);
   color: var(--gray-dark);
   padding-right: 2rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.3rem;
   text-decoration: none;
 }
 
