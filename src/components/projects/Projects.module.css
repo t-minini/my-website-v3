@@ -1,6 +1,7 @@
 .projects {
   width: 100vw;
-  height: fit-content;
+  /* height: 100dvh; */
+  /* height: max-content; */
   background-color: var(
     --black
   ); /* no. of projects is even = var(--black) OR no. of projects is odd = var(--gray-lighter) */
