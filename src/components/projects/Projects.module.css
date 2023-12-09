@@ -1,7 +1,7 @@
 .projects {
   width: 100vw;
   /* height: 100dvh; */
-  /* height: max-content; */
+  /* height: min-content; */
   background-color: var(
     --black
   ); /* no. of projects is even = var(--black) OR no. of projects is odd = var(--gray-lighter) */
@@ -14,7 +14,7 @@
 .projects__container {
   display: flex;
   flex-wrap: wrap;
-  gap: 10rem;
+  /* gap: 10rem; */
 }
 
 .projects__card {
@@ -33,7 +33,7 @@
   color: var(
     --black
   ); /* no. of projects is even = var(--black) OR no. of projects is odd = var(--gray-lighter) */
-  margin: -10rem;
+  /* margin: -10rem; */
   padding: 15rem 10rem;
 }
 
