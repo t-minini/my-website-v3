@@ -10,18 +10,46 @@
   line-height: 12rem;
   font-weight: var(--semiBold-600);
   color: var(--gray-lighter);
+  z-index: 1;
 }
 
-.contact__container {
+.contact__text {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
+  padding-bottom: 6rem;
+}
+
+.contact__text p:first-child {
+  color: var(--orange);
+  font-size: 45rem;
+  line-height: 45rem;
+  font-family: var(--sugiyama);
+  font-weight: var(--regular-400);
+  text-transform: uppercase;
+  position: relative;
+  top: 27rem;
+  left: 5%;
+}
+
+.text__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.text__container p {
+  width: 21%;
+  color: var(--gray-lighter);
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  font-weight: var(--thin-100);
 }
 
 /* ANIMATED DOTS */
 
-.contact__container span:nth-of-type(1) {
+.contact__text span:nth-of-type(1) {
   font-size: 13rem;
   color: var(--font-dark);
   opacity: 0;
@@ -31,7 +59,7 @@
   animation-delay: 0s;
 }
 
-.contact__container span:nth-of-type(2) {
+.contact__text span:nth-of-type(2) {
   font-size: 13rem;
   color: var(--font-dark);
   opacity: 0;
@@ -41,7 +69,7 @@
   animation-delay: 0.2s;
 }
 
-.contact__container span:nth-of-type(3) {
+.contact__text span:nth-of-type(3) {
   font-size: 13rem;
   color: var(--font-dark);
   opacity: 0;
@@ -80,34 +108,32 @@
 .contact__links {
   width: 100%;
   margin-left: 1rem;
+  z-index: 2;
 }
 
 .contact__links a {
-  font-size: 3.3rem;
+  font-size: 1.6rem;
   padding-right: 3rem;
   text-decoration: none;
-  color: var(--green-medium);
+  color: var(--gray-dark);
+  font-weight: var(--regular-400);
   transition: color 1s ease;
+  cursor: pointer;
 }
 
 .contact__links a:hover {
-  color: var(--green-darker);
+  color: var(--orange);
 }
 
 .copyright {
-  /* background-color: red; */
   display: flex;
-  justify-content: right;
-  /* align-items: flex-end; */
-  justify-content:flex-end;
+  justify-content: flex-end;
 }
 
-.copyright p{
-  /* justify-content: right; */
-  text-align: right;
+.copyright p {
   font-size: 1.4rem;
   color: var(--gray-darker);
-  /* background-color: green; */
+  text-align: right;
 }
 
 .copyright span {
