@@ -1,23 +1,26 @@
 .contact {
-  /* width: 100vw; */
+  width: 100vw;
   height: 100dvh;
   background-color: var(--black);
   padding: 5%;
 }
 
 .contact h2 {
-  font-size: 13rem;
-  font-weight: var(--regular-400);
+  font-size: 15rem;
+  line-height: 12rem;
+  font-weight: var(--semiBold-600);
+  color: var(--gray-lighter);
 }
 
 .contact__container {
-  /* height: 100%; */
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-/* animated dots  */
+/* ANIMATED DOTS */
+
 .contact__container span:nth-of-type(1) {
   font-size: 13rem;
   color: var(--font-dark);
@@ -48,7 +51,8 @@
   animation-delay: 0.3s;
 }
 
-/* dots animation */
+/* DOTS ANIMATION */
+
 @-webkit-keyframes dot {
   0% {
     opacity: 0;
@@ -91,12 +95,22 @@
 }
 
 .copyright {
+  /* background-color: red; */
   display: flex;
-  justify-content: center;
+  justify-content: right;
+  /* align-items: flex-end; */
+  justify-content:flex-end;
 }
 
-.copyright p,
-span {
-  font-size: 1.5rem;
-  color: var(--gray-medium);
+.copyright p{
+  /* justify-content: right; */
+  text-align: right;
+  font-size: 1.4rem;
+  color: var(--gray-darker);
+  /* background-color: green; */
+}
+
+.copyright span {
+  font-size: 1.4rem;
+  color: var(--gray-lighter);
 }

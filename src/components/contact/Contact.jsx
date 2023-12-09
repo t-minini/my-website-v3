@@ -4,7 +4,7 @@ import { useState } from 'react'; // Import useState
 export function Contact() {
   const [isHovered, setIsHovered] = useState(false); // Add state for hover
   return (
-    <section
+    <footer
       id="contact"
       className={style.contact}
       onMouseEnter={() => setIsHovered(true)}
@@ -12,7 +12,8 @@ export function Contact() {
     >
       <div className={style.contact__container}>
         <h2>
-          Let's connect<span>.</span>
+          Let's <br />
+          connect<span>.</span>
           <span>.</span>
           <span>.</span>
         </h2>
@@ -46,27 +47,10 @@ export function Contact() {
       </div>
       <div className={style.copyright}>
         <p>
-          <span>&#169;2024 Tulio Minini</span> All Rights Reserved.
+          Copyright <br />
+          <span>&#169;Tulio Minini 2024</span>
         </p>
       </div>
-    </section>
+    </footer>
   );
 }
-
-// import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-
-// export const Contact = () => (
-//   <Parallax strength={800}>
-//     <section id="contact" className={style.contact}>
-//       <div className={style.contact__first}>
-//         <a href="https://www.linkedin.com/in/tulio-minini/">linkedin</a>
-//         <a href="https://github.com/t-minini">github</a>
-//       </div>
-//       <h2>Let's connect</h2>
-//       <div className={style.contact__second}>
-//         <a href="https://www.linkedin.com/in/tulio-minini/">e-mail</a>
-//         <a href="https://github.com/t-minini">curriculum</a>
-//       </div>
-//     </section>
-//   </Parallax>
-// );
