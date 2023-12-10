@@ -11,8 +11,7 @@
   padding-top: 3rem;
   margin-left: 15rem;
   margin-right: 15rem;
-  transition: 0.9s;
-  z-index: 100;
+  transition: opacity 0.9s ease;
 }
 
 .navbar ul {
@@ -41,5 +40,4 @@
 
 .navbar_show {
   display: none;
-  transition: 0.9s;
 }

@@ -8,10 +8,10 @@ export function Navbar() {
   // show navbar when scroll
   const [showNav, setShowNav] = useState(false);
   const showNavbar = () => {
-    if (window.scrollY >= 50) {
-      setShowNav(true);
-    } else {
-      setShowNav(false);
+    const aboutSection = document.getElementById('about'); // replace 'about' with the actual ID of your 'about' section
+    if (aboutSection) {
+      const aboutSectionTop = aboutSection.getBoundingClientRect().top;
+      setShowNav(aboutSectionTop <= 0);
     }
   };
 
