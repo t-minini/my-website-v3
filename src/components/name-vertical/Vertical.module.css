@@ -1,7 +1,7 @@
 .vertical {
   position: fixed;
   bottom: 50%;
-  right: -9.5rem;
+  right: -8rem;
   display: flex;
   gap: 2rem;
   transform: rotate(-90deg);
@@ -12,4 +12,5 @@
   font-weight: var(--light-300);
   color: var(--black);
   letter-spacing: 0.3rem;
+  z-index: 1;
 }
