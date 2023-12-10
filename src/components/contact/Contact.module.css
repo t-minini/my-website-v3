@@ -116,7 +116,7 @@
   padding-right: 3rem;
   text-decoration: none;
   color: var(--gray-dark);
-  font-weight: var(--regular-400);
+  font-weight: var(--medium-500);
   transition: color 1s ease;
   cursor: pointer;
 }

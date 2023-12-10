@@ -1,27 +1,22 @@
 .projects {
   width: 100vw;
-  /* height: 100dvh; */
-  /* height: min-content; */
   background-color: var(
     --black
   ); /* no. of projects is even = var(--black) OR no. of projects is odd = var(--gray-lighter) */
   color: var(
     --gray-lighter
   ); /* no. of projects is even = var(--gray-lighter) OR no. of projects is odd = var(--black) */
-  padding: 0 5%;
 }
 
 .projects__container {
   display: flex;
   flex-wrap: wrap;
-  /* gap: 10rem; */
 }
 
 .projects__card {
   height: 100vh;
   display: flex;
   flex-direction: row;
-  margin: 0 -10rem;
   padding: 15rem 10rem;
 }
 
@@ -33,7 +28,6 @@
   color: var(
     --black
   ); /* no. of projects is even = var(--black) OR no. of projects is odd = var(--gray-lighter) */
-  /* margin: -10rem; */
   padding: 15rem 10rem;
 }
 
