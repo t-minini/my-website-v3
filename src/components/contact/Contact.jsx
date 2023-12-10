@@ -56,8 +56,9 @@ export function Contact() {
       <div className={style.copyright}>
         <p>
           Copyright <br />
-          <span>&#169;Tulio Minini 2024</span>
+          
         </p>
+        <span>&#169;Tulio Minini 2024</span>
       </div>
     </footer>
   );

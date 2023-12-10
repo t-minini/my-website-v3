@@ -75,7 +75,7 @@
 .info__links a {
   font-size: 1.6rem;
   font-weight: var(--medium-500);
-  color: var(--gray-dark);
+  color: var(--gray-darker);
   padding-right: 2rem;
   padding-bottom: 0.3rem;
   text-decoration: none;

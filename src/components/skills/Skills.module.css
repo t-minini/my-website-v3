@@ -30,12 +30,15 @@
 
 .skills a {
   font-size: 2rem;
-  color: var(--gray-dark);
+  color: var(--gray-darker);
   text-decoration: none;
   transition: color 0.5s ease, stroke 0.5s ease, fill 0.5s ease;
 }
 
 .skills__ul svg {
+  position: relative;
+  margin: 0;
+  padding: 0;
   stroke: var(--gray-dark);
   fill: var(--gray-dark);
   transition: color 0.5s ease, stroke 0.5s ease, fill 0.5s ease;

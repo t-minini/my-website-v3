@@ -115,7 +115,7 @@
   font-size: 1.6rem;
   padding-right: 3rem;
   text-decoration: none;
-  color: var(--gray-dark);
+  color: var(--gray-darker);
   font-weight: var(--medium-500);
   transition: color 1s ease;
   cursor: pointer;
@@ -128,15 +128,18 @@
 .copyright {
   display: flex;
   justify-content: flex-end;
+  flex-direction: column;
 }
 
 .copyright p {
   font-size: 1.4rem;
   color: var(--gray-darker);
+  font-weight: var(--thin-100);
   text-align: right;
 }
 
 .copyright span {
   font-size: 1.4rem;
-  color: var(--gray-lighter);
+  color: var(--gray-darker);
+  text-align: right;
 }
