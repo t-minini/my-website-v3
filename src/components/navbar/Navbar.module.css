@@ -11,7 +11,7 @@
   padding-top: 3rem;
   margin-left: 15rem;
   margin-right: 15rem;
-  transition: opacity 0.9s ease;
+  /* transition: 0.9s; */
 }
 
 .navbar ul {
@@ -40,4 +40,5 @@
 
 .navbar_show {
   display: none;
+  /* transition: 0.9s; */
 }
