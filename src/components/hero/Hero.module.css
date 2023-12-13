@@ -13,13 +13,13 @@
 }
 
 .hero__text h1 {
- font-size: 60rem;
- line-height: 0rem;
- color: var(--orange);
- font-family: var(--sugiyama);
- text-transform: uppercase;
- font-weight: var(--regular-400);
- z-index: 1;
+  font-size: 60rem;
+  line-height: 0rem;
+  color: var(--orange);
+  font-family: var(--sugiyama);
+  text-transform: uppercase;
+  font-weight: var(--regular-400);
+  z-index: 1;
 }
 
 .hero__text p {
@@ -46,7 +46,7 @@
 .hero__arrow {
   position: absolute;
   bottom: 0rem;
-  left: 46.6%;
+  left: calc(50% - 13rem / 2);
   width: 13rem;
   height: 6.5rem;
   display: flex;
@@ -54,6 +54,8 @@
   justify-content: center;
   cursor: pointer;
   z-index: 3;
+  background-color: red;
+  /* margin: auto; */
 }
 
 .hero__arrow span {
