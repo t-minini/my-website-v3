@@ -1,5 +1,4 @@
-import style from './App.module.css';
-
+import './App.module.css';
 import { Hero } from './components/hero/Hero';
 import { About } from './components/about/About';
 import { Navbar } from './components/navbar/Navbar';
@@ -11,7 +10,7 @@ import { Vertical } from './components/name-vertical/Vertical';
 
 function App() {
   return (
-    <div className={style.app}>
+    <>
       <Cursor />
       <Navbar />
       <Vertical />
@@ -20,7 +19,7 @@ function App() {
       <Skills />
       <Projects />
       <Contact />
-    </div>
+    </>
   );
 }
 export default App;
