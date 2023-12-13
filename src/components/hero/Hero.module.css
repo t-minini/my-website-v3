@@ -15,13 +15,11 @@
 .hero__text h1 {
  font-size: 60rem;
  line-height: 0rem;
- background-color: red;
  color: var(--orange);
  font-family: var(--sugiyama);
  text-transform: uppercase;
  font-weight: var(--regular-400);
  z-index: 1;
- 
 }
 
 .hero__text p {
