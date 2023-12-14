@@ -7,6 +7,7 @@ import { Cursor } from './components/cursor/Cursor';
 import { Contact } from './components/contact/Contact';
 import { Projects } from './components/projects/Projects';
 import { Vertical } from './components/name-vertical/Vertical';
+import { ProjectsAnimated } from './components/projects-animated/Projects';
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
       <Hero />
       <About />
       <Skills />
-      <Projects />
+      <ProjectsAnimated />
+      {/* <Projects /> */}
       <Contact />
     </>
   );
