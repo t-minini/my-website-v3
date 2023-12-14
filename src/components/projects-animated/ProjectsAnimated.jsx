@@ -84,19 +84,19 @@ const Single = ({ item }) => {
 
   const { scrollYProgress } = useScroll({
     target: ref,
+    // offset: ['start start', 'end start'],
   });
-  const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
+  const y = useTransform(scrollYProgress, [0, 1], [-200, 200]);
   return (
-    <section ref={ref}>
+    <section>
       <div className={style.container}>
         <div className={style.wrapper}>
-          <div className={style.imageContainer}>
+          <div className={style.imageContainer} ref={ref}>
             <img src={item.img} alt="" />
           </div>
-          <motion.div className={style.textContainer} >
-            <h2>{item.project}</h2>
-            <p>{item.description}</p>
-            <div className={style.linksContainer}>
+          <motion.div className={style.textContainer} style={{ y }}>
+            <div className={style.topWrapper}>
+              <h2>{item.project}</h2>
               <a href={item.github} target={'_blank'} rel="noreferrer">
                 Github
               </a>
@@ -104,6 +104,7 @@ const Single = ({ item }) => {
                 Website
               </a>
             </div>
+            <p>{item.description}</p>
           </motion.div>
         </div>
       </div>
@@ -112,7 +113,7 @@ const Single = ({ item }) => {
 };
 export function ProjectsAnimated() {
   return (
-    <div className={style.portfolio} id='projects'>
+    <div className={style.portfolio} id="projects">
       {items.toReversed().map((item) => (
         <Single item={item} key={item.id} />
       ))}

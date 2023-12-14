@@ -27,7 +27,7 @@ export function Navbar() {
         <Link
           to="about"
           spy={true}
-          smooth={true}
+          // smooth={true}
           activeClass={style.navbar__active}
           className={`hoverable ${isHovered ? style.hovered : ''}`}
         >
@@ -36,7 +36,7 @@ export function Navbar() {
         <Link
           to="skills"
           spy={true}
-          smooth={true}
+          // smooth={true}
           activeClass={style.navbar__active}
           className={`hoverable ${isHovered ? style.hovered : ''}`}
         >
@@ -45,7 +45,7 @@ export function Navbar() {
         <Link
           to="projects"
           spy={true}
-          smooth={true}
+          // smooth={true}
           activeClass={style.navbar__active}
           className={`hoverable ${isHovered ? style.hovered : ''}`}
         >
@@ -54,7 +54,7 @@ export function Navbar() {
         <Link
           to="contact"
           spy={true}
-          smooth={true}
+          // smooth={true}
           activeClass={style.navbar__active}
           className={`hoverable ${isHovered ? style.hovered : ''}`}
         >
