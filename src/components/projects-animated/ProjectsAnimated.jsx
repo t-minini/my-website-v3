@@ -2,7 +2,6 @@
 import { useRef } from 'react';
 import style from './ProjectsAnimated.module.css';
 import { motion, useScroll, useTransform } from 'framer-motion';
-// import projectsJSON from '../../projects.json';
 
 const items = [
   {
@@ -84,9 +83,9 @@ const Single = ({ item }) => {
 
   const { scrollYProgress } = useScroll({
     target: ref,
-    // offset: ['start start', 'end start'],
   });
   const y = useTransform(scrollYProgress, [0, 1], [-400, 400]);
+
   return (
     <section>
       <div className={style.container}>
