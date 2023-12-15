@@ -4,7 +4,7 @@
   --gray-medium: #d2d2c8;
   --gray-dark: #b6b7b2;
   --gray-dark-transparent: rgba(182, 183, 179, 0.25);
-  --gray-darker: #9B9B9B;
+  --gray-darker: #9b9b9b;
   --gray-darker-inactive: rgba(182, 183, 179, 0.4);
 
   --black: #252525;
@@ -26,6 +26,14 @@ html {
   /* background-color: var(--color2-blue); */
   cursor: default;
   color: var(--black);
+  overflow: scroll;
+  /* height: 100vh; */
+  scroll-snap-type: y mandatory;
+}
+
+section,
+footer {
+  scroll-snap-align: center;
 }
 
 *,
