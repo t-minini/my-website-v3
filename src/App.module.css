@@ -25,24 +25,19 @@ html {
   cursor: default;
   color: var(--black);
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
-  overflow: auto;
+  /* scroll-snap-type: y mandatory;  */
+  -ms-scroll-snap-type: y mandatory; /* IE 10 and 11 */
+  -webkit-scroll-snap-type: y mandatory; /* Safari, Chrome, and newer versions of Opera */
+  scroll-snap-type: y mandatory; /* Standard property */
+  background-color: red;
 }
-
-.pageContainer {
-  /* height: 100vh; */
-}
-
 
 section,
 footer {
-  /* height: 100vh; */
-  scroll-snap-align: center;
-  /* scroll-snap-stop: always; */
-}
-
-body {
-  /* scroll-snap-stop: always; */
+  -ms-scroll-snap-align: center; /* IE 10 and 11 */
+  -webkit-scroll-snap-align: center; /* Safari, Chrome, and newer versions of Opera */
+  scroll-snap-align: center; /* Standard property */
+  -ms-scroll-chaining: none;
 }
 
 *,
