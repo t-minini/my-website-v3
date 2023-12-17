@@ -21,20 +21,28 @@
 }
 
 html {
-  min-height: 100%;
-  width: 100%;
-  /* background-color: var(--color2-blue); */
+  height: 100vh;
   cursor: default;
   color: var(--black);
-  overflow: scroll;
-  /* height: 100vh; */
-  scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  overflow: auto;
 }
+
+.pageContainer {
+  /* height: 100vh; */
+}
+
 
 section,
 footer {
+  /* height: 100vh; */
   scroll-snap-align: center;
+  /* scroll-snap-stop: always; */
+}
+
+body {
+  /* scroll-snap-stop: always; */
 }
 
 *,
