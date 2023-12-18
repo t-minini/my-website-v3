@@ -11,6 +11,10 @@
   overflow: hidden;
 }
 
+.section {
+  height: 100vh;
+}
+
 .wrapper {
   /* max-width: 1366px; */
   /* margin: auto; */

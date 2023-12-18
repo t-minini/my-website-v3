@@ -25,6 +25,7 @@ html {
   cursor: default;
   color: var(--black);
   scroll-behavior: smooth;
+  overflow-y: scroll;
   /* scroll-snap-type: y mandatory;  */
   -ms-scroll-snap-type: y mandatory; /* IE 10 and 11 */
   -webkit-scroll-snap-type: y mandatory; /* Safari, Chrome, and newer versions of Opera */
