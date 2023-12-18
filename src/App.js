@@ -13,7 +13,7 @@ import { ProjectsAnimated } from './components/projects-animated/ProjectsAnimate
 
 function App() {
   return (
-    <section className={style.pageContainer}>
+    <div className={style.pageContainer}>
       <Cursor />
       <Navbar />
       <Vertical />
@@ -23,7 +23,7 @@ function App() {
       <ProjectsAnimated />
       {/* <Projects /> */}
       <Contact />
-    </section>
+    </div>
   );
 }
 

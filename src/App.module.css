@@ -37,7 +37,7 @@ footer {
   -ms-scroll-snap-align: center; /* IE 10 and 11 */
   -webkit-scroll-snap-align: center; /* Safari, Chrome, and newer versions of Opera */
   scroll-snap-align: center; /* Standard property */
-  -ms-scroll-chaining: none;
+  /* -ms-scroll-chaining: none; */
 }
 
 *,
