@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import style from './Skills.module.css';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useRef } from 'react';
 
 export function Skills() {
@@ -22,12 +22,6 @@ export function Skills() {
   };
 
   const ref = useRef();
-
-  // const { scrollYProgress } = useScroll({
-  //   target: ref,
-  // });
-
-  // const y = useTransform(scrollYProgress, [0, 1], [-200, 200]);
 
   return (
     <section
