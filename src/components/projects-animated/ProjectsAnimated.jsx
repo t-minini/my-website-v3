@@ -110,6 +110,7 @@ const Single = ({ item }) => {
     </section>
   );
 };
+
 export function ProjectsAnimated() {
   return (
     <div className={style.portfolio} id="projects">

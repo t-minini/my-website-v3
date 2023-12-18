@@ -1,17 +1,50 @@
 import { useState } from 'react';
 import style from './Skills.module.css';
+import { motion, useScroll, useTransform } from 'framer-motion';
+import { useRef } from 'react';
 
 export function Skills() {
   const [isHovered, setIsHovered] = useState(false);
+
+  const variants = {
+    initial: {
+      // x: -900,
+      opacity: 0,
+    },
+    animate: {
+      // x: 0,
+      opacity: 1,
+      transition: {
+        duration: 1,
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const ref = useRef();
+
+  // const { scrollYProgress } = useScroll({
+  //   target: ref,
+  // });
+
+  // const y = useTransform(scrollYProgress, [0, 1], [-200, 200]);
+
   return (
     <section
       id="skills"
       className={style.skills}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
+      ref={ref}
     >
-      <div className={style.skills__ul}>
-        <ul>
+      <motion.div
+        className={style.skills__ul}
+        variants={variants}
+        initial="initial"
+        whileInView="animate"
+        // style={{ y }}
+      >
+        <motion.ul variants={variants}>
           <li>USING NOW</li>
           <li>HTML</li>
           <li>CSS</li>
@@ -24,8 +57,8 @@ export function Skills() {
           <li>Figma / Sketch</li>
           <li>Github</li>
           <li>Git</li>
-        </ul>
-        <ul>
+        </motion.ul>
+        <motion.ul variants={variants}>
           <li>INTERESTS</li>
           <li>AWS</li>
           <li>Python</li>
@@ -39,8 +72,8 @@ export function Skills() {
           <li>Swift</li>
           <li>Jest</li>
           <li>Firebase</li>
-        </ul>
-        <ul>
+        </motion.ul>
+        <motion.ul variants={variants}>
           <li>OTHER SKILLS</li>
           <li>Node.js</li>
           <li>Restful API</li>
@@ -59,8 +92,8 @@ export function Skills() {
               </svg>
             </a>
           </li>
-        </ul>
-        <ul>
+        </motion.ul>
+        <motion.ul variants={variants}>
           <li>COURSES</li>
           <li className={style.link}>
             <a
@@ -134,8 +167,8 @@ export function Skills() {
               </svg>
             </a>
           </li>
-        </ul>
-      </div>
+        </motion.ul>
+      </motion.div>
     </section>
   );
 }
