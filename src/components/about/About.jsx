@@ -31,15 +31,15 @@ export function About() {
     initial: {
       opacity: 0,
       y: -50,
-      // y:-50,
     },
     animate: (index) => ({
       opacity: 1,
       y: 0,
-      // x:0,
       transition: {
         delay: 0.05 * index,
-      }
+        type: 'spring',
+        damping: 10,
+      },
     }),
   };
 
