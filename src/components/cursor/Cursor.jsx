@@ -1,67 +1,79 @@
-import gsap from 'gsap';
 import style from './Cursor.module.css';
-import React, { useEffect, useRef } from 'react';
+import { motion, useAnimation } from 'framer-motion';
+import React, { useEffect, useRef, useCallback } from 'react';
 
 export function Cursor() {
-  // Ref for the big ball element
-  const bigBallRef = useRef(null);
+  const circleRef = useRef(null);
+  const controls = useAnimation();
 
-  // Function to update cursor position based on mouse movement
-  const updateCursorPosition = (e) => {
-    if (bigBallRef.current) {
-      // Use gsap to smoothly update position
-      gsap.to(bigBallRef.current, { duration: 0.4, x: e.clientX - 15, y: e.clientY - 15 });
-    }
-  };
+  const updateCursorPosition = useCallback(
+    (e) => {
+      if (circleRef.current) {
+        controls.start({
+          x: e.clientX - 15,
+          y: e.clientY - 15,
+          transition: { duration: 0.05 },
+        });
+      }
+    },
+    [controls]
+  );
 
-  // Function to handle hover events with a specified scale
-  const handleHover = (scale) => () => {
-    if (bigBallRef.current) {
-      // Use gsap to smoothly adjust the scale
-      gsap.to(bigBallRef.current, { duration: 0.3, scale });
-    }
-  };
+  const handleHover = useCallback(
+    (scale) => () => {
+      if (circleRef.current) {
+        controls.start({
+          scale,
+          transition: { duration: 0.3 },
+        });
+      }
+    },
+    [controls]
+  );
 
-  // Effect to set up mouse event listeners
   useEffect(() => {
-    // Select all elements with the 'hoverable' class
     const hoverables = document.querySelectorAll('.hoverable');
 
-    // Function to handle mouse enter with a scale of 3
-    const handleMouseEnter = handleHover(3);
+    const handleMouseLeave = () => {
+      controls.start({
+        opacity: 0,
+      });
+    };
 
-    // Function to handle mouse leave with a scale of 1
-    const handleMouseLeave = handleHover(1);
+    const handleMouseEnter = () => {
+      controls.start({
+        opacity: 1,
+      });
+    };
 
-    // Add mousemove event listener to update cursor position
     document.body.addEventListener('mousemove', updateCursorPosition);
+    document.body.addEventListener('mouseleave', handleMouseLeave);
+    document.body.addEventListener('mouseenter', handleMouseEnter);
 
-    // Attach mouse event listeners for hover and hover out on hoverable elements
     hoverables.forEach((element) => {
-      element.addEventListener('mouseenter', handleMouseEnter);
-      element.addEventListener('mouseleave', handleMouseLeave);
+      element.addEventListener('mouseenter', handleHover(4));
+      element.addEventListener('mouseleave', handleHover(1));
 
-      // Cleanup: Remove the event listeners
       return () => {
-        element.removeEventListener('mouseenter', handleMouseEnter);
-        element.removeEventListener('mouseleave', handleMouseLeave);
+        element.removeEventListener('mouseenter', handleHover(4));
+        element.removeEventListener('mouseleave', handleHover(1));
       };
     });
 
-    // Cleanup: Remove the mousemove event listener
     return () => {
       document.body.removeEventListener('mousemove', updateCursorPosition);
+      document.body.removeEventListener('mouseleave', handleMouseLeave);
+      document.body.removeEventListener('mouseenter', handleMouseEnter);
     };
-  }, []);
+  }, [controls, handleHover, updateCursorPosition]);
 
-  // Render the cursor component
   return (
     <div className={style.cursor}>
-      <div ref={bigBallRef} className={`${style.cursor__ball} ${style['cursor__ball--big']}`}>
+      <motion.div ref={circleRef} animate={controls}>
         <svg height="30" width="30">
-          <circle cx="12" cy="12" r="7" strokeWidth="0"></circle>
+          <circle cx="12" cy="12" r="10" strokeWidth="0"></circle>
         </svg>
-      </div>
+      </motion.div>
     </div>
   );
 }
