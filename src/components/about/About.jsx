@@ -1,4 +1,3 @@
-// import React, {  } from 'react';
 import style from './About.module.css';
 import { motion } from 'framer-motion';
 
@@ -7,10 +6,11 @@ export function About() {
 
   const words = text.split(' ');
 
+  // frame-motion animation
   const variants = {
     initial: {
       opacity: 0,
-      y: -50,
+      y: 50,
     },
     animate: (index) => ({
       color: 'var(--gray-lighter)',
@@ -23,7 +23,8 @@ export function About() {
       },
     }),
   };
-
+  
+// frame-motion animation
   const hover = {
     scale: 1.03,
     color: 'var(--orange)',
