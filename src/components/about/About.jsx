@@ -27,57 +27,46 @@ export function About() {
     }, 2000);
   };
 
-  const container = {
-    hidden: { opacity: 1 },
-    visible: (i = 1) => ({
-      opacity: 1,
-      transition: { staggerChildren: 0.1, delayChildren: 0.04 * i },
-    }),
-  };
-
-  const child = {
-    visible: {
-      color: 'var(--gray-lighter)',
+  const variants = {
+    initial: {
+      opacity: 0,
+      y: -50,
+      // y:-50,
+    },
+    animate: (index) => ({
       opacity: 1,
       y: 0,
+      // x:0,
       transition: {
-        type: 'spring',
-        damping: 12,
-        stiffness: 100,
-        color: {duration: 0.2},
-      },
-      hidden: {
-        // color: "green",
-        // opacity: 1,
-        y: 20,
-        transition: {
-          type: 'spring',
-          damping: 12,
-          stiffness: 100,
-        },
-      },
-    },
+        delay: 0.05 * index,
+      }
+    }),
   };
 
   return (
     <section id="about" className={style.about}>
-      <motion.div variants={container} initial="hidden" animate="visible">
+      <div>
         {wordsArray.map((word, index) => (
           <motion.span
             key={index}
             className={style.word}
             style={{
-              color: hoveredWords[index] ? 'var(--orange)' : 'var(--black)',
+              color: hoveredWords[index]
+                ? 'var(--orange)'
+                : 'var(--gray-lighter)',
             }}
             onMouseOver={() => handleWordHover(index)}
             onMouseLeave={handleWordLeave}
-            variants={child}
+            variants={variants}
+            initial="initial"
+            whileInView="animate"
+            custom={index}
           >
             {index !== 0 && ' '}
             {word}
           </motion.span>
         ))}
-      </motion.div>
+      </div>
     </section>
   );
 }
