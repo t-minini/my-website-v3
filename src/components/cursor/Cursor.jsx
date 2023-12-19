@@ -9,10 +9,12 @@ export function Cursor() {
   const updateCursorPosition = useCallback(
     (e) => {
       if (circleRef.current) {
-        controls.start({
-          x: e.clientX - 15,
-          y: e.clientY - 15,
-          transition: { duration: 0.05 },
+        requestAnimationFrame(() => {
+          controls.start({
+            x: e.clientX - 15,
+            y: e.clientY - 15,
+            transition: { duration: 0.05 },
+          });
         });
       }
     },
