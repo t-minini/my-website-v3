@@ -47,64 +47,6 @@
   font-weight: var(--thin-100);
 }
 
-/* ANIMATED DOTS */
-
-.contact__text span:nth-of-type(1) {
-  font-size: 13rem;
-  color: var(--font-dark);
-  opacity: 0;
-  -webkit-animation: dot 1.3s infinite;
-  -webkit-animation-delay: 0s;
-  animation: dot 1.3s infinite;
-  animation-delay: 0s;
-}
-
-.contact__text span:nth-of-type(2) {
-  font-size: 13rem;
-  color: var(--font-dark);
-  opacity: 0;
-  -webkit-animation: dot 1.3s infinite;
-  -webkit-animation-delay: 0.2s;
-  animation: dot 1.3s infinite;
-  animation-delay: 0.2s;
-}
-
-.contact__text span:nth-of-type(3) {
-  font-size: 13rem;
-  color: var(--font-dark);
-  opacity: 0;
-  -webkit-animation: dot 1.3s infinite;
-  -webkit-animation-delay: 0.3s;
-  animation: dot 1.3s infinite;
-  animation-delay: 0.3s;
-}
-
-/* DOTS ANIMATION */
-
-@-webkit-keyframes dot {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes dot {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 .contact__links {
   width: 100%;
   margin-left: 1rem;
@@ -116,7 +58,7 @@
   padding-right: 3rem;
   text-decoration: none;
   color: var(--gray-darker);
-  font-weight: var(--medium-500);
+  font-weight: var(--light-300);
   transition: color 1s ease;
   cursor: pointer;
 }

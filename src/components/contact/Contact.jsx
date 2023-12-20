@@ -1,5 +1,5 @@
 import style from './Contact.module.css';
-import { useState } from 'react'; // Import useState
+import { useState } from 'react';
 
 export function Contact() {
   const [isHovered, setIsHovered] = useState(false); // Add state for hover
@@ -15,14 +15,12 @@ export function Contact() {
         <div className={style.text__container}>
           <h2>
             Let's <br />
-            connect<span>.</span>
-            <span>.</span>
-            <span>.</span>
+            connect.
           </h2>
           <p>
             I'm currently up for some exciting <br />
             projects. Hit me up if you're on <br /> the lookout for a front-end
-            <br /> developer. Let's chat!
+            <br /> developer.
           </p>
         </div>
         <div className={style.contact__links}>
@@ -56,7 +54,6 @@ export function Contact() {
       <div className={style.copyright}>
         <p>
           Copyright <br />
-          
         </p>
         <span>&#169;Tulio Minini 2024</span>
       </div>
