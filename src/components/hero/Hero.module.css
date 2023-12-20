@@ -13,6 +13,8 @@
 }
 
 .hero__text h1 {
+  position: absolute;
+  bottom: 45rem;
   font-size: 60rem;
   line-height: 0rem;
   color: var(--orange);
