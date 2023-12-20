@@ -1,7 +1,8 @@
 .hero {
   height: 100dvh;
   background-color: var(--black);
-  /* background-color: red; */
+  position: relative;
+  z-index: -1;
 }
 
 .hero__text {
@@ -30,7 +31,7 @@
   z-index: 4;
 }
 
-.hero__imgs {
+.hero__container {
   display: flex;
   justify-content: center;
 }
@@ -60,7 +61,7 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  z-index: 3;
+  z-index: 100;
 }
 
 .hero__arrow span {
