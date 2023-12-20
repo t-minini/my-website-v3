@@ -31,6 +31,7 @@
   position: relative;
   top: 27rem;
   left: 5%;
+  width: fit-content;
 }
 
 .text__container {
