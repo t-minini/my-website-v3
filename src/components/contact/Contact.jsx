@@ -1,8 +1,8 @@
-import style from './Contact.module.css';
 import { useState } from 'react';
+import style from './Contact.module.css';
 
 export function Contact() {
-  const [isHovered, setIsHovered] = useState(false); // Add state for hover
+  const [isHovered, setIsHovered] = useState(false);
   return (
     <footer
       id="contact"
