@@ -14,7 +14,7 @@ const ProjectCard = ({ projectsJSON }) => {
   return (
     <section className={style.container} key={projectsJSON.id}>
       <div className={style.imageContainer} ref={ref}>
-        <img src={projectsJSON.img} alt="" />
+        <img loading="lazy" src={projectsJSON.img} alt="" />
       </div>
       <motion.div className={style.textContainer} style={{ y }}>
         <div className={style.topWrapper}>
