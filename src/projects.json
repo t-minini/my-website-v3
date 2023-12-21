@@ -26,7 +26,7 @@
   {
     "id": "004",
     "img": "/images/portfolio-imgs/tulio-minini-website-v1.jpg",
-    "project": "My Website V1",
+    "project": "My Website 2022",
     "github": "https://github.com/t-minini/my-website",
     "website": "https://tulio-minini-v1.netlify.app/",
     "description": "My very first website/portfolio featuring a mix of CSS, HTML, React, Bootstrap and some cool animations created with vanilla JavaScript and React.js."
@@ -50,7 +50,7 @@
   {
     "id": "007",
     "img": "/images/portfolio-imgs/tulio-minini-website-v2.png",
-    "project": "My Website V2",
+    "project": "My Website 2023",
     "github": "https://github.com/t-minini/my-website-v2",
     "website": "https://tuliominini.com/",
     "description": "The second version of my website/portfolio was created with CSS, HTML, and React. It was also the project where I had my first experience using Figma for design practice."

@@ -1,5 +1,4 @@
 .portfolio {
-  /* height: fit-content; */
   background-color: var(--gray-lighter);
 }
 
@@ -9,18 +8,7 @@
   justify-content: center;
   height: 100vh;
   overflow: hidden;
-}
-
-.section {
-  height: 100vh;
-}
-
-.wrapper {
-  /* max-width: 1366px; */
-  /* margin: auto; */
   padding: 5%;
-  display: flex;
-  /* min-height: 80%; */
 }
 
 .imageContainer {
@@ -30,9 +18,7 @@
 
 .imageContainer img {
   border-radius: 2rem;
-  height: 100%;
   width: 100%;
-  object-fit: cover;
 }
 
 .textContainer {
@@ -43,23 +29,26 @@
   justify-content: center;
 }
 
+.textContainer p {
+  font-size: 1.8rem;
+  font-weight: var(--thin-100);
+}
+
 .topWrapper {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
   align-items: flex-end;
+
 }
 
 .topWrapper h2 {
   font-size: 3.4rem;
-  width: max-content;
-  padding-right: 2rem;
 }
 
 .topWrapper a {
   font-size: 1.6rem;
-  font-weight: var(--medium-500);
+  font-weight: var(--light-300);
   color: var(--gray-darker);
-  padding-right: 2rem;
+  padding-left: 2rem;
   padding-bottom: 0.3rem;
   text-decoration: none;
 }
@@ -69,7 +58,4 @@
   transition: color 0.5s ease-in-out;
 }
 
-.textContainer p {
-  font-size: 1.8rem;
-  font-weight: var(--thin-100);
-}
+
