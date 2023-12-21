@@ -52,6 +52,7 @@ export function HeroTwo() {
     <section ref={parallaxRef} id="hero" className={style.hero}>
       <div className={style.hero__container}>
         <motion.img
+          loading="lazy"
           style={{ y: backgroundY }}
           className={style.img__back}
           src={imgBack}
