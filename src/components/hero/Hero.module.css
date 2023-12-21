@@ -1,46 +1,52 @@
 .hero {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  background-color: var(--gray-lighter);
+  height: 100dvh;
+  background-color: var(--black);
+  position: relative;
+  z-index: -1;
 }
 
 .hero__text {
-  width: 50vw;
-  height: 100dvh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  align-items: center;
+  padding-top: 15%;
 }
 
 .hero__text h1 {
-  position: absolute;
-  bottom: 45rem;
-  font-size: 60rem;
-  line-height: 0rem;
+  font-size: 35rem;
+  letter-spacing: 0.5rem;
   color: var(--orange);
   font-family: var(--sugiyama);
-  text-transform: uppercase;
   font-weight: var(--regular-400);
-  z-index: 1;
-}
-
-.hero__text p {
-  padding: 010% 10% 10%;
-  font-size: 5.2rem;
-  font-weight: var(--thin-100);
+  line-height: 25rem;
   z-index: 2;
 }
 
-.hero__img {
-  width: 50vw;
-  height: 100dvh;
+.hero__text p {
+  width: 100%;
+  font-size: 5.2rem;
+  text-align: center;
+  color: var(--gray-lighter);
+  font-weight: var(--thin-100);
+  z-index: 4;
 }
 
-.hero__img img {
-  width: 50vw;
-  height: 100dvh;
-  object-fit: cover;
-  object-position: 0 -3rem;
+.hero__container {
+  display: flex;
+  justify-content: center;
+}
+
+.img__back {
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.img__front {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 3;
 }
 
 /* ARROW DOWN */
@@ -55,7 +61,7 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  z-index: 3;
+  z-index: 100;
 }
 
 .hero__arrow span {
@@ -64,8 +70,8 @@
   cursor: pointer;
   width: 2.4rem;
   height: 2.4rem;
-  border-left: 0.1rem solid var(--black);
-  border-bottom: 0.1rem solid var(--black);
+  border-left: 0.1rem solid var(--gray-lighter);
+  border-bottom: 0.1rem solid var(--gray-lighter);
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   -webkit-animation: arrow 1.5s infinite;

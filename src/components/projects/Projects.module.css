@@ -1,92 +1,61 @@
-.projects {
-  width: 100vw;
-  background-color: var(
-    --black
-  ); /* no. of projects is even = var(--black) OR no. of projects is odd = var(--gray-lighter) */
-  color: var(
-    --gray-lighter
-  ); /* no. of projects is even = var(--gray-lighter) OR no. of projects is odd = var(--black) */
+.portfolio {
+  background-color: var(--gray-lighter);
 }
 
-.projects__container {
+.container {
   display: flex;
-  flex-wrap: wrap;
-}
-
-.projects__card {
+  align-items: center;
+  justify-content: center;
   height: 100vh;
-  display: flex;
-  flex-direction: row;
-  padding: 15rem 10rem;
-}
-
-.projects__card:nth-child(even) {
-  flex-direction: row-reverse;
-  background-color: var(
-    --gray-lighter
-  ); /* no. of projects is even = var(--gray-lighter) OR no. of projects is odd = var(--black) */
-  color: var(
-    --black
-  ); /* no. of projects is even = var(--black) OR no. of projects is odd = var(--gray-lighter) */
-  padding: 15rem 10rem;
-}
-
-.projects__card:nth-child(even) .projects__info {
-  margin-right: 2rem;
-  margin-left: unset;
-}
-
-.projects__img {
   overflow: hidden;
+  padding: 5%;
+}
+
+.imageContainer {
   flex: 2;
-  border-radius: 2rem;
-}
-
-.projects__img img {
-  width: 100%;
-  height: 100%;
-  /* transition: transform 1s ease; */
-  object-fit: cover;
-}
-
-.projects__info {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  justify-content: flex-end;
-  margin-left: 2rem;
-}
-
-.info__top h3 {
-  font-size: 3.4rem;
-  width: max-content;
   padding-right: 2rem;
 }
 
-.info__top {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+.imageContainer img {
+  border-radius: 2rem;
+  width: 100%;
 }
 
-.info__links {
+.textContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.textContainer p {
+  font-size: 1.8rem;
+  font-weight: var(--thin-100);
+}
+
+.topWrapper {
   display: flex;
   align-items: flex-end;
+
 }
-.info__links a {
+
+.topWrapper h2 {
+  font-size: 3.4rem;
+}
+
+.topWrapper a {
   font-size: 1.6rem;
-  font-weight: var(--medium-500);
+  font-weight: var(--light-300);
   color: var(--gray-darker);
-  padding-right: 2rem;
+  padding-left: 2rem;
   padding-bottom: 0.3rem;
   text-decoration: none;
 }
 
-.info__links a:hover {
+.topWrapper a:hover {
   color: var(--orange);
   transition: color 0.5s ease-in-out;
 }
 
-.info__bottom p {
-  font-size: 1.8rem;
-  font-weight: var(--thin-100);
-}
+
