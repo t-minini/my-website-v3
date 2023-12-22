@@ -6,17 +6,36 @@ import { useRef } from 'react';
 export function Skills() {
   const [isHovered, setIsHovered] = useState(false);
 
-  const variants = {
+  const titleVariants = {
     initial: {
-      // x: -900,
+      x: -50,
       opacity: 0,
     },
     animate: {
-      // x: 0,
+      x: 0,
       opacity: 1,
       transition: {
+        duration: 0.5,
+        staggerChildren: 1,
+        // staggerDirection: -1,
+      },
+    },
+  };
+
+  const itemVariants = {
+    initial: {
+      y: -50,
+      opacity: 0,
+    },
+    animate: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        delay: 0.5,
         duration: 1,
-        staggerChildren: 0.2,
+        staggerChildren: 5,
+        type: 'spring',
+        // damping: 1,
       },
     },
   };
@@ -33,27 +52,94 @@ export function Skills() {
     >
       <motion.div
         className={style.skills__ul}
-        variants={variants}
+        variants={titleVariants}
         initial="initial"
         whileInView="animate"
-        // style={{ y }}
       >
-        <motion.ul variants={variants}>
+        <ul>
           <li>USING NOW</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>React</li>
-          <li>Pixel Perfect</li>
-          <li>Responsive design</li>
-          <li>Flexbox & Grid</li>
-          <li>Bootstrap / Material UI</li>
-          <li>Figma / Sketch</li>
-          <li>Github</li>
-          <li>Git</li>
-        </motion.ul>
-        <motion.ul variants={variants}>
-          <li>INTERESTS</li>
+          <motion.li
+            variants={itemVariants}
+            initial="initial"
+            whileInView="animate"
+          >
+            HTML
+          </motion.li>
+          <motion.li
+            variants={itemVariants}
+            initial="initial"
+            whileInView="animate"
+          >
+            CSS
+          </motion.li>
+          <motion.li
+            variants={itemVariants}
+            initial="initial"
+            whileInView="animate"
+          >
+            JavaScript
+          </motion.li>
+          <motion.li
+            variants={itemVariants}
+            initial="initial"
+            whileInView="animate"
+          >
+            React
+          </motion.li>
+          <motion.li
+            variants={itemVariants}
+            initial="initial"
+            whileInView="animate"
+          >
+            Pixel Perfect
+          </motion.li>
+          <motion.li
+            variants={itemVariants}
+            initial="initial"
+            whileInView="animate"
+          >
+            Responsive design
+          </motion.li>
+          <motion.li
+            variants={itemVariants}
+            initial="initial"
+            whileInView="animate"
+          >
+            Flexbox & Grid
+          </motion.li>
+          <motion.li
+            variants={itemVariants}
+            initial="initial"
+            whileInView="animate"
+          >
+            Bootstrap / Material UI
+          </motion.li>
+          <motion.li
+            variants={itemVariants}
+            initial="initial"
+            whileInView="animate"
+          >
+            Figma / Sketch
+          </motion.li>
+          <motion.li
+            variants={itemVariants}
+            initial="initial"
+            whileInView="animate"
+          >
+            Github
+          </motion.li>
+          <motion.li
+            variants={itemVariants}
+            initial="initial"
+            whileInView="animate"
+          >
+            Git
+          </motion.li>
+        </ul>
+        <ul>
+          <li variants={titleVariants} initial="initial" whileInView="animate">
+            INTERESTS
+          </li>
           <li>AWS</li>
           <li>Python</li>
           <li>SQL</li>
@@ -66,9 +152,11 @@ export function Skills() {
           <li>Swift</li>
           <li>Jest</li>
           <li>Firebase</li>
-        </motion.ul>
-        <motion.ul variants={variants}>
-          <li>OTHER SKILLS</li>
+        </ul>
+        <ul>
+          <li variants={titleVariants} initial="initial" whileInView="animate">
+            OTHER SKILLS
+          </li>
           <li>Node.js</li>
           <li>Restful API</li>
           <li>Node.js</li>
@@ -86,9 +174,11 @@ export function Skills() {
               </svg>
             </a>
           </li>
-        </motion.ul>
-        <motion.ul variants={variants}>
-          <li>COURSES</li>
+        </ul>
+        <ul>
+          <li variants={titleVariants} initial="initial" whileInView="animate">
+            COURSES
+          </li>
           <li className={style.link}>
             <a
               href="https://www.coursera.org/account/accomplishments/certificate/AU9ZWJUBQN8W"
@@ -161,7 +251,7 @@ export function Skills() {
               </svg>
             </a>
           </li>
-        </motion.ul>
+        </ul>
       </motion.div>
     </section>
   );
