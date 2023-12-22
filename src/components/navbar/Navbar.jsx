@@ -1,25 +1,52 @@
 import { Link } from 'react-scroll';
-import { useState, React } from 'react';
 import style from './Navbar.module.css';
+import { motion } from 'framer-motion';
+import { useState, useEffect } from 'react';
 
 export function Navbar() {
   const [isHovered, setIsHovered] = useState(false);
 
   // show navbar when scroll
   const [showNav, setShowNav] = useState(false);
-  const showNavbar = () => {
-    const aboutSection = document.getElementById('about'); 
-    if (aboutSection) {
-      const aboutSectionTop = aboutSection.getBoundingClientRect().top;
-      setShowNav(aboutSectionTop <= 0);
-    }
+
+  useEffect(() => {
+    const showNavbar = () => {
+      const aboutSection = document.getElementById('about');
+      if (aboutSection) {
+        const aboutSectionTop = aboutSection.getBoundingClientRect().top;
+        setShowNav(aboutSectionTop <= 0);
+      }
+    };
+
+    window.addEventListener('scroll', showNavbar);
+
+    return () => {
+      window.removeEventListener('scroll', showNavbar);
+    };
+  }, []);
+
+  // animation
+  const navVariants = {
+    initial: {
+      y: '-100vh',
+      opacity: 0,
+    },
+    animate: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        type: 'spring',
+        stiffness: 40,
+      },
+    },
   };
 
-  window.addEventListener('scroll', showNavbar);
-
   return (
-    <nav
-      className={`${showNav ? style.navbar : style.navbar_show}`}
+    <motion.nav
+      variants={navVariants}
+      initial="initial"
+      animate={showNav ? 'animate' : 'initial'}
+      className={style.navbar}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -27,16 +54,16 @@ export function Navbar() {
         <Link
           to="about"
           spy={true}
-          // smooth={true}
           activeClass={style.navbar__active}
           className={`hoverable ${isHovered ? style.hovered : ''}`}
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
         >
           <li>About,&nbsp;</li>
         </Link>
         <Link
           to="skills"
           spy={true}
-          // smooth={true}
           activeClass={style.navbar__active}
           className={`hoverable ${isHovered ? style.hovered : ''}`}
         >
@@ -45,7 +72,6 @@ export function Navbar() {
         <Link
           to="projects"
           spy={true}
-          // smooth={true}
           activeClass={style.navbar__active}
           className={`hoverable ${isHovered ? style.hovered : ''}`}
         >
@@ -54,13 +80,12 @@ export function Navbar() {
         <Link
           to="contact"
           spy={true}
-          // smooth={true}
           activeClass={style.navbar__active}
           className={`hoverable ${isHovered ? style.hovered : ''}`}
         >
           <li>Contact</li>
         </Link>
       </ul>
-    </nav>
+    </motion.nav>
   );
 }

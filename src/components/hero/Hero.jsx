@@ -56,8 +56,8 @@ export function Hero() {
 `;
 
 const visibleMask = `
-  linear-gradient(to top, rgba(0,0,0, 1) 50%, rgba(0,0,0,0) 0%),
-  linear-gradient(to bottom, rgba(0,0,0, 1) 50%, rgba(0,0,0,0) 0%)
+  linear-gradient(to top, rgba(0,0,0, 1) 51%, rgba(0,0,0,0) 0%),
+  linear-gradient(to bottom, rgba(0,0,0, 1) 51%, rgba(0,0,0,0) 0%)
 `;
 
   return (
