@@ -10,7 +10,7 @@
   {
     "id": "002",
     "img": "/images/portfolio-imgs/concerts-database.jpg",
-    "project": "Concert's Database",
+    "project": "Concerts Database",
     "github": "https://github.com/t-minini/concert-database",
     "website": "https://concert-database.netlify.app/",
     "description": "Driven by my love for live music experiences, I designed this website to capture memories of the concerts I've attended. Crafted with a blend of HTML, CSS, and React and Material UI, it's a digital diary of my musical journey."
@@ -69,6 +69,6 @@
     "project": "My Website 2024",
     "github": "https://github.com/t-minini/my-website-v3",
     "website": "https://soft-lebkuchen-f9e7cb.netlify.app/",
-    "description": ""
+    "description": "write a text here"
   }
 ]
