@@ -26,7 +26,7 @@ export function About() {
   
 // frame-motion animation
   const hover = {
-    scale: 1.03,
+    scale: 1.05,
     color: 'var(--orange)',
     transition: { type: 'spring', delay: -500 },
   };
