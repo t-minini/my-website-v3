@@ -294,7 +294,7 @@ export function Skills() {
             className={style.link}
           >
             <a
-              href="https://www.coursera.org/account/accomplishments/certificate/AU9ZWJUBQN8W"
+              href="https://coursera.org/share/5c8cb91e75313572a018a9f5e5183fda"
               target="blank_"
               className={`hoverable ${isHovered ? style.hovered : ''}`}
             >
