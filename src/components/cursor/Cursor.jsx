@@ -13,7 +13,7 @@ export function Cursor() {
           controls.start({
             x: e.clientX - 15,
             y: e.clientY - 15,
-            transition: { duration: 0.05 },
+            transition: { duration: 0.09 },
           });
         });
       }
