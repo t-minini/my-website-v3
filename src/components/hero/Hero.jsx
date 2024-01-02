@@ -1,5 +1,5 @@
-import { useRef, useState } from 'react';
 import style from './Hero.module.css';
+import { useRef, useState } from 'react';
 import imgBack from './../../assets/images/hero-back.png';
 import imgFront from './../../assets/images/hero-front.png';
 import { motion, useScroll, useTransform } from 'framer-motion';
@@ -15,7 +15,7 @@ export function Hero() {
   const backgroundY = useTransform(scrollYProgress, [0, 1], ['0%', '100%']);
   const textY = useTransform(scrollYProgress, [0, 1], ['0%', '100%']);
 
-  const h1Variant = {
+  const h1Variants = {
     initial: {
       opacity: 0,
       y: -50,
@@ -31,7 +31,7 @@ export function Hero() {
     },
   };
 
-  const pVariant = {
+  const pVariants = {
     initial: {
       opacity: 0,
       y: -50,
@@ -82,13 +82,13 @@ const visibleMask = `
         <div className={style.hero__text}>
           <motion.h1
             style={{ y: textY }}
-            variants={h1Variant}
+            variants={h1Variants}
             initial="initial"
             whileInView="animate"
           >
             tulio&#xa0;minini
           </motion.h1>
-          <motion.p variants={pVariant} initial="initial" whileInView="animate">
+          <motion.p variants={pVariants} initial="initial" whileInView="animate">
             a former designer who found his passion for <br />
             front-end development.
           </motion.p>
@@ -108,9 +108,6 @@ const visibleMask = `
             alt="a black and white photograph of me siting on a bench, smiling, wearing a grey shirt, black trousers and a watch"
           />
         </div>
-        {/* <Link to="about" smooth={true} className={style.hero__arrow}>
-            <span></span>
-          </Link> */}
       </div>
     </section>
   );
