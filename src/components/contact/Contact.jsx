@@ -4,8 +4,6 @@ import style from './Contact.module.css';
 export function Contact() {
   const [isHovered, setIsHovered] = useState(false);
   return (
-    <>
-    {/* <div className={style.helper}></div> */}
       <footer
         id="contact"
         className={style.contact}
@@ -61,6 +59,5 @@ export function Contact() {
           <span>&#169;Tulio Minini 2024</span>
         </div>
       </footer>
-    </>
   );
 }
