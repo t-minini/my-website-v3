@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
-import projectsJSON from '../../projects.json';
 import style from './Projects.module.css';
+import projectsJSON from '../../projects.json';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
 const ProjectCard = ({ projectsJSON }) => {
