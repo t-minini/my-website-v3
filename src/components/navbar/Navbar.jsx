@@ -1,6 +1,6 @@
 import { Link } from 'react-scroll';
-import style from './Navbar.module.css';
 import { motion } from 'framer-motion';
+import style from './Navbar.module.css';
 import { useState, useEffect } from 'react';
 
 export function Navbar() {
@@ -25,7 +25,6 @@ export function Navbar() {
     };
   }, []);
 
-  // animation
   const navVariants = {
     initial: {
       y: '-100vh',
