@@ -1,7 +1,6 @@
-import { useState } from 'react';
-import style from './Skills.module.css';
 import { motion } from 'framer-motion';
-import { useRef } from 'react';
+import style from './Skills.module.css';
+import { useState, useRef } from 'react';
 
 export function Skills() {
   const [isHovered, setIsHovered] = useState(false);
@@ -35,7 +34,6 @@ export function Skills() {
         duration: 1,
         staggerChildren: 5,
         type: 'spring',
-        // damping: 1,
       },
     },
   };
