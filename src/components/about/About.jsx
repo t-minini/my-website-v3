@@ -6,8 +6,9 @@ export function About() {
 
   const words = text.split(' ');
 
-  // frame-motion animation
-  const variants = {
+  // frame-motion animations
+  
+  const aboutVariants = {
     initial: {
       opacity: 0,
       y: 50,
@@ -23,9 +24,8 @@ export function About() {
       },
     }),
   };
-  
-// frame-motion animation
-  const hover = {
+
+  const aboutHover = {
     scale: 1.05,
     color: 'var(--orange)',
     transition: { type: 'spring', delay: -500 },
@@ -38,10 +38,10 @@ export function About() {
           <motion.span
             key={index}
             className={style.word}
-            variants={variants}
+            variants={aboutVariants}
             initial="initial"
             whileInView="animate"
-            whileHover={hover}
+            whileHover={aboutHover}
             custom={index}
           >
             {index !== 0 && ' '}
