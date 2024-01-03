@@ -41,7 +41,6 @@
   height: 100%;
   position: absolute;
   z-index: 1;
-  aspect-ratio: auto;
 }
 
 .img__front {
@@ -49,63 +48,6 @@
   position: absolute;
   top: 0;
   z-index: 3;
-}
-
-/* ARROW DOWN */
-
-.hero__arrow {
-  position: absolute;
-  bottom: 0rem;
-  left: calc(50% - 13rem / 2);
-  width: 13rem;
-  height: 6.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  z-index: 100;
-}
-
-.hero__arrow span {
-  position: absolute;
-  bottom: 4rem;
-  cursor: pointer;
-  width: 2.4rem;
-  height: 2.4rem;
-  border-left: 0.1rem solid var(--gray-lighter);
-  border-bottom: 0.1rem solid var(--gray-lighter);
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  -webkit-animation: arrow 1.5s infinite;
-  animation: arrow 1.5s infinite;
-}
-
-@-webkit-keyframes arrow {
-  0% {
-    -webkit-transform: rotate(-45deg) translate(0, 0);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: rotate(-45deg) translate(-2rem, 2rem);
-    opacity: 0;
-  }
-}
-
-@keyframes arrow {
-  0% {
-    transform: rotate(-45deg) translate(0, 0);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    transform: rotate(-45deg) translate(-2rem, 2rem);
-    opacity: 0;
-  }
 }
 
 /* MacBook Pro 14"  */
@@ -133,15 +75,15 @@
   }
 
   .img__back {
-    height: 50%;
-    width: 55%;
-    top: 25%;
+    height: 650px;
+    width: 490px;
+    top: 20%;
   }
 
   .img__front {
-    height: 50%;
-    width: 55%;
-    top: 25%;
+    height: 650px;
+    width: 490px;
+    top: 20%;
   }
 }
 
@@ -162,15 +104,15 @@
   }
 
   .img__back {
-    height: 71%;
-    width: 38%;
-    top: 14%;
+    height: 650px;
+    width: 490px;
+    top: 10%;
   }
 
   .img__front {
-    height: 71%;
-    width: 38%;
-    top: 14%;
+    height: 650px;
+    width: 490px;
+    top: 10%;
   }
 }
 
@@ -191,14 +133,14 @@
   }
 
   .img__back {
-    height: 50%;
-    width: 80%;
+    height: 400px;
+    width: 300px;
     top: 25%;
   }
 
   .img__front {
-    height: 50%;
-    width: 80%;
+    height: 400px;
+    width: 300px;
     top: 25%;
   }
 }
@@ -213,7 +155,6 @@
     font-size: 15rem;
     letter-spacing: 0.8rem;
     line-height: 11rem;
-    /* background-color: red; */
   }
 
   .hero__text p {
@@ -222,13 +163,13 @@
 
   .img__back {
     height: 100%;
-    width: 35%;
+    width: 305px;
     top: 0;
   }
 
   .img__front {
     height: 100%;
-    width: 35%;
+    width: 305px;
     top: 0;
   }
 }
@@ -245,7 +186,7 @@
   }
 
   .hero__text h1 {
-    font-size: 7rem;
+    font-size: 7.1rem;
     letter-spacing: 0.5rem;
   }
 
@@ -255,27 +196,27 @@
 
   .img__back {
     height: 400px;
-    width: 290px;
-    top: 50%;
+    width: 300px;
+    top: 20%;
   }
 
   .img__front {
     height: 400px;
-    width: 290px;
-    top: 50%;
+    width: 300px;
+    top: 20%;
   }
 }
 
 /* iPhone SE 667 x 375 (portrait) */
 @media only screen and (min-width: 667px) and (max-width: 667px) and (orientation: landscape) {
   .hero__text {
-    padding-top: 15%;
+    padding-top: 16%;
   }
 
   .hero__text h1 {
-    font-size: 7rem;
+    font-size: 12rem;
     letter-spacing: 0.8rem;
-    line-height: 11rem;
+    line-height: 9rem;
   }
 
   .hero__text p {
@@ -284,13 +225,13 @@
 
   .img__back {
     height: 100%;
-    width: 40%;
+    width: 280px;
     top: 0;
   }
 
   .img__front {
     height: 100%;
-    width: 40%;
+    width: 280px;
     top: 0;
   }
 }
