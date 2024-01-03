@@ -3,7 +3,7 @@ import style from './App.module.css';
 import { Hero } from './components/hero/Hero';
 import { About } from './components/about/About';
 import { Navbar } from './components/navbar/Navbar';
-// import { Skills } from './components/skills/Skills';
+import { Skills } from './components/skills/Skills';
 // import { Cursor } from './components/cursor/Cursor';
 // import { Contact } from './components/contact/Contact';
 // import { Projects } from './components/projects/Projects';
@@ -19,7 +19,7 @@ function App() {
       <Navbar />
       <Hero />
       <About />
-      {/* <Skills /> */}
+      <Skills />
       {/* <Projects /> */}
       {/* <Contact /> */}
     </div>

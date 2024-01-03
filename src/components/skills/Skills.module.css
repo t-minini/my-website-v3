@@ -54,3 +54,43 @@
   fill: var(--orange);
   transition: color 0.5s ease, stroke 0.5s ease, fill 0.5s ease;
 }
+
+/* MacBook Pro 14"  */
+@media only screen and (max-width: 1512px) {
+  /* not needed */
+}
+
+/* iPad Air 820 x 1180  */
+@media only screen and (max-width: 820px) {
+  /* not needed */
+}
+
+/* iPad Air 1180 x 820 (portrait)  */
+@media only screen and (max-width: 1180px) and (orientation: landscape) {
+  /* not needed */
+}
+
+/* iPhone 11 Pro Max / XR 414 x 896  */
+@media only screen and (max-width: 414px) {
+
+}
+
+/* iPhone 11 Pro Max / XR 896 x 414 (portrait) */
+@media only screen and (min-width: 805px) and (max-width: 896px) and (orientation: landscape) {
+
+}
+
+/* iPhone 13 Pro 390 x 844  */
+@media only screen and (max-width: 390px) {
+  /* not needed */
+}
+
+/* iPhone SE 375 x 667  */
+@media only screen and (max-width: 375px) {
+
+}
+
+/* iPhone SE 667 x 375 (portrait) */
+@media only screen and (min-width: 667px) and (max-width: 667px) and (orientation: landscape) {
+ 
+}
