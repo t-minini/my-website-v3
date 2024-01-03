@@ -41,6 +41,7 @@
   height: 100%;
   position: absolute;
   z-index: 1;
+  aspect-ratio: auto;
 }
 
 .img__front {
@@ -253,15 +254,15 @@
   }
 
   .img__back {
-    height: 60%;
-    width: 80%;
-    top: 20%;
+    height: 400px;
+    width: 290px;
+    top: 50%;
   }
 
   .img__front {
-    height: 60%;
-    width: 80%;
-    top: 20%;
+    height: 400px;
+    width: 290px;
+    top: 50%;
   }
 }
 
