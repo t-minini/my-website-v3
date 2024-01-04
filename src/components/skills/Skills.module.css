@@ -109,7 +109,7 @@
 /* iPhone 11 Pro Max / XR 414 x 896  */
 @media only screen and (max-width: 414px) {
   .skills__ul ul li:first-child {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
 
   .skills__ul li {
@@ -120,6 +120,7 @@
   .skills a {
     font-size: 1.6rem;
   }
+
 }
 
 /* iPhone 11 Pro Max / XR 896 x 414 (portrait) */
@@ -145,8 +146,45 @@
 
 /* iPhone SE 375 x 667  */
 @media only screen and (max-width: 375px) {
+  .skills__ul ul li:first-child {
+    font-size: 1.4rem;
+  }
+
+  .skills__ul li {
+    font-size: 1.1rem;
+    padding-top: 0.5rem;
+  }
+
+  .skills a {
+    font-size: 1.1rem;
+  }
+
+  .skills__ul svg {
+    height: 1.4rem;
+    margin-left: -0.2rem;
+  }
 }
 
 /* iPhone SE 667 x 375 (portrait) */
 @media only screen and (min-width: 667px) and (max-width: 667px) and (orientation: landscape) {
+  .skills__ul {
+    display: flex;
+  }
+  .skills__ul ul li:first-child {
+    font-size: 1.3rem;
+  }
+
+  .skills__ul li {
+    font-size: 1.1rem;
+    padding-top: 0.5rem;
+  }
+
+  .skills a {
+    font-size: 1.1rem;
+  }
+
+  .skills__ul svg {
+    height: 1.4rem;
+    margin-left: -0.2rem;
+  }
 }
