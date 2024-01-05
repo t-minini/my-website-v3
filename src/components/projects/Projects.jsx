@@ -1,17 +1,43 @@
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect  } from 'react';
 import style from './Projects.module.css';
 import projectsJSON from '../../projects.json';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
 const ProjectCard = ({ projectsJSON }) => {
   const [isHovered, setIsHovered] = useState(false);
+  const [animationValues, setAnimationValues] = useState([-400, 400]);
+
 
   const ref = useRef();
 
   const { scrollYProgress } = useScroll({
     target: ref,
   });
-  const y = useTransform(scrollYProgress, [0, 1], [-400, 400]);
+  
+  useEffect(() => {
+    // Update animation values based on screen size
+    const updateAnimationValues = () => {
+      const screenWidth = window.innerWidth;
+
+      // Adjust these values based on your requirements
+      if (screenWidth <= 820) {
+        setAnimationValues([-0, 0]);
+      } else {
+        setAnimationValues([-400, 400]);
+      }
+    };
+
+    // Call the function on mount and window resize
+    updateAnimationValues();
+    window.addEventListener('resize', updateAnimationValues);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', updateAnimationValues);
+    };
+  }, []); // Empty dependency array means this effect runs once on mount
+
+  const y = useTransform(scrollYProgress, [0, 1], animationValues);
 
   return (
     <section
