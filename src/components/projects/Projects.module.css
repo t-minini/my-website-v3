@@ -82,7 +82,13 @@
 
 /* iPad Air 1180 x 820 (portrait)  */
 @media only screen and (max-width: 1180px) and (orientation: landscape) {
-  /* not needed */
+  .container {
+    padding: 3%;
+  }
+
+  .topWrapper h2 {
+    font-size: 2.8rem;
+  }
 }
 
 /* iPhone 11 Pro Max / XR 414 x 896  */
