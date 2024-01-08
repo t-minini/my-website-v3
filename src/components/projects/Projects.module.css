@@ -93,10 +93,48 @@
 
 /* iPhone 11 Pro Max / XR 414 x 896  */
 @media only screen and (max-width: 414px) {
+  .container {
+    padding-top: 3rem;
+  }
+
+  .topWrapper h2 {
+    font-size: 2.2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .textContainer p {
+    font-size: 1.5rem;
+  }
+
+  .topWrapper a {
+    font-size: 1.4rem;
+    padding-left: 1rem;
+    padding-bottom: 1.2rem;
+  }
+
+  .container:first-child {
+    padding-top: 6rem;
+  }
 }
 
 /* iPhone 11 Pro Max / XR 896 x 414 (portrait) */
 @media only screen and (min-width: 805px) and (max-width: 896px) and (orientation: landscape) {
+  .topWrapper h2 {
+    font-size: 1.9rem;
+    padding-top: unset;
+    padding-bottom: 0.5rem;
+  }
+
+  .textContainer p {
+    font-size: 1.3rem;
+  }
+
+  .topWrapper a {
+    font-size: 1.4rem;
+    padding-left: 1rem;
+    padding-bottom: 0.7rem;
+  }
 }
 
 /* iPhone 13 Pro 390 x 844  */

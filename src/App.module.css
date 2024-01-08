@@ -59,3 +59,11 @@ footer {
 ::-webkit-scrollbar {
   display: none;
 }
+
+/* iPhone 11 Pro Max / XR 414 x 896  */
+@media only screen and (max-width: 414px) {
+  html {
+    scroll-snap-type: unset; /* Standard property */
+    scroll-snap-align: unset;
+  }
+}
