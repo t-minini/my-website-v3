@@ -80,7 +80,7 @@
   }
 }
 
-/* iPad Air 1180 x 820 (portrait)  */
+/* iPad Air 1180 x 820 (landscape)  */
 @media only screen and (max-width: 1180px) and (orientation: landscape) {
   .container {
     padding: 3%;
@@ -118,7 +118,7 @@
   }
 }
 
-/* iPhone 11 Pro Max / XR 896 x 414 (portrait) */
+/* iPhone 11 Pro Max / XR 896 x 414 (landscape) */
 @media only screen and (min-width: 805px) and (max-width: 896px) and (orientation: landscape) {
   .topWrapper h2 {
     font-size: 1.9rem;
@@ -144,10 +144,14 @@
 
 /* iPhone SE 375 x 667  */
 @media only screen and (max-width: 375px) {
+  /* not needed */
 }
 
-/* iPhone SE 667 x 375 (portrait) */
+/* iPhone SE 667 x 375 (landscape) */
 @media only screen and (min-width: 667px) and (max-width: 667px) and (orientation: landscape) {
+  .container {
+    padding-top: 5rem;
+  }
 }
 
 
