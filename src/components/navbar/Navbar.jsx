@@ -53,6 +53,7 @@ export function Navbar() {
         <Link
           to="about"
           spy={true}
+          smooth={true}
           activeClass={style.navbar__active}
           className={`hoverable ${isHovered ? style.hovered : ''}`}
           onMouseEnter={() => setIsHovered(true)}

@@ -113,7 +113,7 @@
     padding-bottom: 1.2rem;
   }
 
-  .container:first-child {
+  .container{
     padding-top: 6rem;
   }
 }
