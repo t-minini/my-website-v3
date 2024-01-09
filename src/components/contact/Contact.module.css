@@ -140,18 +140,24 @@
     line-height: 3.5rem;
   }
 
+  .text__container {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
   .contact__text p:first-child {
     font-size: 20rem;
     line-height: 14rem;
-    top: 5rem;
-    left: 2%;
+    top: 26rem;
+    left: 4%;
   }
 
   .text__container p {
-    width: 41%;
-    font-size: 1rem;
-    line-height: 1rem;
+    width: 100%;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
     z-index: 2;
+    margin-bottom: 17rem;
   }
 
   .contact__links {
