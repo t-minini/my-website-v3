@@ -62,12 +62,26 @@
 @media only screen and (max-width: 820px) {
   .skills {
     flex-direction: column-reverse;
+    justify-content: center;
   }
   .skills__ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
   }
+
+  .skills__ul ul li:first-child {
+    font-size: 3.2rem;
+  }
+
+  .skills__ul li {
+    font-size: 2.7rem;
+  }
+
+  .skills a {
+    font-size: 2.7rem;
+  }
+
   .skills__ul ul:first-child {
     grid-row-start: 1;
     grid-column-start: 1;
@@ -88,7 +102,6 @@
     grid-column-start: 1;
     grid-row-end: 3;
     grid-column-end: 2;
-    height: min-content;
     /* background-color: yellow; */
   }
   .skills__ul ul:nth-child(4) {
@@ -96,46 +109,50 @@
     grid-column-start: 2;
     grid-row-end: 3;
     grid-column-end: 3;
-    height: min-content;
     /* background-color: purple; */
   }
 }
 
-/* iPad Air 1180 x 820 (portrait)  */
+/* iPad Air 1180 x 820 (landscape)  */
 @media only screen and (max-width: 1180px) and (orientation: landscape) {
-  /* not needed */
+  .skills__ul ul li:first-child {
+    font-size: 3rem;
+  }
+
+  .skills__ul li {
+    font-size: 2.2rem;
+  }
 }
 
 /* iPhone 11 Pro Max / XR 414 x 896  */
 @media only screen and (max-width: 414px) {
   .skills__ul ul li:first-child {
-    font-size: 1.9rem;
+    font-size: 2.2rem;
   }
 
   .skills__ul li {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     padding-top: 0.7rem;
   }
 
   .skills a {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
   }
-
 }
 
-/* iPhone 11 Pro Max / XR 896 x 414 (portrait) */
+/* iPhone 11 Pro Max / XR 896 x 414 (landscape) */
 @media only screen and (min-width: 805px) and (max-width: 896px) and (orientation: landscape) {
   .skills__ul ul li:first-child {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
   }
 
   .skills__ul li {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     padding-top: 0.5rem;
   }
 
   .skills a {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -147,16 +164,16 @@
 /* iPhone SE 375 x 667  */
 @media only screen and (max-width: 375px) {
   .skills__ul ul li:first-child {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
   }
 
   .skills__ul li {
-    font-size: 1.1rem;
-    padding-top: 0.5rem;
+    font-size: 1.4rem;
+    padding-top: 0.4rem;
   }
 
   .skills a {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
   }
 
   .skills__ul svg {
@@ -165,26 +182,26 @@
   }
 }
 
-/* iPhone SE 667 x 375 (portrait) */
+/* iPhone SE 667 x 375 (landscape) */
 @media only screen and (min-width: 667px) and (max-width: 667px) and (orientation: landscape) {
   .skills__ul {
     display: flex;
   }
   .skills__ul ul li:first-child {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
   }
 
   .skills__ul li {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     padding-top: 0.5rem;
   }
 
   .skills a {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   .skills__ul svg {
-    height: 1.4rem;
+    height: 1.2rem;
     margin-left: -0.2rem;
   }
 }
