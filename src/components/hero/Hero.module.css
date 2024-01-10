@@ -237,7 +237,7 @@
   }
 } */
 
-/* SMARTPHONES */
+/* SMARTPHONES PORTRAIT */
 @media only screen and (max-width: 480px) and (orientation: portrait) {
   .hero__text h1 {
     font-size: 7.1rem;
@@ -259,6 +259,7 @@
   }
 }
 
+/* SMARTPHONES PORTRAIT */
 @media only screen and (min-width: 370px) and (orientation: landscape) {
   .hero__text h1 {
     font-size: 13.5rem;
@@ -282,8 +283,39 @@
   }
 }
 
-/* TABLETS */
+/* TABLETS PORTRAIT */
 @media only screen and (min-width: 481px) and (orientation: portrait) {
+  .hero__text h1 {
+    font-size: 16rem;
+    letter-spacing: 0.5rem;
+    line-height: 11rem;
+    margin-left: 3%;
+  }
+
+  .hero__text p {
+    font-size: 3rem;
+  }
+
+  .img__back {
+    width: 65%;
+  }
+
+  .img__front {
+    width: 65%;
+  }
+}
+
+/* TABLETS LANDSCAPE */
+@media only screen and (min-width: 767px) and (orientation: landscape) {
+  .hero__text h1 {
+    font-size: 22rem;
+    letter-spacing: 0.5rem;
+    line-height: 16rem;
+  }
+
+  .hero__text p {
+    font-size: 4rem;
+  }
 }
 
 /* SMALL SCREENS, LAPTOPS */
