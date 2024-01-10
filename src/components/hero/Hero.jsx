@@ -55,43 +55,14 @@ export function Hero() {
   linear-gradient(to top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0) 0%)
 `;
 
-const visibleMask = `
+  const visibleMask = `
   linear-gradient(to top, rgba(0,0,0, 1) 51%, rgba(0,0,0,0) 0%),
   linear-gradient(to bottom, rgba(0,0,0, 1) 51%, rgba(0,0,0,0) 0%)
 `;
 
   return (
     <section ref={parallaxRef} id="hero" className={style.hero}>
-      <div className={style.hero__container}>
-        <motion.img
-          animate={
-            isLoaded && isInView
-              ? { WebkitMaskImage: visibleMask, maskImage: visibleMask }
-              : { WebkitMaskImage: hiddenMask, maskImage: hiddenMask }
-          }
-          transition={{ duration: 2, delay: 2 }}
-          viewport={{ once: true }}
-          onViewportEnter={() => setIsInView(true)}
-          onLoad={() => setIsLoaded(true)}
-          loading="lazy"
-          style={{ y: backgroundY }}
-          className={style.img__back}
-          src={imgBack}
-          alt="a black and white photograph of me siting on a bench, smiling, wearing a grey shirt, black trousers and a watch"
-        />
-        <div className={style.hero__text}>
-          <motion.h1
-            style={{ y: textY }}
-            variants={h1Variants}
-            initial="initial"
-            whileInView="animate"
-          >
-            tulio&#xa0;minini
-          </motion.h1>
-          <motion.p variants={pVariants} initial="initial" whileInView="animate">
-            a former designer who found his passion for <br />
-            front-end development.
-          </motion.p>
+        <div className={style.img__container}>
           <motion.img
             animate={
               isLoaded && isInView
@@ -108,7 +79,42 @@ const visibleMask = `
             alt="a black and white photograph of me siting on a bench, smiling, wearing a grey shirt, black trousers and a watch"
           />
         </div>
-      </div>
+        <div className={style.img__container}>
+          <motion.img
+            animate={
+              isLoaded && isInView
+                ? { WebkitMaskImage: visibleMask, maskImage: visibleMask }
+                : { WebkitMaskImage: hiddenMask, maskImage: hiddenMask }
+            }
+            transition={{ duration: 2, delay: 2 }}
+            viewport={{ once: true }}
+            onViewportEnter={() => setIsInView(true)}
+            onLoad={() => setIsLoaded(true)}
+            loading="lazy"
+            style={{ y: backgroundY }}
+            className={style.img__back}
+            src={imgBack}
+            alt="a black and white photograph of me siting on a bench, smiling, wearing a grey shirt, black trousers and a watch"
+          />
+        </div>
+        <div className={style.hero__text}>
+          <motion.h1
+            style={{ y: textY }}
+            variants={h1Variants}
+            initial="initial"
+            whileInView="animate"
+          >
+            tulio&#xa0;minini
+          </motion.h1>
+          <motion.p
+            variants={pVariants}
+            initial="initial"
+            whileInView="animate"
+          >
+            a former designer who found his passion for <br />
+            front-end development.
+          </motion.p>
+        </div>
     </section>
   );
 }
