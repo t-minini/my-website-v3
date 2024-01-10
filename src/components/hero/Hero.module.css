@@ -259,7 +259,7 @@
   }
 }
 
-/* SMARTPHONES PORTRAIT */
+/* SMARTPHONES LANDSCAPE */
 @media only screen and (min-width: 370px) and (orientation: landscape) {
   .hero__text h1 {
     font-size: 13.5rem;
@@ -318,14 +318,45 @@
   }
 }
 
-/* SMALL SCREENS, LAPTOPS */
+/* SMALL SCREENS, LAPTOPS PORTRAIT */
 @media only screen and (min-width: 769px) and (orientation: portrait) {
+  .hero__text h1 {
+    background-color: blueviolet;
+    font-size: 19rem;
+    letter-spacing: 0;
+    line-height: 12rem;
+  }
+
+  .hero__text p {
+    font-size: 3.4rem;
+  }
+
+  .img__back {
+    width: 60%;
+  }
+
+  .img__front {
+    width: 60%;
+  }
 }
 
-/* DESKTOPS, LARGE SCREENS */
+/* SMALL SCREENS, LAPTOPS LANDSCAPE */
+@media only screen and (min-width: 819px) and (orientation: landscape) {
+  .hero__text h1 {
+    font-size: 26rem;
+    letter-spacing: 0.2rem;
+    line-height: 19rem;
+  }
+
+  .hero__text p {
+    font-size: 4rem;
+  }
+}
+
+/* DESKTOPS, LARGE SCREENS PORTRAIT */
 @media only screen and (min-width: 1025px) and (orientation: portrait) {
 }
 
-/* EXTRA LARGE SCREENS, TV */
+/* EXTRA LARGE SCREENS, TV PORTRAIT */
 @media only screen and (min-width: 1201px) and (orientation: portrait) {
 }
