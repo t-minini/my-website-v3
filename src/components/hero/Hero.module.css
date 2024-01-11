@@ -16,21 +16,15 @@
 }
 
 .hero__text h1 {
-  background-color:blue;
   width: 100%;
-  /* font-size: 35rem; */
-  /* letter-spacing: 1rem; */
   color: var(--orange);
-  /* font-family: var(--sugiyama); */
   font-weight: var(--regular-400);
-  /* line-height: 25rem; */
   z-index: 2;
   text-align: center;
 }
 
 .hero__text p {
   width: 100%;
-  font-size: 5.2rem;
   text-align: center;
   color: var(--gray-lighter);
   font-weight: var(--thin-100);
@@ -59,13 +53,11 @@
   .hero__text h1 {
     background-color: red;
     font-size: 7.1rem;
-    /* letter-spacing: 0.3rem; */
     line-height: 5.3rem;
-    /* margin-left: 4%; */
   }
 
   .hero__text p {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   .img__back {
@@ -83,7 +75,6 @@
     font-size: 7.5rem;
     background-color: aquamarine;
     line-height: 6rem;
-    /* margin-left: 4%; */
   }
 
   .hero__text p {
@@ -94,13 +85,9 @@
 /* SMARTPHONES LANDSCAPE */
 @media only screen and (min-width: 665px) and (orientation: landscape) {
   .hero__text h1 {
-    /* background-color:blueviolet; */
+    background-color: coral;
     font-size: 12rem;
-    /* letter-spacing: 0.5rem; */
     line-height: 9rem;
-    /* padding: 3rem; */
-    /* margin-bottom: 1rem; */
-    /* margin-left: 3%; */
   }
 
   .hero__text p {
@@ -121,9 +108,7 @@
   .hero__text h1 {
     background-color: yellowgreen;
     font-size: 13rem;
-    /* letter-spacing: 0.5rem; */
     line-height: 11rem;
-    /* margin-left: 3%; */
   }
 
   .hero__text p {
@@ -144,7 +129,6 @@
   .hero__text h1 {
     background-color: brown;
     font-size: 18rem;
-    /* letter-spacing: 0.5rem; */
     line-height: 16rem;
   }
 
@@ -157,8 +141,7 @@
 @media only screen and (min-width: 769px) and (orientation: portrait) {
   .hero__text h1 {
     background-color: yellow;
-    font-size: 19rem;
-    /* letter-spacing: 0; */
+    font-size: 16rem;
     line-height: 12rem;
   }
 
@@ -179,8 +162,7 @@
 @media only screen and (min-width: 1179px) and (orientation: landscape) {
   .hero__text h1 {
     background-color: blueviolet;
-    font-size: 26rem;
-    /* letter-spacing: 0.2rem; */
+    font-size: 22rem;
     line-height: 19rem;
   }
 
@@ -193,7 +175,7 @@
 @media only screen and (min-width: 1023px) and (orientation: portrait) {
   .hero__text h1 {
     background-color: cadetblue;
-    font-size: 24rem;
+    font-size: 20rem;
     line-height: 16rem;
   }
 
@@ -214,7 +196,7 @@
 @media only screen and (min-width: 1365px) and (orientation: landscape) {
   .hero__text h1 {
     background-color: darkolivegreen;
-    font-size: 31rem;
+    font-size: 25rem;
     line-height: 19rem;
   }
 
@@ -227,8 +209,7 @@
 @media only screen and (min-width: 1520px) and (orientation: landscape) {
   .hero__text h1 {
     background-color: beige;
-    font-size: 38rem;
-    /* letter-spacing: 0.5rem; */
+    font-size: 33rem;
     line-height: 28rem;
   }
 
