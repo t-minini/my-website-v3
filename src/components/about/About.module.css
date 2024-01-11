@@ -22,6 +22,10 @@
 
 /* SMARTPHONES PORTRAIT - SHORTER SCREENS */
 @media only screen and (max-width: 480px) and (orientation: portrait) {
+  .about {
+    padding-top: 5.5rem;
+  }
+
   .about span.word {
     /* background-color: blue; */
     font-size: 2.3rem;
