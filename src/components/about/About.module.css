@@ -8,9 +8,9 @@
 }
 
 .about span.word {
-  font-size: 4.5rem;
+  /* font-size: 4.5rem; */
   display: inline-block;
-  margin-right: 1.5rem;
+  /* margin-right: 1.5rem; */
   transition: color 0.5s ease-in-out;
 }
 
@@ -22,54 +22,101 @@
   color: var(--orange);
 }
 
-/* MacBook Pro 14"  */
-@media only screen and (max-width: 1512px) {
-  /* not needed */
-}
-
-/* iPad Air 820 x 1180  */
-@media only screen and (max-width: 820px) {
-  /* not needed */
-}
-
-/* iPad Air 1180 x 820 (portrait)  */
-@media only screen and (max-width: 1180px) and (orientation: landscape) {
-  /* not needed */
-}
-
-/* iPhone 11 Pro Max / XR 414 x 896  */
-@media only screen and (max-width: 414px) {
+/* SMARTPHONES PORTRAIT - SHORTER SCREENS */
+@media only screen and (max-width: 480px) and (orientation: portrait) {
   .about span.word {
-    font-size: 2.8rem;
+    font-size: 2.3rem;
+    /* background-color: blue; */
     margin-right: 0.6rem;
   }
 }
 
-/* iPhone 11 Pro Max / XR 896 x 414 (portrait) */
-@media only screen and (min-width: 805px) and (max-width: 896px) and (orientation: landscape) {
+/* SMARTPHONES PORTRAIT - TALLER SCREENS */
+@media only screen and (min-width: 390px) and (orientation: portrait) {
   .about span.word {
-    font-size: 2.5rem;
-    margin-right: 0.6rem;
+    font-size: 2.7rem;
+    /* background-color: red; */
+    margin-right: 0.5rem;
   }
 }
 
-/* iPhone 13 Pro 390 x 844  */
-@media only screen and (max-width: 390px) {
-  /* not needed */
-}
-
-/* iPhone SE 375 x 667  */
-@media only screen and (max-width: 375px) {
+/* SMARTPHONES LANDSCAPE - SHORTER SCREENS */
+@media only screen and (min-width: 665px) and (orientation: landscape) {
   .about span.word {
-    font-size: 2.2rem;
-    margin-right: 0.6rem;
+    font-size: 2.1rem;
+    /* background-color: aquamarine; */
+    margin-right: 0.5rem;
   }
 }
 
-/* iPhone SE 667 x 375 (portrait) */
-@media only screen and (min-width: 667px) and (max-width: 667px) and (orientation: landscape) {
+/* SMARTPHONES LANDSCAPE - TALLER SCREENS */
+@media only screen and (min-width: 843px) and (orientation: landscape) {
   .about span.word {
-    font-size: 2.2rem;
-    margin-right: 0.6rem;
+    font-size: 2.4rem;
+    /* background-color: blueviolet; */
+    margin-right: 0.4rem;
+  }
+}
+
+/* TABLETS PORTRAIT */
+@media only screen and (min-width: 767px) and (orientation: portrait) {
+  .about span.word {
+    font-size: 3.8rem;
+    /* background-color: chartreuse; */
+    margin-right: 1rem;
+  }
+}
+
+/* TABLETS LANDSCAPE */
+@media only screen and (min-width: 1023px) and (orientation: landscape) {
+  .about span.word {
+    font-size: 3.4rem;
+    /* background-color: coral; */
+    margin-right: 0.5rem;
+  }
+}
+
+/* SMALL SCREENS, LAPTOPS PORTRAIT */
+@media only screen and (min-width: 769px) and (orientation: portrait) {
+  .about span.word {
+    font-size: 4rem;
+    /* background-color: aquamarine; */
+    margin-right: 1rem;
+  }
+}
+
+/* SMALL SCREENS, LAPTOPS LANDSCAPE */
+@media only screen and (min-width: 1179px) and (orientation: landscape) {
+  .about span.word {
+    font-size: 3.5rem;
+    /* background-color: chocolate; */
+    margin-right: 1rem;
+  }
+}
+
+/* DESKTOPS, LARGE SCREENS PORTRAIT */
+@media only screen and (min-width: 1023px) and (orientation: portrait) {
+  .about span.word {
+    font-size: 5rem;
+    /* background-color: darkcyan; */
+    margin-right: 1.3rem;
+  }
+}
+
+/* DESKTOPS, LARGE SCREENS LANDSCAPE */
+@media only screen and (min-width: 1365px) and (orientation: landscape) {
+  .about span.word {
+    font-size: 4.3rem;
+    /* background-color: hotpink; */
+    margin-right: 1.1rem;
+  }
+}
+
+/* EXTRA LARGE SCREENS, TV PORTRAIT */
+@media only screen and (min-width: 1520px) and (orientation: landscape) {
+  .about span.word {
+    font-size: 4.5rem;
+    /* background-color: cornflowerblue; */
+    margin-right: 0.7rem;
   }
 }
