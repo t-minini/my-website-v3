@@ -16,13 +16,13 @@
 }
 
 .hero__text h1 {
-  /* min-width: 100%; */
-  font-size: 35rem;
-  letter-spacing: 1rem;
+  min-width: 100%;
+  /* font-size: 35rem; */
+  /* letter-spacing: 1rem; */
   color: var(--orange);
-  font-family: var(--sugiyama);
+  /* font-family: var(--sugiyama); */
   font-weight: var(--regular-400);
-  line-height: 25rem;
+  /* line-height: 25rem; */
   z-index: 2;
   text-align: center;
 }
@@ -56,11 +56,11 @@
 /* SMARTPHONES PORTRAIT */
 @media only screen and (max-width: 480px) and (orientation: portrait) {
   .hero__text h1 {
-    /* background-color: red; */
+    background-color: red;
     font-size: 7.1rem;
-    letter-spacing: 0.3rem;
+    /* letter-spacing: 0.3rem; */
     line-height: 5rem;
-    margin-left: 4%;
+    /* margin-left: 4%; */
   }
 
   .hero__text p {
@@ -79,9 +79,10 @@
 /* SMARTPHONES PORTRAIT - TALLER SCREENS */
 @media only screen and (min-width: 390px) and (orientation: portrait) {
   .hero__text h1 {
-    font-size: 8.4rem;
+    font-size: 7.5rem;
+    background-color: aquamarine;
     line-height: 6rem;
-    margin-left: 4%;
+    /* margin-left: 4%; */
   }
 
   .hero__text p {
@@ -92,11 +93,13 @@
 /* SMARTPHONES LANDSCAPE */
 @media only screen and (min-width: 665px) and (orientation: landscape) {
   .hero__text h1 {
-    /* background-color: aqua; */
-    font-size: 13.5rem;
-    letter-spacing: 0.5rem;
-    line-height: 8rem;
-    margin-left: 3%;
+    /* background-color:blueviolet; */
+    font-size: 15rem;
+    /* letter-spacing: 0.5rem; */
+    line-height: 12rem;
+    /* padding: 3rem; */
+    /* margin-bottom: 1rem; */
+    /* margin-left: 3%; */
   }
 
   .hero__text p {
