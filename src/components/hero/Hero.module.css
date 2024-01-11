@@ -51,204 +51,18 @@
   z-index: 3;
 }
 
-/* MacBook Pro 14"  */
-/* @media only screen and (max-width: 1512px) {
-  .hero__text h1 {
-    font-size: 33rem;
-    letter-spacing: unset;
-  }
-} */
-
-/* iPad Air 820 x 1180  */
-/* @media only screen and (max-width: 820px) {
-  .hero__text {
-    padding-top: 60%;
-  }
-
-  .hero__text h1 {
-    font-size: 18rem;
-    letter-spacing: unset;
-    line-height: 15rem;
-  }
-
-  .hero__text p {
-    font-size: 3.2rem;
-  }
-
-  .img__back {
-    height: 650px;
-    width: 490px;
-    top: 20%;
-  }
-
-  .img__front {
-    height: 650px;
-    width: 490px;
-    top: 20%;
-  }
-} */
-
-/* iPad Air 1180 x 820 (portrait)  */
-/* @media only screen and (max-width: 1180px) and (orientation: landscape) {
-  .hero__text {
-    padding-top: 25%;
-  }
-
-  .hero__text h1 {
-    font-size: 23rem;
-    letter-spacing: 0.5rem;
-    line-height: 15rem;
-  }
-
-  .hero__text p {
-    font-size: 4rem;
-  }
-
-  .img__back {
-    height: 650px;
-    width: 490px;
-    top: 10%;
-  }
-
-  .img__front {
-    height: 650px;
-    width: 490px;
-    top: 10%;
-  }
-} */
-
-/* iPhone 11 Pro Max / XR 414 x 896  */
-/* @media only screen and (max-width: 414px) {
-  .hero__text {
-    padding-top: 85%;
-  }
-
-  .hero__text h1 {
-    font-size: 7rem;
-    letter-spacing: 0.7rem;
-    line-height: 5rem;
-  }
-
-  .hero__text p {
-    font-size: 1.5rem;
-  }
-
-  .img__back {
-    height: 400px;
-    width: 300px;
-    top: 25%;
-  }
-
-  .img__front {
-    height: 400px;
-    width: 300px;
-    top: 25%;
-  }
-} */
-
-/* iPhone 11 Pro Max / XR 896 x 414 (portrait) */
-/* @media only screen and (min-width: 805px) and (max-width: 896px) and (orientation: landscape) {
-  .hero__text {
-    padding-top: 15%;
-  }
-
-  .hero__text h1 {
-    font-size: 15rem;
-    letter-spacing: 0.8rem;
-    line-height: 11rem;
-  }
-
-  .hero__text p {
-    font-size: 2.5rem;
-  }
-
-  .img__back {
-    height: 100%;
-    width: 305px;
-    top: 0;
-  }
-
-  .img__front {
-    height: 100%;
-    width: 305px;
-    top: 0;
-  }
-} */
-
-/* iPhone 13 Pro 390 x 844  */
-@media only screen and (max-width: 390px) {
-  /* not needed */
-}
-
-/* iPhone SE 375 x 667  */
-/* @media only screen and (max-width: 375px) {
-  .hero__text {
-    padding-top: 70%;
-  }
-
-  .hero__text h1 {
-    font-size: 7.1rem;
-    letter-spacing: 0.5rem;
-  }
-
-  .hero__text p {
-    font-size: 1.4rem;
-  }
-
-  .img__back {
-    height: 400px;
-    width: 300px;
-    top: 20%;
-  }
-
-  .img__front {
-    height: 400px;
-    width: 300px;
-    top: 20%;
-  }
-} */
-
-/* iPhone SE 667 x 375 (portrait) */
-/* @media only screen and (min-width: 667px) and (max-width: 667px) and (orientation: landscape) {
-  .hero__text {
-    padding-top: 16%;
-  }
-
-  .hero__text h1 {
-    font-size: 12rem;
-    letter-spacing: 0.8rem;
-    line-height: 9rem;
-  }
-
-  .hero__text p {
-    font-size: 2.5rem;
-  }
-
-  .img__back {
-    height: 100%;
-    width: 280px;
-    top: 0;
-  }
-
-  .img__front {
-    height: 100%;
-    width: 280px;
-    top: 0;
-  }
-} */
-
 /* SMARTPHONES PORTRAIT */
 @media only screen and (max-width: 480px) and (orientation: portrait) {
   .hero__text h1 {
     background-color: red;
     font-size: 7.1rem;
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.3rem;
     line-height: 5rem;
     margin-left: 4%;
   }
 
   .hero__text p {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 
   .img__back {
@@ -265,13 +79,13 @@
   .hero__text h1 {
     background-color: aqua;
     font-size: 13.5rem;
-    letter-spacing: 0.7rem;
+    letter-spacing: 0.5rem;
     line-height: 8rem;
     margin-left: 3%;
   }
 
   .hero__text p {
-    font-size: 2.6rem;
+    font-size: 2.3rem;
   }
 
   .img__back {
@@ -316,7 +130,7 @@
   }
 
   .hero__text p {
-    font-size: 4rem;
+    font-size: 3.8rem;
   }
 }
 
@@ -330,7 +144,7 @@
   }
 
   .hero__text p {
-    font-size: 3.4rem;
+    font-size: 3.2rem;
   }
 
   .img__back {
@@ -366,7 +180,7 @@
   }
 
   .hero__text p {
-    font-size: 4.3rem;
+    font-size: 4rem;
   }
 
   .img__back {
@@ -383,15 +197,24 @@
   .hero__text h1 {
     background-color: darkolivegreen;
     font-size: 31rem;
-    /* letter-spacing: 0; */
-    line-height: 20rem;
+    line-height: 19rem;
+  }
+
+  .hero__text p {
+    font-size: 4.5rem;
+  }
+}
+
+/* EXTRA LARGE SCREENS, TV PORTRAIT */
+@media only screen and (min-width: 1520px) and (orientation: landscape) {
+  .hero__text h1 {
+    background-color: beige;
+    font-size: 38rem;
+    letter-spacing: 0.5rem;
+    line-height: 28rem;
   }
 
   .hero__text p {
     font-size: 5.2rem;
   }
-}
-
-/* EXTRA LARGE SCREENS, TV PORTRAIT */
-@media only screen and (min-width: 1201px) and (orientation: portrait) {
 }
