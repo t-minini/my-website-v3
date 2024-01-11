@@ -51,7 +51,7 @@
 /* SMARTPHONES PORTRAIT */
 @media only screen and (max-width: 480px) and (orientation: portrait) {
   .hero__text h1 {
-    background-color: red;
+    /* background-color: red; */
     font-size: 7.1rem;
     line-height: 5.3rem;
   }
@@ -61,11 +61,11 @@
   }
 
   .img__back {
-    width: 60%;
+    width: 63%;
   }
 
   .img__front {
-    width: 60%;
+    width: 63%;
   }
 }
 
@@ -73,7 +73,7 @@
 @media only screen and (min-width: 390px) and (orientation: portrait) {
   .hero__text h1 {
     font-size: 7.5rem;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     line-height: 6rem;
   }
 
@@ -85,7 +85,7 @@
 /* SMARTPHONES LANDSCAPE */
 @media only screen and (min-width: 665px) and (orientation: landscape) {
   .hero__text h1 {
-    background-color: coral;
+    /* background-color: coral; */
     font-size: 12rem;
     line-height: 9rem;
   }
@@ -106,7 +106,7 @@
 /* TABLETS PORTRAIT */
 @media only screen and (min-width: 767px) and (orientation: portrait) {
   .hero__text h1 {
-    background-color: yellowgreen;
+    /* background-color: yellowgreen; */
     font-size: 13rem;
     line-height: 11rem;
   }
@@ -127,7 +127,7 @@
 /* TABLETS LANDSCAPE */
 @media only screen and (min-width: 1023px) and (orientation: landscape) {
   .hero__text h1 {
-    background-color: brown;
+    /* background-color: brown; */
     font-size: 18rem;
     line-height: 16rem;
   }
@@ -140,7 +140,7 @@
 /* SMALL SCREENS, LAPTOPS PORTRAIT */
 @media only screen and (min-width: 769px) and (orientation: portrait) {
   .hero__text h1 {
-    background-color: yellow;
+    /* background-color: yellow; */
     font-size: 16rem;
     line-height: 12rem;
   }
@@ -161,7 +161,7 @@
 /* SMALL SCREENS, LAPTOPS LANDSCAPE */
 @media only screen and (min-width: 1179px) and (orientation: landscape) {
   .hero__text h1 {
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     font-size: 22rem;
     line-height: 19rem;
   }
@@ -174,7 +174,7 @@
 /* DESKTOPS, LARGE SCREENS PORTRAIT */
 @media only screen and (min-width: 1023px) and (orientation: portrait) {
   .hero__text h1 {
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
     font-size: 20rem;
     line-height: 16rem;
   }
@@ -195,7 +195,7 @@
 /* DESKTOPS, LARGE SCREENS LANDSCAPE */
 @media only screen and (min-width: 1365px) and (orientation: landscape) {
   .hero__text h1 {
-    background-color: darkolivegreen;
+    /* background-color: darkolivegreen; */
     font-size: 25rem;
     line-height: 19rem;
   }
@@ -208,7 +208,7 @@
 /* EXTRA LARGE SCREENS, TV PORTRAIT */
 @media only screen and (min-width: 1520px) and (orientation: landscape) {
   .hero__text h1 {
-    background-color: beige;
+    /* background-color: beige; */
     font-size: 33rem;
     line-height: 28rem;
   }
