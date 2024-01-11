@@ -16,6 +16,7 @@
 }
 
 .hero__text h1 {
+  /* min-width: 100%; */
   font-size: 35rem;
   letter-spacing: 1rem;
   color: var(--orange);
@@ -23,6 +24,7 @@
   font-weight: var(--regular-400);
   line-height: 25rem;
   z-index: 2;
+  text-align: center;
 }
 
 .hero__text p {
@@ -71,6 +73,19 @@
 
   .img__front {
     width: 60%;
+  }
+}
+
+/* SMARTPHONES PORTRAIT - TALLER SCREENS */
+@media only screen and (min-width: 390px) and (orientation: portrait) {
+  .hero__text h1 {
+    font-size: 8.4rem;
+    line-height: 6rem;
+    margin-left: 4%;
+  }
+
+  .hero__text p {
+    font-size: 1.5rem;
   }
 }
 
