@@ -240,6 +240,7 @@
 /* SMARTPHONES PORTRAIT */
 @media only screen and (max-width: 480px) and (orientation: portrait) {
   .hero__text h1 {
+    background-color: red;
     font-size: 7.1rem;
     letter-spacing: 0.5rem;
     line-height: 5rem;
@@ -260,8 +261,9 @@
 }
 
 /* SMARTPHONES LANDSCAPE */
-@media only screen and (min-width: 370px) and (orientation: landscape) {
+@media only screen and (min-width: 665px) and (orientation: landscape) {
   .hero__text h1 {
+    background-color: aqua;
     font-size: 13.5rem;
     letter-spacing: 0.7rem;
     line-height: 8rem;
@@ -273,19 +275,18 @@
   }
 
   .img__back {
-    /* width: unset; */
     height: 100%;
   }
 
   .img__front {
-    /* width: unset; */
     height: 100%;
   }
 }
 
 /* TABLETS PORTRAIT */
-@media only screen and (min-width: 481px) and (orientation: portrait) {
+@media only screen and (min-width: 767px) and (orientation: portrait) {
   .hero__text h1 {
+    background-color: yellowgreen;
     font-size: 16rem;
     letter-spacing: 0.5rem;
     line-height: 11rem;
@@ -306,8 +307,9 @@
 }
 
 /* TABLETS LANDSCAPE */
-@media only screen and (min-width: 767px) and (orientation: landscape) {
+@media only screen and (min-width: 1023px) and (orientation: landscape) {
   .hero__text h1 {
+    background-color: brown;
     font-size: 22rem;
     letter-spacing: 0.5rem;
     line-height: 16rem;
@@ -321,7 +323,7 @@
 /* SMALL SCREENS, LAPTOPS PORTRAIT */
 @media only screen and (min-width: 769px) and (orientation: portrait) {
   .hero__text h1 {
-    background-color: blueviolet;
+    background-color: yellow;
     font-size: 19rem;
     letter-spacing: 0;
     line-height: 12rem;
@@ -341,8 +343,9 @@
 }
 
 /* SMALL SCREENS, LAPTOPS LANDSCAPE */
-@media only screen and (min-width: 819px) and (orientation: landscape) {
+@media only screen and (min-width: 1179px) and (orientation: landscape) {
   .hero__text h1 {
+    background-color: blueviolet;
     font-size: 26rem;
     letter-spacing: 0.2rem;
     line-height: 19rem;
@@ -354,7 +357,39 @@
 }
 
 /* DESKTOPS, LARGE SCREENS PORTRAIT */
-@media only screen and (min-width: 1025px) and (orientation: portrait) {
+@media only screen and (min-width: 1023px) and (orientation: portrait) {
+  .hero__text h1 {
+    background-color: cadetblue;
+    font-size: 24rem;
+    /* letter-spacing: 0; */
+    line-height: 16rem;
+  }
+
+  .hero__text p {
+    font-size: 4.3rem;
+  }
+
+  .img__back {
+    width: 60%;
+  }
+
+  .img__front {
+    width: 60%;
+  }
+}
+
+/* DESKTOPS, LARGE SCREENS LANDSCAPE */
+@media only screen and (min-width: 1365px) and (orientation: landscape) {
+  .hero__text h1 {
+    background-color: darkolivegreen;
+    font-size: 31rem;
+    /* letter-spacing: 0; */
+    line-height: 20rem;
+  }
+
+  .hero__text p {
+    font-size: 5.2rem;
+  }
 }
 
 /* EXTRA LARGE SCREENS, TV PORTRAIT */
