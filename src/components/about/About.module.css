@@ -1,10 +1,14 @@
 .about {
-  /* min-width: 100vw; */
   min-height: 100dvh;
   background-color: var(--black);
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
+}
+
+.container {
+  max-width: var(--content-width);
 }
 
 .about span.word {
@@ -20,106 +24,127 @@
   color: var(--orange);
 }
 
-/* SMARTPHONES PORTRAIT - SHORTER SCREENS */
+/* SMARTPHONES - SHORTER SCREENS (PORTRAIT) */
 @media only screen and (max-width: 480px) and (orientation: portrait) {
   .about {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: var(--padding-s);
+    padding-right: var(--padding-s);
   }
 
   .about span.word {
+    /* background-color: aquamarine; */
     font-size: 2.2rem;
     line-height: 2.8rem;
     margin-right: 0.6rem;
   }
 }
 
-/* SMARTPHONES PORTRAIT - TALLER SCREENS */
-@media only screen and (min-width: 390px) and (orientation: portrait) {
-  .about span.word {
-    /* background-color: red; */
-    font-size: 2.7rem;
-    margin-right: 0.5rem;
-  }
-}
-
-/* SMARTPHONES LANDSCAPE - SHORTER SCREENS */
+/* SMARTPHONES - SHORTER SCREENS (LANDSCAPE) */
 @media only screen and (min-width: 665px) and (orientation: landscape) {
+  .about {
+    padding-left: var(--padding-s);
+    padding-right: var(--padding-s);
+  }
+
   .about span.word {
     /* background-color: aquamarine; */
-    font-size: 2.1rem;
-    margin-right: 0.5rem;
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+    margin-right: 0.6rem;
   }
 }
 
-/* SMARTPHONES LANDSCAPE - TALLER SCREENS */
+/* SMARTPHONES - TALLER SCREENS (PORTRAIT) */
+@media only screen and (min-width: 390px) and (orientation: portrait) {
+  .about {
+    padding-left: var(--padding-s);
+    padding-right: var(--padding-s);
+  }
+
+  .about span.word {
+    /* background-color: blueviolet; */
+    font-size: 2.4rem;
+    line-height: 3rem;
+    margin-right: 0.8rem;
+  }
+}
+
+/* SMARTPHONES - TALLER SCREENS (LANDSCAPE) */
 @media only screen and (min-width: 843px) and (orientation: landscape) {
   .about span.word {
     /* background-color: blueviolet; */
     font-size: 2.4rem;
-    margin-right: 0.4rem;
+    line-height: 3rem;
+    margin-right: 0.8rem;
   }
 }
 
-/* TABLETS PORTRAIT */
+/* IPAD MINI (PORTRAIT) */
 @media only screen and (min-width: 767px) and (orientation: portrait) {
+  .about {
+    padding-left: var(--padding-m);
+    padding-right: var(--padding-m);
+  }
+
   .about span.word {
     /* background-color: chartreuse; */
-    font-size: 3.8rem;
+    font-size: 4rem;
+    line-height: 5.2rem;
     margin-right: 1rem;
   }
 }
 
-/* TABLETS LANDSCAPE */
+/* IPAD MINI (LANDSCAPE) */
 @media only screen and (min-width: 1023px) and (orientation: landscape) {
   .about span.word {
-    /* background-color: coral; */
-    font-size: 3.4rem;
-    margin-right: 0.5rem;
-  }
-}
-
-/* SMALL SCREENS, LAPTOPS PORTRAIT */
-@media only screen and (min-width: 769px) and (orientation: portrait) {
-  .about span.word {
-    /* background-color: aquamarine; */
+    /* background-color: chartreuse; */
     font-size: 4rem;
-    margin-right: 1rem;
+    line-height: 5rem;
+    margin-right: 0.8rem;
   }
 }
 
-/* SMALL SCREENS, LAPTOPS LANDSCAPE */
+/* IPAD AIR (PORTRAIT) */
+@media only screen and (min-width: 769px) and (orientation: portrait) {
+
+}
+
+/* IPAD AIR (LANDSCAPE) */
 @media only screen and (min-width: 1179px) and (orientation: landscape) {
   .about span.word {
-    /* background-color: chocolate; */
-    font-size: 3.5rem;
+    /* background-color:deeppink; */
+    font-size: 4.4rem;
+    line-height: 5.2rem;
     margin-right: 1rem;
   }
 }
 
-/* DESKTOPS, LARGE SCREENS PORTRAIT */
+/* IPAD PRO (PORTRAIT) */
 @media only screen and (min-width: 1023px) and (orientation: portrait) {
   .about span.word {
-    /* background-color: darkcyan; */
-    font-size: 5rem;
-    margin-right: 1.3rem;
+    /* background-color:goldenrod; */
+    font-size: 4.6rem;
+    line-height: 5.8rem;
+    margin-right: 1.4rem;
   }
 }
 
-/* DESKTOPS, LARGE SCREENS LANDSCAPE */
+/* MACBOOK PRO 14" and IPAD PRO (LANDSCAPE) */
 @media only screen and (min-width: 1365px) and (orientation: landscape) {
   .about span.word {
-    /* background-color: hotpink; */
-    font-size: 4.3rem;
-    margin-right: 1.1rem;
+    /* background-color:goldenrod; */
+    font-size: 5rem;
+    line-height: 5.2rem;
+    margin-right: 1.2rem;
   }
 }
 
-/* EXTRA LARGE SCREENS, TV PORTRAIT */
+/* MONITORS (LANDSCAPE) */
 @media only screen and (min-width: 1520px) and (orientation: landscape) {
   .about span.word {
-    /* background-color: cornflowerblue; */
-    font-size: 4.5rem;
-    margin-right: 0.7rem;
+    /* background-color:plum; */
+    font-size: 5rem;
+    line-height: 5.2rem;
+    margin-right: 1.2rem;
   }
 }
