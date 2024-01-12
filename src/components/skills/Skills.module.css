@@ -271,9 +271,10 @@
   }
 }
 
-/* TABLETS PORTRAIT */
+/* TABLETS PORTRAIT (IPAD MINI) */
 @media only screen and (min-width: 767px) and (orientation: portrait) {
   .skills {
+    /* padding: 4.8%; */
     padding-top: 5.5rem;
   }
   .skills__ul {
@@ -304,7 +305,7 @@
   }
 }
 
-/* TABLETS LANDSCAPE */
+/* TABLETS LANDSCAPE (IPAD MINI) */
 @media only screen and (min-width: 1023px) and (orientation: landscape) {
   .skills {
     padding: 4%;
@@ -328,24 +329,133 @@
 
   .skills__ul svg {
     height: 1.6rem;
-    /* margin-left: -0.2rem; */
   }
 }
 
-/* SMALL SCREENS, LAPTOPS PORTRAIT */
+/* SMALL SCREENS, LAPTOPS PORTRAIT (IPAD AIR) */
 @media only screen and (min-width: 769px) and (orientation: portrait) {
+  .skills {
+    padding: 4%;
+    padding-top: 5.5rem;
+  }
+  .skills__ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .skills__ul ul li:first-child {
+    background-color: blueviolet;
+    /* background-color: unset; */
+    font-size: 2.8rem;
+  }
+
+  .skills__ul li {
+    font-size: 2.4rem;
+    padding-top: 0.7rem;
+  }
+
+  .skills a {
+    font-size: 2.4rem;
+  }
+
+  .skills__ul svg {
+    height: 2.3rem;
+    /* margin-left: 0.2rem; */
+  }
+
+  .skills__ul ul:first-child {
+    /* padding-bottom: 2rem; */
+  }
 }
 
-/* SMALL SCREENS, LAPTOPS LANDSCAPE */
+/* SMALL SCREENS, LAPTOPS LANDSCAPE (IPAD AIR) */
 @media only screen and (min-width: 1179px) and (orientation: landscape) {
+  .skills {
+    padding: 3.5%;
+    padding-top: 5.5rem;
+  }
+
+  .skills__ul ul li:first-child {
+    background-color: blueviolet;
+    /* background-color: unset; */
+    font-size: 2.3rem;
+  }
+
+  .skills__ul li {
+    font-size: 1.9rem;
+    /* padding-top: 0.4rem; */
+  }
+
+  .skills a {
+    font-size: 1.9rem;
+  }
+
+  .skills__ul svg {
+    height: 1.8rem;
+  }
 }
 
-/* DESKTOPS, LARGE SCREENS PORTRAIT */
+/* DESKTOPS, LARGE SCREENS PORTRAIT (IPAD PRO) */
 @media only screen and (min-width: 1023px) and (orientation: portrait) {
+  .skills {
+    padding: 4%;
+    padding-top: 5.5rem;
+  }
+  .skills__ul {
+    /* display: grid; */
+    /* grid-template-columns: repeat(2, 1fr); */
+  }
+
+  .skills__ul ul li:first-child {
+    background-color:cornflowerblue;
+    /* background-color: unset; */
+    font-size: 3.5rem;
+  }
+
+  .skills__ul li {
+    font-size: 3.1rem;
+    padding-top: 0.9rem;
+  }
+
+  .skills a {
+    font-size: 3.1rem;
+  }
+
+  .skills__ul svg {
+    height: 2.9rem;
+    margin-left: 0.6rem;
+  }
+
+  .skills__ul ul:first-child {
+    /* padding-bottom: 2rem; */
+  }
 }
 
-/* DESKTOPS, LARGE SCREENS LANDSCAPE */
+/* DESKTOPS, LARGE SCREENS LANDSCAPE (IPAD PRO) */
 @media only screen and (min-width: 1365px) and (orientation: landscape) {
+  .skills {
+    padding: 3%;
+    padding-top: 5.5rem;
+  }
+
+  .skills__ul ul li:first-child {
+    background-color:cornflowerblue;
+    /* background-color: unset; */
+    font-size: 3.1rem;
+  }
+
+  .skills__ul li {
+    font-size: 2.3rem;
+    /* padding-top: 0.4rem; */
+  }
+
+  .skills a {
+    font-size: 2.3rem;
+  }
+
+  .skills__ul svg {
+    height: 2.1rem;
+    margin-left: 0.4rem;
+  }
 }
 
 /* EXTRA LARGE SCREENS, TV PORTRAIT */
