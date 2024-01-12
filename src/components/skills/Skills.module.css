@@ -2,15 +2,17 @@
   width: 100vw;
   height: 100dvh;
   background-color: var(--gray-lighter);
-  padding: 5%;
+  padding: 0 10%;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .skills__ul {
-  width: 100%;
+  width: var(--content-width);
   height: fit-content;
   display: flex;
+  columns: 4;
   justify-content: space-between;
 }
 
@@ -19,18 +21,19 @@
 }
 
 .skills__ul ul li:first-child {
-  font-size: 2.4rem;
+  /* font-size: 2.4rem; */
   font-weight: var(--semiBold-600);
 }
 
 .skills__ul li {
-  font-size: 2rem;
+  /* font-size: 2rem; */
+  /* line-height: 2.5rem; */
   font-weight: var(--light-300);
-  padding-top: 1rem;
+  /* padding-top: 1rem; */
 }
 
 .skills a {
-  font-size: 2rem;
+  /* font-size: 2rem; */
   color: var(--gray-darker);
   text-decoration: none;
   transition: color 0.5s ease, stroke 0.5s ease, fill 0.5s ease;
@@ -460,4 +463,41 @@
 
 /* EXTRA LARGE SCREENS, TV PORTRAIT */
 @media only screen and (min-width: 1520px) and (orientation: landscape) {
+  .skills {
+    /* width: 100vw; */
+    /* height: 100dvh; */
+    /* background-color: var(--gray-lighter); */
+    
+  }
+  .skills__ul {
+    background-color: red;
+    /* width: 55%; */
+    /* display: grid; */
+    /* grid-template-columns: repeat(2, 1fr); */
+  }
+
+  .skills__ul ul li:first-child {
+    background-color:chocolate;
+    background-color: unset;
+    font-size: 1.8rem;
+    padding-top: unset;
+  }
+
+  .skills__ul li {
+    font-size: 1.8rem;
+    padding-top: 0.9rem;
+  }
+
+  .skills a {
+    font-size: 1.8rem;
+  }
+
+  .skills__ul svg {
+    height: 1.7rem;
+    margin-left: 0rem;
+  }
+
+  .skills__ul ul:first-child {
+    /* padding-bottom: 2rem; */
+  }
 }

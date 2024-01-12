@@ -22,6 +22,8 @@
 
   --inter: 'Inter', sans-serif;
   --sugiyama: 'Dr Sugiyama', cursive;
+
+  --content-width: 1024px;
 }
 
 html {
@@ -40,9 +42,9 @@ html {
 
 section,
 footer {
-  -ms-scroll-snap-align: start; /* IE 10 and 11 */
-  -webkit-scroll-snap-align: start; /* Safari, Chrome, and newer versions of Opera */
-  scroll-snap-align: start; /* Standard property */
+  -ms-scroll-snap-align: unset; /* IE 10 and 11 */
+  -webkit-scroll-snap-align: unset; /* Safari, Chrome, and newer versions of Opera */
+  scroll-snap-align: center; /* Standard property */
   /* -ms-scroll-chaining: none; */
 }
 

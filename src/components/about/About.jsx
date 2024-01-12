@@ -31,7 +31,7 @@ export function About() {
 
   return (
     <section id="about" className={style.about}>
-      <div>
+      <div className={style.container}>
         {words.map((word, index) => (
           <motion.span
             key={index}

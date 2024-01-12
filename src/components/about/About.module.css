@@ -1,10 +1,10 @@
 .about {
-  min-width: 100vw;
-  height: 100dvh;
+  /* min-width: 100vw; */
+  min-height: 100dvh;
   background-color: var(--black);
-  padding: 5%;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .about span.word {
@@ -23,12 +23,13 @@
 /* SMARTPHONES PORTRAIT - SHORTER SCREENS */
 @media only screen and (max-width: 480px) and (orientation: portrait) {
   .about {
-    padding-top: 5.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .about span.word {
-    /* background-color: blue; */
-    font-size: 2.3rem;
+    font-size: 2.2rem;
+    line-height: 2.8rem;
     margin-right: 0.6rem;
   }
 }
