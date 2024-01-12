@@ -239,7 +239,6 @@
 
 /* SMARTPHONES PORTRAIT - TALLER SCREENS */
 @media only screen and (min-width: 390px) and (orientation: portrait) {
-  
 }
 
 /* SMARTPHONES LANDSCAPE */
@@ -274,10 +273,63 @@
 
 /* TABLETS PORTRAIT */
 @media only screen and (min-width: 767px) and (orientation: portrait) {
+  .skills {
+    padding-top: 5.5rem;
+  }
+  .skills__ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .skills__ul ul li:first-child {
+    background-color: yellowgreen;
+    font-size: 2.8rem;
+  }
+
+  .skills__ul li {
+    font-size: 2.2rem;
+    padding-top: 0.7rem;
+  }
+
+  .skills a {
+    font-size: 2.2rem;
+  }
+
+  .skills__ul svg {
+    height: 2rem;
+    margin-left: 0.2rem;
+  }
+
+  .skills__ul ul:first-child {
+    padding-bottom: 2rem;
+  }
 }
 
 /* TABLETS LANDSCAPE */
 @media only screen and (min-width: 1023px) and (orientation: landscape) {
+  .skills {
+    padding: 4%;
+    padding-top: 5.5rem;
+  }
+
+  .skills__ul ul li:first-child {
+    background-color: yellowgreen;
+    /* background-color: unset; */
+    font-size: 2rem;
+  }
+
+  .skills__ul li {
+    font-size: 1.7rem;
+    padding-top: 0.4rem;
+  }
+
+  .skills a {
+    font-size: 1.7rem;
+  }
+
+  .skills__ul svg {
+    height: 1.6rem;
+    /* margin-left: -0.2rem; */
+  }
 }
 
 /* SMALL SCREENS, LAPTOPS PORTRAIT */
