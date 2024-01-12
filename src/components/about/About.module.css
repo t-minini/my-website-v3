@@ -129,7 +129,7 @@
   }
 }
 
-/* MACBOOK PRO 14" and IPAD PRO (LANDSCAPE) */
+/* IPAD PRO and MACBOOK PRO 14" (LANDSCAPE) */
 @media only screen and (min-width: 1365px) and (orientation: landscape) {
   .about span.word {
     /* background-color:goldenrod; */

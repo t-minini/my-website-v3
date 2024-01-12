@@ -1,14 +1,14 @@
 .hero {
-  height: 100dvh;
-  width: 100vw;
+  min-height: 100dvh;
+  min-width: 100vw;
   background-color: var(--black);
   position: relative;
   z-index: -1;
 }
 
 .hero__text {
+  min-height: 100dvh;
   min-width: 100vw;
-  height: 100dvh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,7 +48,7 @@
   z-index: 3;
 }
 
-/* SMARTPHONES PORTRAIT */
+/* SMARTPHONES - SHORTER SCREENS (PORTRAIT) */
 @media only screen and (max-width: 480px) and (orientation: portrait) {
   .hero__text h1 {
     /* background-color: red; */
@@ -69,20 +69,7 @@
   }
 }
 
-/* SMARTPHONES PORTRAIT - TALLER SCREENS */
-@media only screen and (min-width: 390px) and (orientation: portrait) {
-  .hero__text h1 {
-    font-size: 7.5rem;
-    /* background-color: aquamarine; */
-    line-height: 6rem;
-  }
-
-  .hero__text p {
-    font-size: 1.6rem;
-  }
-}
-
-/* SMARTPHONES LANDSCAPE */
+/* SMARTPHONES - SHORTER SCREENS (LANDSCAPE) */
 @media only screen and (min-width: 665px) and (orientation: landscape) {
   .hero__text h1 {
     /* background-color: coral; */
@@ -103,7 +90,25 @@
   }
 }
 
-/* TABLETS PORTRAIT */
+/* SMARTPHONES - TALLER SCREENS (PORTRAIT) */
+@media only screen and (min-width: 390px) and (orientation: portrait) {
+  .hero__text h1 {
+    font-size: 7.5rem;
+    /* background-color: aquamarine; */
+    line-height: 6rem;
+  }
+
+  .hero__text p {
+    font-size: 1.6rem;
+  }
+}
+
+/* SMARTPHONES - TALLER SCREENS (LANDSCAPE) */
+@media only screen and (min-width: 843px) and (orientation: landscape) {
+
+}
+
+/* IPAD MINI (PORTRAIT) */
 @media only screen and (min-width: 767px) and (orientation: portrait) {
   .hero__text h1 {
     /* background-color: yellowgreen; */
@@ -124,7 +129,7 @@
   }
 }
 
-/* TABLETS LANDSCAPE */
+/* IPAD MINI (LANDSCAPE) */
 @media only screen and (min-width: 1023px) and (orientation: landscape) {
   .hero__text h1 {
     /* background-color: brown; */
@@ -137,11 +142,11 @@
   }
 }
 
-/* SMALL SCREENS, LAPTOPS PORTRAIT */
+/* IPAD AIR (PORTRAIT) */
 @media only screen and (min-width: 769px) and (orientation: portrait) {
   .hero__text h1 {
     /* background-color: yellow; */
-    font-size: 16rem;
+    font-size: 15rem;
     line-height: 12rem;
   }
 
@@ -158,11 +163,11 @@
   }
 }
 
-/* SMALL SCREENS, LAPTOPS LANDSCAPE */
+/* IPAD AIR (LANDSCAPE) */
 @media only screen and (min-width: 1179px) and (orientation: landscape) {
   .hero__text h1 {
     /* background-color: blueviolet; */
-    font-size: 22rem;
+    font-size: 21rem;
     line-height: 19rem;
   }
 
@@ -171,11 +176,11 @@
   }
 }
 
-/* DESKTOPS, LARGE SCREENS PORTRAIT */
+/* IPAD PRO (PORTRAIT) */
 @media only screen and (min-width: 1023px) and (orientation: portrait) {
   .hero__text h1 {
     /* background-color: cadetblue; */
-    font-size: 20rem;
+    font-size: 19rem;
     line-height: 16rem;
   }
 
@@ -192,11 +197,11 @@
   }
 }
 
-/* DESKTOPS, LARGE SCREENS LANDSCAPE */
+/* IPAD PRO and MACBOOK PRO 14" (LANDSCAPE) */
 @media only screen and (min-width: 1365px) and (orientation: landscape) {
   .hero__text h1 {
     /* background-color: darkolivegreen; */
-    font-size: 25rem;
+    font-size: 24rem;
     line-height: 19rem;
   }
 
@@ -205,12 +210,12 @@
   }
 }
 
-/* EXTRA LARGE SCREENS, TV PORTRAIT */
+/* MONITORS (LANDSCAPE) */
 @media only screen and (min-width: 1520px) and (orientation: landscape) {
   .hero__text h1 {
     /* background-color: beige; */
-    font-size: 33rem;
-    line-height: 28rem;
+    font-size: 32rem;
+    line-height: 25rem;
   }
 
   .hero__text p {
