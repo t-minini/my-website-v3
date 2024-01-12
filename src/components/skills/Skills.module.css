@@ -1,45 +1,36 @@
 .skills {
-  width: 100vw;
-  height: 100dvh;
+  /* width: 100vw; */
+  min-height: 100dvh;
   background-color: var(--gray-lighter);
-  padding: 0 10%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.skills__ul {
-  width: var(--content-width);
-  height: fit-content;
-  display: flex;
+.container {
+  max-width: var(--content-width);
   columns: 4;
-  justify-content: space-between;
 }
 
-.skills__ul ul {
+.container ul {
   list-style: none;
 }
 
-.skills__ul ul li:first-child {
-  /* font-size: 2.4rem; */
+.container ul li:first-child {
   font-weight: var(--semiBold-600);
 }
 
-.skills__ul li {
-  /* font-size: 2rem; */
-  /* line-height: 2.5rem; */
+.container li {
   font-weight: var(--light-300);
-  /* padding-top: 1rem; */
 }
 
 .skills a {
-  /* font-size: 2rem; */
   color: var(--gray-darker);
   text-decoration: none;
   transition: color 0.5s ease, stroke 0.5s ease, fill 0.5s ease;
 }
 
-.skills__ul svg {
+.container svg {
   position: relative;
   margin: 0;
   padding: 0;
@@ -48,195 +39,92 @@
   transition: color 0.5s ease, stroke 0.5s ease, fill 0.5s ease;
 }
 
-.skills__ul .link:hover a,
-.skills__ul .link:hover svg {
+.container .link:hover a,
+.container .link:hover svg {
   color: var(--orange);
   stroke: var(--orange);
   fill: var(--orange);
   transition: color 0.5s ease, stroke 0.5s ease, fill 0.5s ease;
 }
 
-/* MacBook Pro 14"  */
-@media only screen and (max-width: 1512px) {
-}
-
-/* iPad Air 820 x 1180  */
-@media only screen and (max-width: 820px) {
-  /* .skills {
-    flex-direction: column-reverse;
-    justify-content: center;
+/* SMARTPHONES - SHORTER SCREENS (PORTRAIT) */
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+  .skills {
+    min-height: fit-content;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding-left: var(--padding-s);
+    padding-right: var(--padding-s);
+    padding-top: var(--padding-l);
+    padding-bottom: var(--padding-s);
   }
-  .skills__ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+  .container {
+    columns: 1;
   }
-
-  .skills__ul ul li:first-child {
-    font-size: 3.2rem;
-  }
-
-  .skills__ul li {
-    font-size: 2.7rem;
+  .container ul li:first-child {
+    /* background-color: red; */
+    font-size: 2rem;
   }
 
-  .skills a {
-    font-size: 2.7rem;
+  .container ul {
+    padding-bottom: 1.4rem;
   }
 
-  .skills__ul ul:first-child {
-    grid-row-start: 1;
-    grid-column-start: 1;
-    grid-row-end: 2;
-    grid-column-end: 2;
-    padding-bottom: 2rem;
-  }
-  .skills__ul ul:nth-child(2) {
-    grid-row-start: 1;
-    grid-column-start: 2;
-    grid-row-end: 2;
-    grid-column-end: 3;
-    
-  }
-  .skills__ul ul:nth-child(3) {
-    grid-row-start: 2;
-    grid-column-start: 1;
-    grid-row-end: 3;
-    grid-column-end: 2;
-  }
-  .skills__ul ul:nth-child(4) {
-    grid-row-start: 2;
-    grid-column-start: 2;
-    grid-row-end: 3;
-    grid-column-end: 3;
-  } */
-}
-
-/* iPad Air 1180 x 820 (landscape)  */
-@media only screen and (max-width: 1180px) and (orientation: landscape) {
-  /* .skills__ul ul li:first-child {
-    font-size: 3rem;
+  .container ul:last-child {
+    padding-bottom: 0;
   }
 
-  .skills__ul li {
-    font-size: 2.2rem;
-  } */
-}
-
-/* iPhone 11 Pro Max / XR 414 x 896  */
-@media only screen and (max-width: 414px) {
-  /* .skills__ul ul li:first-child {
-    font-size: 2.2rem;
-  }
-
-  .skills__ul li {
-    font-size: 1.7rem;
-    padding-top: 0.7rem;
+  .container li {
+    font-size: 1.6rem;
+    padding-top: 1.2rem;
   }
 
   .skills a {
-    font-size: 1.7rem;
-  } */
-}
-
-/* iPhone 11 Pro Max / XR 896 x 414 (landscape) */
-@media only screen and (min-width: 805px) and (max-width: 896px) and (orientation: landscape) {
-  /* .skills__ul ul li:first-child {
     font-size: 1.8rem;
   }
 
-  .skills__ul li {
-    font-size: 1.4rem;
-    padding-top: 0.5rem;
+  .container svg {
+    height: 1.7rem;
   }
-
-  .skills a {
-    font-size: 1.4rem;
-  } */
 }
 
-/* iPhone 13 Pro 390 x 844  */
-@media only screen and (max-width: 390px) {
-}
-
-/* iPhone SE 375 x 667  */
-@media only screen and (max-width: 375px) {
-  /* .skills__ul ul li:first-child {
-    font-size: 1.7rem;
-  }
-
-  .skills__ul li {
-    font-size: 1.4rem;
-    padding-top: 0.4rem;
-  }
-
-  .skills a {
-    font-size: 1.4rem;
-  }
-
-  .skills__ul svg {
-    height: 1.4rem;
-    margin-left: -0.2rem;
-  } */
-}
-
-/* iPhone SE 667 x 375 (landscape) */
-@media only screen and (min-width: 667px) and (max-width: 667px) and (orientation: landscape) {
-  /* .skills__ul {
-    display: flex;
-  }
-  .skills__ul ul li:first-child {
-    font-size: 1.7rem;
-  }
-
-  .skills__ul li {
-    font-size: 1.2rem;
-    padding-top: 0.5rem;
-  }
-
-  .skills a {
-    font-size: 1.2rem;
-  }
-
-  .skills__ul svg {
-    height: 1.2rem;
-    margin-left: -0.2rem;
-  } */
-}
-
-/* SMARTPHONES PORTRAIT */
-@media only screen and (max-width: 480px) and (orientation: portrait) {
+/* SMARTPHONES - SHORTER SCREENS (LANDSCAPE) */
+@media only screen and (min-width: 665px) and (orientation: landscape) {
   .skills {
-    /* flex-direction: column-reverse; */
-    justify-content: center;
-    padding-top: 5.5rem;
+    padding-left: var(--padding-s);
+    padding-right: var(--padding-s);
+    padding-top: var(--padding-l);
+    padding-bottom: var(--padding-s);
   }
-  .skills__ul {
+  .container {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* grid-template-rows: repeat(1, 1fr); */
   }
-  .skills__ul ul li:first-child {
-    background-color: red;
-    font-size: 1.7rem;
+  .container ul li:first-child {
+    /* background-color: red; */
+    font-size: 2rem;
   }
 
-  .skills__ul li {
-    font-size: 1.4rem;
-    padding-top: 0.4rem;
+  .container ul {
+    padding-bottom: 1.6rem;
+  }
+
+  .container ul:nth-child(3), .container ul:last-child {
+    padding-bottom: 0;
+  }
+
+  .container li {
+    font-size: 1.6rem;
+    padding-top: 1rem;
   }
 
   .skills a {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 
-  .skills__ul svg {
-    height: 1.4rem;
-    margin-left: -0.2rem;
-  }
-
-  .skills__ul ul:first-child {
-    padding-bottom: 2rem;
+  .container svg {
+    height: 1.6rem;
   }
 }
 
@@ -244,52 +132,22 @@
 @media only screen and (min-width: 390px) and (orientation: portrait) {
 }
 
-/* SMARTPHONES LANDSCAPE */
-@media only screen and (min-width: 665px) and (orientation: landscape) {
-  .skills {
-    padding-top: 5.5rem;
-  }
-
-  .skills__ul ul li:first-child {
-    background-color: red;
-    font-size: 1.5rem;
-  }
-
-  .skills__ul li {
-    font-size: 1.2rem;
-    padding-top: 0.4rem;
-  }
-
-  .skills a {
-    font-size: 1.2rem;
-  }
-
-  .skills__ul svg {
-    height: 1.4rem;
-    margin-left: -0.2rem;
-  }
-
-  .skills__ul ul:first-child {
-    /* padding-bottom: 2rem; */
-  }
-}
-
 /* TABLETS PORTRAIT (IPAD MINI) */
 @media only screen and (min-width: 767px) and (orientation: portrait) {
   .skills {
     /* padding: 4.8%; */
-    padding-top: 5.5rem;
+    /* padding-top: 5.5rem; */
   }
-  .skills__ul {
+  .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  .skills__ul ul li:first-child {
+  .container ul li:first-child {
     background-color: yellowgreen;
     font-size: 2.8rem;
   }
 
-  .skills__ul li {
+  .container li {
     font-size: 2.2rem;
     padding-top: 0.7rem;
   }
@@ -298,12 +156,12 @@
     font-size: 2.2rem;
   }
 
-  .skills__ul svg {
+  .container svg {
     height: 2rem;
     margin-left: 0.2rem;
   }
 
-  .skills__ul ul:first-child {
+  .container ul:first-child {
     padding-bottom: 2rem;
   }
 }
@@ -311,17 +169,17 @@
 /* TABLETS LANDSCAPE (IPAD MINI) */
 @media only screen and (min-width: 1023px) and (orientation: landscape) {
   .skills {
-    padding: 4%;
-    padding-top: 5.5rem;
+    /* padding: 4%; */
+    /* padding-top: 5.5rem; */
   }
 
-  .skills__ul ul li:first-child {
+  .container ul li:first-child {
     background-color: yellowgreen;
     /* background-color: unset; */
     font-size: 2rem;
   }
 
-  .skills__ul li {
+  .container li {
     font-size: 1.7rem;
     padding-top: 0.4rem;
   }
@@ -330,7 +188,7 @@
     font-size: 1.7rem;
   }
 
-  .skills__ul svg {
+  .container svg {
     height: 1.6rem;
   }
 }
@@ -338,20 +196,20 @@
 /* SMALL SCREENS, LAPTOPS PORTRAIT (IPAD AIR) */
 @media only screen and (min-width: 769px) and (orientation: portrait) {
   .skills {
-    padding: 4%;
-    padding-top: 5.5rem;
+    /* padding: 4%; */
+    /* padding-top: 5.5rem; */
   }
-  .skills__ul {
+  .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  .skills__ul ul li:first-child {
+  .container ul li:first-child {
     background-color: blueviolet;
     /* background-color: unset; */
     font-size: 2.8rem;
   }
 
-  .skills__ul li {
+  .container li {
     font-size: 2.4rem;
     padding-top: 0.7rem;
   }
@@ -360,12 +218,12 @@
     font-size: 2.4rem;
   }
 
-  .skills__ul svg {
+  .container svg {
     height: 2.3rem;
     /* margin-left: 0.2rem; */
   }
 
-  .skills__ul ul:first-child {
+  .container ul:first-child {
     /* padding-bottom: 2rem; */
   }
 }
@@ -373,17 +231,17 @@
 /* SMALL SCREENS, LAPTOPS LANDSCAPE (IPAD AIR) */
 @media only screen and (min-width: 1179px) and (orientation: landscape) {
   .skills {
-    padding: 3.5%;
-    padding-top: 5.5rem;
+    /* padding: 3.5%; */
+    /* padding-top: 5.5rem; */
   }
 
-  .skills__ul ul li:first-child {
+  .container ul li:first-child {
     background-color: blueviolet;
     /* background-color: unset; */
     font-size: 2.3rem;
   }
 
-  .skills__ul li {
+  .container li {
     font-size: 1.9rem;
     /* padding-top: 0.4rem; */
   }
@@ -392,7 +250,7 @@
     font-size: 1.9rem;
   }
 
-  .skills__ul svg {
+  .container svg {
     height: 1.8rem;
   }
 }
@@ -400,21 +258,21 @@
 /* DESKTOPS, LARGE SCREENS PORTRAIT (IPAD PRO) */
 @media only screen and (min-width: 1023px) and (orientation: portrait) {
   .skills {
-    padding: 4%;
-    padding-top: 5.5rem;
+    /* padding: 4%; */
+    /* padding-top: 5.5rem; */
   }
-  .skills__ul {
+  .container {
     /* display: grid; */
     /* grid-template-columns: repeat(2, 1fr); */
   }
 
-  .skills__ul ul li:first-child {
-    background-color:cornflowerblue;
+  .container ul li:first-child {
+    background-color: cornflowerblue;
     /* background-color: unset; */
     font-size: 3.5rem;
   }
 
-  .skills__ul li {
+  .container li {
     font-size: 3.1rem;
     padding-top: 0.9rem;
   }
@@ -423,12 +281,12 @@
     font-size: 3.1rem;
   }
 
-  .skills__ul svg {
+  .container svg {
     height: 2.9rem;
     margin-left: 0.6rem;
   }
 
-  .skills__ul ul:first-child {
+  .container ul:first-child {
     /* padding-bottom: 2rem; */
   }
 }
@@ -436,17 +294,17 @@
 /* DESKTOPS, LARGE SCREENS LANDSCAPE (IPAD PRO) */
 @media only screen and (min-width: 1365px) and (orientation: landscape) {
   .skills {
-    padding: 3%;
-    padding-top: 5.5rem;
+    /* padding: 3%; */
+    /* padding-top: 5.5rem; */
   }
 
-  .skills__ul ul li:first-child {
-    background-color:cornflowerblue;
+  .container ul li:first-child {
+    background-color: cornflowerblue;
     /* background-color: unset; */
     font-size: 3.1rem;
   }
 
-  .skills__ul li {
+  .container li {
     font-size: 2.3rem;
     /* padding-top: 0.4rem; */
   }
@@ -455,35 +313,34 @@
     font-size: 2.3rem;
   }
 
-  .skills__ul svg {
+  .container svg {
     height: 2.1rem;
     margin-left: 0.4rem;
   }
 }
 
-/* EXTRA LARGE SCREENS, TV PORTRAIT */
+/* MONITORS (LANDSCAPE) */
 @media only screen and (min-width: 1520px) and (orientation: landscape) {
   .skills {
     /* width: 100vw; */
     /* height: 100dvh; */
     /* background-color: var(--gray-lighter); */
-    
   }
-  .skills__ul {
-    background-color: red;
+  .container {
+    /* background-color: red; */
     /* width: 55%; */
     /* display: grid; */
     /* grid-template-columns: repeat(2, 1fr); */
   }
 
-  .skills__ul ul li:first-child {
-    background-color:chocolate;
+  .container ul li:first-child {
+    background-color: chocolate;
     background-color: unset;
     font-size: 1.8rem;
-    padding-top: unset;
+    /* padding-top: unset; */
   }
 
-  .skills__ul li {
+  .container li {
     font-size: 1.8rem;
     padding-top: 0.9rem;
   }
@@ -492,12 +349,12 @@
     font-size: 1.8rem;
   }
 
-  .skills__ul svg {
+  .container svg {
     height: 1.7rem;
     margin-left: 0rem;
   }
 
-  .skills__ul ul:first-child {
+  .container ul:first-child {
     /* padding-bottom: 2rem; */
   }
 }
