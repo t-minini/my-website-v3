@@ -62,7 +62,7 @@
     columns: 1;
   }
   .container ul li:first-child {
-    /* background-color: red; */
+    background-color: red;
     font-size: 2rem;
   }
 
@@ -80,7 +80,7 @@
   }
 
   .skills a {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   .container svg {
@@ -102,7 +102,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
   .container ul li:first-child {
-    /* background-color: red; */
+    background-color: red;
     font-size: 2rem;
   }
 
@@ -128,8 +128,47 @@
   }
 }
 
-/* SMARTPHONES PORTRAIT - TALLER SCREENS */
+/* SMARTPHONES - TALLER SCREENS (PORTRAIT) */
 @media only screen and (min-width: 390px) and (orientation: portrait) {
+  .container ul li:first-child {
+    background-color:aqua;
+    /* background-color: unset; */
+    font-size: 2.2rem;
+  }
+
+  .container li {
+    font-size: 1.8rem;
+  }
+
+  .skills a {
+    font-size: 1.8rem;
+  }
+
+  .container svg {
+    height: 1.7rem;
+  }
+}
+
+/* SMARTPHONES - TALLER SCREENS (LANDSCAPE) */
+@media only screen and (min-width: 843px) and (orientation: landscape) {
+    .container ul li:first-child {
+    background-color:aqua;
+    /* background-color: unset; */
+    font-size: 2.2rem;
+  }
+
+  .container li {
+    font-size: 1.8rem;
+  }
+
+  .skills a {
+    font-size: 1.8rem;
+  }
+
+  .container svg {
+    height: 1.7rem;
+  }
+
 }
 
 /* TABLETS PORTRAIT (IPAD MINI) */
