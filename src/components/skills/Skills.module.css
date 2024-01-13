@@ -96,11 +96,13 @@
     padding-top: var(--padding-l);
     padding-bottom: var(--padding-s);
   }
+
   .container {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+
   .container ul li:first-child {
     background-color: red;
     font-size: 2rem;
@@ -171,64 +173,65 @@
 
 }
 
-/* TABLETS PORTRAIT (IPAD MINI) */
+/* IPAD MINI (PORTRAIT) */
 @media only screen and (min-width: 767px) and (orientation: portrait) {
   .skills {
-    /* padding: 4.8%; */
-    /* padding-top: 5.5rem; */
+    padding-left: var(--padding-m);
+    padding-right: var(--padding-m);
+    padding-top: var(--padding-l);
+    padding-bottom: var(--padding-m);
   }
-  .container {
+
+   .container ul li:first-child {
+    background-color:blueviolet;
+    /* background-color: unset; */
+    font-size: 2.4rem;
+  }
+.container {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  .container ul li:first-child {
-    background-color: yellowgreen;
-    font-size: 2.8rem;
-  }
 
   .container li {
-    font-size: 2.2rem;
-    padding-top: 0.7rem;
+    font-size: 2rem;
+    padding-top: 1.2rem;
   }
 
   .skills a {
-    font-size: 2.2rem;
+    font-size:2rem;
   }
 
   .container svg {
-    height: 2rem;
-    margin-left: 0.2rem;
-  }
-
-  .container ul:first-child {
-    padding-bottom: 2rem;
+    height: 1.9rem;
   }
 }
 
-/* TABLETS LANDSCAPE (IPAD MINI) */
+/* IPAD MINI (LANDSCAPE) */
 @media only screen and (min-width: 1023px) and (orientation: landscape) {
   .skills {
-    /* padding: 4%; */
-    /* padding-top: 5.5rem; */
+    padding-left: var(--padding-m);
+    padding-right: var(--padding-m);
+    padding-top: var(--padding-l);
+    padding-bottom: var(--padding-m);
   }
 
-  .container ul li:first-child {
-    background-color: yellowgreen;
+   .container ul li:first-child {
+    background-color:blueviolet;
     /* background-color: unset; */
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
 
   .container li {
-    font-size: 1.7rem;
-    padding-top: 0.4rem;
+    font-size: 2rem;
   }
 
   .skills a {
-    font-size: 1.7rem;
+    font-size: 2rem;
   }
 
   .container svg {
-    height: 1.6rem;
+    height: 1.9rem;
   }
 }
 
