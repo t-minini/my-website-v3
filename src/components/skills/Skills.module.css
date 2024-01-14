@@ -235,25 +235,49 @@
   }
 }
 
-/* SMALL SCREENS, LAPTOPS PORTRAIT (IPAD AIR) */
+/* IPAD AIR (PORTRAIT) */
 @media only screen and (min-width: 769px) and (orientation: portrait) {
   .skills {
-    /* padding: 4%; */
-    /* padding-top: 5.5rem; */
+    padding-left: var(--padding-m);
+    padding-right: var(--padding-m);
+    padding-top: var(--padding-l);
+    padding-bottom: var(--padding-m);
+    /* min-height: fit-content; */
   }
+
   .container {
+    margin: 0;
+    padding: o;
+    /* width: 100%; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
   }
-  .container ul li:first-child {
-    background-color: blueviolet;
+
+   .container ul li:first-child {
+    background-color:cornflowerblue;
     /* background-color: unset; */
     font-size: 2.8rem;
   }
 
+  .container ul:nth-child(1) {
+    width: 45%;
+
+  }
+  .container ul:nth-child(2) {
+    width: 55%;
+  }
+
+  .container ul:nth-child(3) {
+    width: 45%;
+  }
+
+  .container ul:nth-child(4) {
+    width: 55%;
+  }
+
   .container li {
     font-size: 2.4rem;
-    padding-top: 0.7rem;
   }
 
   .skills a {
@@ -262,39 +286,12 @@
 
   .container svg {
     height: 2.3rem;
-    /* margin-left: 0.2rem; */
-  }
-
-  .container ul:first-child {
-    /* padding-bottom: 2rem; */
   }
 }
 
-/* SMALL SCREENS, LAPTOPS LANDSCAPE (IPAD AIR) */
+/* IPAD AIR (LANDSCAPE) */
 @media only screen and (min-width: 1179px) and (orientation: landscape) {
-  .skills {
-    /* padding: 3.5%; */
-    /* padding-top: 5.5rem; */
-  }
-
-  .container ul li:first-child {
-    background-color: blueviolet;
-    /* background-color: unset; */
-    font-size: 2.3rem;
-  }
-
-  .container li {
-    font-size: 1.9rem;
-    /* padding-top: 0.4rem; */
-  }
-
-  .skills a {
-    font-size: 1.9rem;
-  }
-
-  .container svg {
-    height: 1.8rem;
-  }
+  
 }
 
 /* DESKTOPS, LARGE SCREENS PORTRAIT (IPAD PRO) */
@@ -306,6 +303,7 @@
   .container {
     /* display: grid; */
     /* grid-template-columns: repeat(2, 1fr); */
+    columns: 4;
   }
 
   .container ul li:first-child {
