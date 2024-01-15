@@ -47,7 +47,7 @@ section,
 footer {
   -ms-scroll-snap-align: unset; /* IE 10 and 11 */
   -webkit-scroll-snap-align: unset; /* Safari, Chrome, and newer versions of Opera */
-  scroll-snap-align: center; /* Standard property */
+  scroll-snap-align: unset; /* Standard property */
   /* -ms-scroll-chaining: none; */
 }
 
