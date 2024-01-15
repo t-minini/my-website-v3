@@ -112,7 +112,8 @@
     padding-bottom: 1.6rem;
   }
 
-  .container ul:nth-child(3), .container ul:last-child {
+  .container ul:nth-child(3),
+  .container ul:last-child {
     padding-bottom: 0;
   }
 
@@ -133,7 +134,7 @@
 /* SMARTPHONES - TALLER SCREENS (PORTRAIT) */
 @media only screen and (min-width: 390px) and (orientation: portrait) {
   .container ul li:first-child {
-    background-color:aqua;
+    background-color: aqua;
     /* background-color: unset; */
     font-size: 2.2rem;
   }
@@ -153,8 +154,8 @@
 
 /* SMARTPHONES - TALLER SCREENS (LANDSCAPE) */
 @media only screen and (min-width: 843px) and (orientation: landscape) {
-    .container ul li:first-child {
-    background-color:aqua;
+  .container ul li:first-child {
+    background-color: aqua;
     /* background-color: unset; */
     font-size: 2.2rem;
   }
@@ -170,7 +171,6 @@
   .container svg {
     height: 1.7rem;
   }
-
 }
 
 /* IPAD MINI (PORTRAIT) */
@@ -182,12 +182,12 @@
     padding-bottom: var(--padding-m);
   }
 
-   .container ul li:first-child {
-    background-color:blueviolet;
+  .container ul li:first-child {
+    background-color: blueviolet;
     /* background-color: unset; */
     font-size: 2.4rem;
   }
-.container {
+  .container {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -199,7 +199,7 @@
   }
 
   .skills a {
-    font-size:2rem;
+    font-size: 2rem;
   }
 
   .container svg {
@@ -216,8 +216,8 @@
     padding-bottom: var(--padding-m);
   }
 
-   .container ul li:first-child {
-    background-color:blueviolet;
+  .container ul li:first-child {
+    background-color: blueviolet;
     /* background-color: unset; */
     font-size: 2.4rem;
   }
@@ -246,23 +246,20 @@
   }
 
   .container {
-    margin: 0;
-    padding: o;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
   }
 
-   .container ul li:first-child {
-    background-color:cornflowerblue;
+  .container ul li:first-child {
+    background-color: cornflowerblue;
     /* background-color: unset; */
     font-size: 2.8rem;
   }
 
   .container ul:nth-child(1) {
     width: 45%;
-
   }
+
   .container ul:nth-child(2) {
     width: 55%;
   }
@@ -290,47 +287,30 @@
 
 /* IPAD AIR (LANDSCAPE) */
 @media only screen and (min-width: 1179px) and (orientation: landscape) {
-  
-}
-
-/* DESKTOPS, LARGE SCREENS PORTRAIT (IPAD PRO) */
-@media only screen and (min-width: 1023px) and (orientation: portrait) {
-  .skills {
-    /* padding: 4%; */
-    /* padding-top: 5.5rem; */
-  }
-  .container {
-    /* display: grid; */
-    /* grid-template-columns: repeat(2, 1fr); */
-    columns: 4;
-  }
-
   .container ul li:first-child {
     background-color: cornflowerblue;
     /* background-color: unset; */
-    font-size: 3.5rem;
+    font-size: 2.8rem;
   }
 
   .container li {
-    font-size: 3.1rem;
-    padding-top: 0.9rem;
+    font-size: 2.4rem;
   }
 
   .skills a {
-    font-size: 3.1rem;
+    font-size: 2.4rem;
   }
 
   .container svg {
-    height: 2.9rem;
-    margin-left: 0.6rem;
-  }
-
-  .container ul:first-child {
-    /* padding-bottom: 2rem; */
+    height: 2.3rem;
   }
 }
 
-/* DESKTOPS, LARGE SCREENS LANDSCAPE (IPAD PRO) */
+/* IPAD PRO (PORTRAIT) */
+@media only screen and (min-width: 1023px) and (orientation: portrait) {
+}
+
+/* IPAD PRO and MACBOOK PRO 14" (LANDSCAPE) */
 @media only screen and (min-width: 1365px) and (orientation: landscape) {
   .skills {
     /* padding: 3%; */
