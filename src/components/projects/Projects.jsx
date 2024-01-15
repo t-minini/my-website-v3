@@ -20,7 +20,7 @@ const ProjectCard = ({ projectsJSON }) => {
       const screenWidth = window.innerWidth;
 
       // Adjust these values based on your requirements
-      if (screenWidth <= 932) {
+      if (screenWidth <= 1024 || screenWidth <= 1179 ) {
         setAnimationValues([-0, 0]);
       } else {
         setAnimationValues([-400, 400]);

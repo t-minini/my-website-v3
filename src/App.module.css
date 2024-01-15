@@ -47,8 +47,63 @@ section,
 footer {
   -ms-scroll-snap-align: unset; /* IE 10 and 11 */
   -webkit-scroll-snap-align: unset; /* Safari, Chrome, and newer versions of Opera */
-  scroll-snap-align: unset; /* Standard property */
+  scroll-snap-align: center; /* Standard property */
   /* -ms-scroll-chaining: none; */
+}
+
+/* SMARTPHONES - SHORTER SCREENS (PORTRAIT) */
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+  section,
+  footer {
+    -ms-scroll-snap-align: unset; /* IE 10 and 11 */
+    -webkit-scroll-snap-align: unset; /* Safari, Chrome, and newer versions of Opera */
+    scroll-snap-align: unset; /* Standard property */
+    /* -ms-scroll-chaining: none; */
+  }
+}
+
+/* SMARTPHONES - SHORTER SCREENS (LANDSCAPE) */
+@media only screen and (min-width: 665px) and (orientation: landscape) {
+  section,
+  footer {
+    -ms-scroll-snap-align: unset; /* IE 10 and 11 */
+    -webkit-scroll-snap-align: unset; /* Safari, Chrome, and newer versions of Opera */
+    scroll-snap-align: unset; /* Standard property */
+    /* -ms-scroll-chaining: none; */
+  }
+}
+
+/* IPAD MINI (PORTRAIT) */
+@media only screen and (min-width: 767px) and (orientation: portrait) {
+  section,
+  footer {
+    -ms-scroll-snap-align: unset; /* IE 10 and 11 */
+    -webkit-scroll-snap-align: unset; /* Safari, Chrome, and newer versions of Opera */
+    scroll-snap-align: unset; /* Standard property */
+    /* -ms-scroll-chaining: none; */
+  }
+}
+
+/* IPAD MINI (LANDSCAPE) */
+@media only screen and (min-width: 1023px) and (orientation: landscape) {
+  section,
+  footer {
+    -ms-scroll-snap-align: unset; /* IE 10 and 11 */
+    -webkit-scroll-snap-align: unset; /* Safari, Chrome, and newer versions of Opera */
+    scroll-snap-align: unset; /* Standard property */
+    /* -ms-scroll-chaining: none; */
+  }
+}
+
+/* IPAD AIR (LANDSCAPE) */
+@media only screen and (min-width: 1179px) and (orientation: landscape) {
+  section,
+  footer {
+    -ms-scroll-snap-align: unset; /* IE 10 and 11 */
+    -webkit-scroll-snap-align: unset; /* Safari, Chrome, and newer versions of Opera */
+    scroll-snap-align: center; /* Standard property */
+    /* -ms-scroll-chaining: none; */
+  }
 }
 
 *,

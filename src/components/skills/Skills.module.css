@@ -1,5 +1,4 @@
 .skills {
-  /* width: 100vw; */
   min-height: 100dvh;
   background-color: var(--gray-lighter);
   display: flex;
@@ -131,12 +130,12 @@
 
 /* SMARTPHONES - TALLER SCREENS (PORTRAIT) */
 @media only screen and (min-width: 390px) and (orientation: portrait) {
-  
+  /* not needed */
 }
 
 /* SMARTPHONES - TALLER SCREENS (LANDSCAPE) */
 @media only screen and (min-width: 843px) and (orientation: landscape) {
- 
+ /* not needed */
 }
 
 /* IPAD MINI (PORTRAIT) */
@@ -199,23 +198,25 @@
 
 /* IPAD AIR (PORTRAIT) */
 @media only screen and (min-width: 769px) and (orientation: portrait) {
- 
+ /* not needed */
 }
 
 /* IPAD AIR (LANDSCAPE) */
 @media only screen and (min-width: 1179px) and (orientation: landscape) {
-
+/* not needed */
 }
 
 /* IPAD PRO (PORTRAIT) */
 @media only screen and (min-width: 1023px) and (orientation: portrait) {
+  /* not needed */
 }
 
 /* IPAD PRO and MACBOOK PRO 14" (LANDSCAPE) */
 @media only screen and (min-width: 1365px) and (orientation: landscape) {
+  /* not needed */
 }
 
 /* MONITORS (LANDSCAPE) */
 @media only screen and (min-width: 1520px) and (orientation: landscape) {
-
+/* not needed */
 }
