@@ -185,7 +185,7 @@
   .container ul li:first-child {
     background-color: blueviolet;
     /* background-color: unset; */
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
   .container {
     width: 100%;
@@ -194,16 +194,16 @@
   }
 
   .container li {
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding-top: 1.2rem;
   }
 
   .skills a {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .container svg {
-    height: 1.9rem;
+    height: 1.7rem;
   }
 }
 
@@ -219,149 +219,11 @@
   .container ul li:first-child {
     background-color: blueviolet;
     /* background-color: unset; */
-    font-size: 2.4rem;
-  }
-
-  .container li {
     font-size: 2rem;
-  }
-
-  .skills a {
-    font-size: 2rem;
-  }
-
-  .container svg {
-    height: 1.9rem;
-  }
-}
-
-/* IPAD AIR (PORTRAIT) */
-@media only screen and (min-width: 769px) and (orientation: portrait) {
-  .skills {
-    padding-left: var(--padding-m);
-    padding-right: var(--padding-m);
-    padding-top: var(--padding-l);
-    padding-bottom: var(--padding-m);
-    /* min-height: fit-content; */
-  }
-
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .container ul li:first-child {
-    background-color: cornflowerblue;
-    /* background-color: unset; */
-    font-size: 2.8rem;
-  }
-
-  .container ul:nth-child(1) {
-    width: 45%;
-  }
-
-  .container ul:nth-child(2) {
-    width: 55%;
-  }
-
-  .container ul:nth-child(3) {
-    width: 45%;
-  }
-
-  .container ul:nth-child(4) {
-    width: 55%;
-  }
-
-  .container li {
-    font-size: 2.4rem;
-  }
-
-  .skills a {
-    font-size: 2.4rem;
-  }
-
-  .container svg {
-    height: 2.3rem;
-  }
-}
-
-/* IPAD AIR (LANDSCAPE) */
-@media only screen and (min-width: 1179px) and (orientation: landscape) {
-  .container ul li:first-child {
-    background-color: cornflowerblue;
-    /* background-color: unset; */
-    font-size: 2.8rem;
-  }
-
-  .container li {
-    font-size: 2.4rem;
-  }
-
-  .skills a {
-    font-size: 2.4rem;
-  }
-
-  .container svg {
-    height: 2.3rem;
-  }
-}
-
-/* IPAD PRO (PORTRAIT) */
-@media only screen and (min-width: 1023px) and (orientation: portrait) {
-}
-
-/* IPAD PRO and MACBOOK PRO 14" (LANDSCAPE) */
-@media only screen and (min-width: 1365px) and (orientation: landscape) {
-  .skills {
-    /* padding: 3%; */
-    /* padding-top: 5.5rem; */
-  }
-
-  .container ul li:first-child {
-    background-color: cornflowerblue;
-    /* background-color: unset; */
-    font-size: 3.1rem;
-  }
-
-  .container li {
-    font-size: 2.3rem;
-    /* padding-top: 0.4rem; */
-  }
-
-  .skills a {
-    font-size: 2.3rem;
-  }
-
-  .container svg {
-    height: 2.1rem;
-    margin-left: 0.4rem;
-  }
-}
-
-/* MONITORS (LANDSCAPE) */
-@media only screen and (min-width: 1520px) and (orientation: landscape) {
-  .skills {
-    /* width: 100vw; */
-    /* height: 100dvh; */
-    /* background-color: var(--gray-lighter); */
-  }
-  .container {
-    /* background-color: red; */
-    /* width: 55%; */
-    /* display: grid; */
-    /* grid-template-columns: repeat(2, 1fr); */
-  }
-
-  .container ul li:first-child {
-    background-color: chocolate;
-    background-color: unset;
-    font-size: 1.8rem;
-    /* padding-top: unset; */
   }
 
   .container li {
     font-size: 1.8rem;
-    padding-top: 0.9rem;
   }
 
   .skills a {
@@ -370,10 +232,28 @@
 
   .container svg {
     height: 1.7rem;
-    margin-left: 0rem;
   }
+}
 
-  .container ul:first-child {
-    /* padding-bottom: 2rem; */
-  }
+/* IPAD AIR (PORTRAIT) */
+@media only screen and (min-width: 769px) and (orientation: portrait) {
+ 
+}
+
+/* IPAD AIR (LANDSCAPE) */
+@media only screen and (min-width: 1179px) and (orientation: landscape) {
+
+}
+
+/* IPAD PRO (PORTRAIT) */
+@media only screen and (min-width: 1023px) and (orientation: portrait) {
+}
+
+/* IPAD PRO and MACBOOK PRO 14" (LANDSCAPE) */
+@media only screen and (min-width: 1365px) and (orientation: landscape) {
+}
+
+/* MONITORS (LANDSCAPE) */
+@media only screen and (min-width: 1520px) and (orientation: landscape) {
+
 }
