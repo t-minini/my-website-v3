@@ -55,7 +55,7 @@ export function Skills() {
         whileInView="animate"
       >
         <ul>
-          <li>USING NOW</li>
+          <li>Using Now</li>
           <motion.li
             variants={itemVariants}
             initial="initial"
@@ -142,7 +142,7 @@ export function Skills() {
           </motion.li>
         </ul>
         <ul>
-          <li>INTERESTS</li>
+          <li>Interests</li>
           <motion.li
             variants={itemVariants}
             initial="initial"
@@ -229,7 +229,7 @@ export function Skills() {
           </motion.li>
         </ul>
         <ul>
-          <li>OTHER SKILLS</li>
+          <li>Other Skills</li>
           <motion.li
             variants={itemVariants}
             initial="initial"
@@ -284,7 +284,7 @@ export function Skills() {
           </motion.li>
         </ul>
         <ul>
-          <li>COURSES</li>
+          <li>Courses</li>
           <motion.li
             variants={itemVariants}
             initial="initial"

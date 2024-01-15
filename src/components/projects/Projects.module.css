@@ -8,7 +8,6 @@
   justify-content: center;
   height: 100vh;
   overflow: hidden;
-  padding: 5%;
 }
 
 .imageContainer {
@@ -31,7 +30,7 @@
 
 .textContainer p {
   font-size: 1.8rem;
-  font-weight: var(--thin-100);
+  font-weight: var(--light-300);
 }
 
 .topWrapper {
@@ -40,7 +39,8 @@
 }
 
 .topWrapper h2 {
-  font-size: 3.4rem;
+  /* font-size: 3.4rem; */
+  font-weight: var(--semiBold-600);
 }
 
 .topWrapper a {
@@ -64,77 +64,19 @@
 
 /* iPad Air 820 x 1180  */
 @media only screen and (max-width: 820px) {
-  .container {
-    height: 50vh;
-    flex-direction: column;
-    padding: 10rem 5% 0rem 5%;
-    height: fit-content;
-  }
 
-  .container:last-child {
-    padding-bottom: 5%;
-  }
-
-  .imageContainer {
-    padding-right: 0;
-  }
 }
 
 /* iPad Air 1180 x 820 (landscape)  */
 @media only screen and (max-width: 1180px) and (orientation: landscape) {
-  .container {
-    padding: 3%;
-  }
-
-  .topWrapper h2 {
-    font-size: 2.8rem;
-  }
 }
 
 /* iPhone 11 Pro Max / XR 414 x 896  */
 @media only screen and (max-width: 414px) {
-  .container {
-    padding-top: 3rem;
-  }
-
-  .topWrapper h2 {
-    font-size: 2.2rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-
-  .textContainer p {
-    font-size: 1.5rem;
-  }
-
-  .topWrapper a {
-    font-size: 1.4rem;
-    padding-left: 1rem;
-    padding-bottom: 1.2rem;
-  }
-
-  .container{
-    padding-top: 6rem;
-  }
 }
 
 /* iPhone 11 Pro Max / XR 896 x 414 (landscape) */
 @media only screen and (min-width: 805px) and (max-width: 896px) and (orientation: landscape) {
-  .topWrapper h2 {
-    font-size: 1.9rem;
-    padding-top: unset;
-    padding-bottom: 0.5rem;
-  }
-
-  .textContainer p {
-    font-size: 1.3rem;
-  }
-
-  .topWrapper a {
-    font-size: 1.4rem;
-    padding-left: 1rem;
-    padding-bottom: 0.7rem;
-  }
 }
 
 /* iPhone 13 Pro 390 x 844  */
@@ -149,9 +91,148 @@
 
 /* iPhone SE 667 x 375 (landscape) */
 @media only screen and (min-width: 667px) and (max-width: 667px) and (orientation: landscape) {
+}
+
+/* SMARTPHONES - SHORTER SCREENS (PORTRAIT) */
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+  .portfolio {
+    padding-left: var(--padding-s);
+    padding-right: var(--padding-s);
+    padding-top: var(--padding-l);
+    padding-bottom: var(--padding-s);
+  }
+
   .container {
-    padding-top: 5rem;
+    height: fit-content;
+    flex-direction: column;
+    padding-bottom: 2rem;
+  }
+
+  .container:last-child {
+    padding-bottom: 0;
+  }
+
+  .imageContainer {
+    padding-right: 0;
+  }
+
+  .imageContainer img {
+    border-radius: 1.2rem;
+  }
+
+  .topWrapper h2 {
+    font-size: 1.8rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .textContainer p {
+    font-size: 1.6rem;
+  }
+
+  .topWrapper a {
+    font-size: 1.4rem;
+    padding-left: 1rem;
+    padding-bottom: 0.6rem;
   }
 }
 
+/* SMARTPHONES - SHORTER SCREENS (LANDSCAPE) */
+@media only screen and (min-width: 665px) and (orientation: landscape) {
+  .portfolio {
+    padding-left: var(--padding-s);
+    padding-right: var(--padding-s);
+    padding-top: var(--padding-l);
+    padding-bottom: var(--padding-s);
+  }
 
+  .container {
+    height: fit-content;
+    flex-direction: column;
+    padding-bottom: 2rem;
+  }
+
+  .container:last-child {
+    padding-bottom: 0;
+  }
+
+  .imageContainer {
+    padding-right: 0;
+  }
+  .imageContainer img {
+    border-radius: 1.2rem;
+  }
+
+  .topWrapper h2 {
+    font-size: 1.8rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .textContainer p {
+    font-size: 1.6rem;
+  }
+
+  .topWrapper a {
+    font-size: 1.4rem;
+    padding-left: 1rem;
+    padding-bottom: 0.6rem;
+  }
+}
+
+/* SMARTPHONES - TALLER SCREENS (PORTRAIT) */
+@media only screen and (min-width: 390px) and (orientation: portrait) {
+  
+}
+
+/* SMARTPHONES - TALLER SCREENS (LANDSCAPE) */
+@media only screen and (min-width: 843px) and (orientation: landscape) {
+ 
+}
+
+/* IPAD MINI (PORTRAIT) */
+@media only screen and (min-width: 767px) and (orientation: portrait) {
+  .portfolio {
+    padding-left: var(--padding-m);
+    padding-right: var(--padding-m);
+    padding-top: var(--padding-l);
+    padding-bottom: var(--padding-m);
+  }
+
+  .container {
+    height: fit-content;
+    flex-direction: column;
+    padding-bottom: 2rem;
+  }
+
+  .container:last-child {
+    padding-bottom: 0;
+  }
+
+  .imageContainer {
+    padding-right: 0;
+  }
+
+  .imageContainer img {
+    border-radius: 1.2rem;
+  }
+
+  .topWrapper h2 {
+    font-size: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .textContainer p {
+    font-size: 1.8rem;
+  }
+
+  .topWrapper a {
+    font-size: 1.6rem;
+    padding-left: 1rem;
+    padding-bottom: 0.6rem;
+  }
+}
+
+/* IPAD MINI (LANDSCAPE) */
+@media only screen and (min-width: 1023px) and (orientation: landscape) {}
