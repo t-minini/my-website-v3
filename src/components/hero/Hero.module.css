@@ -18,6 +18,7 @@
 .hero__text h1 {
   width: 100%;
   color: var(--orange);
+  font-family: 'Dr Sugiyama', cursive;
   font-weight: var(--regular-400);
   z-index: 2;
   text-align: center;

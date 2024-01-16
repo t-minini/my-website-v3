@@ -5,6 +5,8 @@
 
 .contact__tm {
   color: var(--orange);
+  font-family: 'Dr Sugiyama', cursive;
+  text-transform: uppercase;
 }
 
 .contact__text {
@@ -31,6 +33,10 @@
   justify-content: flex-end;
   color: var(--gray-lighter);
   font-weight: var(--thin-100);
+}
+
+.contact__links {
+  z-index: 2;
 }
 
 .contact__links a {
@@ -110,7 +116,7 @@
     font-size: 0.8rem;
   }
 
-  .contact__text .copyright span:first-child {
+  .contact__text .copyright span {
     font-size: 0.8rem;
   }
 }
@@ -135,7 +141,7 @@
     padding-left: 4%;
   }
 
-  .text__container p:first-of-type {
+  .text__container p {
     width: 50%;
     font-size: 1.1rem;
     padding-right: 5%;
@@ -158,4 +164,174 @@
   .contact__text .copyright span {
     font-size: 0.8rem;
   }
+}
+
+/* SMARTPHONES - TALLER SCREENS (PORTRAIT) */
+@media only screen and (min-width: 390px) and (orientation: portrait) {
+  /* not needed */
+}
+
+/* SMARTPHONES - TALLER SCREENS (LANDSCAPE) */
+@media only screen and (min-width: 843px) and (orientation: landscape) {
+  /* not needed */
+}
+
+/* IPAD MINI (PORTRAIT) */
+@media only screen and (min-width: 767px) and (orientation: portrait) {
+  .contact {
+    padding-left: var(--padding-m);
+    padding-right: var(--padding-m);
+    padding-top: var(--padding-l);
+    padding-bottom: var(--padding-m);
+  }
+
+  .contact h2 {
+    font-size: 12rem;
+    line-height: 9rem;
+  }
+
+  .text__container {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .text__container p {
+    /* background-color: red; */
+    width: 100%;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    margin-bottom: 26rem;
+    justify-content: flex-start;
+    z-index: 2;
+  }
+
+  .contact__tm {
+    width: fit-content;
+    font-size: 30rem;
+    position: relative;
+    line-height: 8rem;
+    top: 33rem;
+    left: 6%;
+  }
+
+  .contact__links {
+    margin-left: 0.2rem;
+  }
+
+  .contact__links a {
+    font-size: 1.6rem;
+    padding-right: 1.5rem;
+  }
+
+  .contact__text .copyright p {
+    font-size: 1rem;
+  }
+
+  .contact__text .copyright span {
+    font-size: 1rem;
+  }
+}
+
+/* IPAD MINI (LANDSCAPE) */
+@media only screen and (min-width: 1023px) and (orientation: landscape) {
+  .contact {
+    padding-left: var(--padding-m);
+    padding-right: var(--padding-m);
+    padding-top: var(--padding-l);
+    padding-bottom: var(--padding-m);
+  }
+
+  .contact h2 {
+    font-size: 12rem;
+    line-height: 9rem;
+  }
+
+  .text__container {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .text__container p {
+    width: 100%;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    margin-bottom: 26rem;
+    justify-content: flex-start;
+    z-index: 2;
+  }
+
+  .contact__tm {
+    width: fit-content;
+    font-size: 30rem;
+    position: relative;
+    line-height: 8rem;
+    top: 32rem;
+    left: 2%;
+  }
+
+  .contact__links {
+    margin-left: 0.2rem;
+  }
+
+  .contact__links a {
+    font-size: 1.6rem;
+    padding-right: 1.5rem;
+  }
+
+  .contact__text .copyright p {
+    font-size: 1rem;
+  }
+
+  .contact__text .copyright span {
+    font-size: 1rem;
+  }
+}
+
+/* IPAD AIR (PORTRAIT) */
+@media only screen and (min-width: 769px) and (orientation: portrait) {
+  /* not needed */
+}
+
+/* IPAD AIR (LANDSCAPE) */
+@media only screen and (min-width: 1179px) and (orientation: landscape) {
+  /* not needed */
+}
+
+/* IPAD PRO (PORTRAIT) */
+@media only screen and (min-width: 1023px) and (orientation: portrait) {
+  /* not needed */
+}
+
+/* IPAD PRO and MACBOOK PRO 14" (LANDSCAPE) */
+@media only screen and (min-width: 1365px) and (orientation: landscape) {
+  .contact {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact__tm {
+    top: 0;
+    left: 1%;
+  }
+
+  .contact__text {
+    min-width: var(--content-width);
+  }
+
+  .text__container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .text__container p {
+    padding-right: 3%;
+    margin-bottom: 0;
+    justify-content: flex-end;
+  }
+}
+
+/* MONITORS (LANDSCAPE) */
+@media only screen and (min-width: 1520px) and (orientation: landscape) {
+  /* not needed */
 }
