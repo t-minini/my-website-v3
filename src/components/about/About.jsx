@@ -5,20 +5,20 @@ export function About() {
   const text = `With a diverse background in construction, interior design, architecture, and hospitality, I offer a unique perspective to my work. Originally from Brazil and based Dublin, I discovered my passion for front-end development in 2022, when I completed a full-stack web development bootcamp, which equipped me with the skills to create visually appealing and user-friendly websites. As a dedicated professional, I'm committed to continuous learning to hone my skills and contribute to innovative projects.`;
 
   const words = text.split(' ');
-  
+
   const aboutVariants = {
     initial: {
-      opacity: 0,
       y: 50,
+      opacity: 0,
     },
     animate: (index) => ({
-      color: 'var(--gray-lighter)',
       opacity: 1,
+      color: 'var(--gray-lighter)',
       y: 0,
       transition: {
-        delay: 0.04 * index,
-        type: 'spring',
         damping: 10,
+        type: 'spring',
+        delay: 0.04 * index,
       },
     }),
   };
@@ -30,17 +30,17 @@ export function About() {
   };
 
   return (
-    <section id="about" className={style.about}>
+    <section className={style.about} id="about">
       <div className={style.container}>
         {words.map((word, index) => (
           <motion.span
             key={index}
-            className={style.word}
-            variants={aboutVariants}
+            custom={index}
             initial="initial"
             whileInView="animate"
+            className={style.word}
             whileHover={aboutHover}
-            custom={index}
+            variants={aboutVariants}
           >
             {index !== 0 && ' '}
             {word}

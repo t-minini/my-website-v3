@@ -1,4 +1,4 @@
-.portfolio {
+.projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -47,7 +47,7 @@
 
 /* SMARTPHONES - SHORTER SCREENS (PORTRAIT) */
 @media only screen and (max-width: 480px) and (orientation: portrait) {
-  .portfolio {
+  .projects {
     padding-top: var(--padding-l);
     padding-left: var(--padding-s);
     padding-right: var(--padding-s);
@@ -91,7 +91,7 @@
 
 /* SMARTPHONES - SHORTER SCREENS (LANDSCAPE) */
 @media only screen and (min-width: 665px) and (orientation: landscape) {
-  .portfolio {
+  .projects {
     padding-top: var(--padding-l);
     padding-left: var(--padding-s);
     padding-right: var(--padding-s);
@@ -144,7 +144,7 @@
 
 /* IPAD MINI (PORTRAIT) */
 @media only screen and (min-width: 767px) and (orientation: portrait) {
-  .portfolio {
+  .projects {
     padding-top: var(--padding-l);
     padding-left: var(--padding-m);
     padding-right: var(--padding-m);
@@ -188,7 +188,7 @@
 
 /* IPAD MINI (LANDSCAPE) */
 @media only screen and (min-width: 1023px) and (orientation: landscape) {
-  .portfolio {
+  .projects {
     padding-top: var(--padding-l);
     padding-left: var(--padding-m);
     padding-right: var(--padding-m);
@@ -216,7 +216,7 @@
 
 /* IPAD AIR (PORTRAIT) */
 @media only screen and (min-width: 769px) and (orientation: portrait) {
- /* not needed */
+  /* not needed */
 }
 
 /* IPAD AIR (LANDSCAPE) */

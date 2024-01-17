@@ -25,26 +25,26 @@ export function Contact() {
         </div>
         <div className={style.contact__links}>
           <a
-            href="https://www.linkedin.com/in/tulio-minini/"
             target={'_blank'}
             rel="noreferrer"
+            href="https://www.linkedin.com/in/tulio-minini/"
             className={`hoverable ${isHovered ? style.hovered : ''}`}
           >
             LinkedIn
           </a>
           <a
-            href="mailto:tulio.mminini@gmail.com"
-            target={'_blank'}
             rel="noreferrer"
+            target={'_blank'}
             title="Send me an e-mail"
+            href="mailto:tulio.mminini@gmail.com"
             className={`hoverable ${isHovered ? style.hovered : ''}`}
           >
             E-mail
           </a>
           <a
-            href="https://github.com/t-minini"
-            target={'_blank'}
             rel="noreferrer"
+            target={'_blank'}
+            href="https://github.com/t-minini"
             className={`hoverable ${isHovered ? style.hovered : ''}`}
           >
             Github

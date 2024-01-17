@@ -45,6 +45,20 @@ footer {
   -webkit-scroll-snap-align: unset; /* Safari, Chrome, and newer versions of Opera */
 }
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%; /* base font size to 10px, to facilitate using REM unit */
+  box-sizing: border-box;
+  font-family: var(--inter);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
 /* SMARTPHONES - SHORTER SCREENS (PORTRAIT) */
 @media only screen and (max-width: 480px) and (orientation: portrait) {
   section,
@@ -95,18 +109,4 @@ footer {
     -ms-scroll-snap-align: unset; /* IE 10 and 11 */
     -webkit-scroll-snap-align: unset; /* Safari, Chrome, and newer versions of Opera */
   }
-}
-
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  font-size: 62.5%; /* base font size to 10px, to facilitate using REM unit */
-  box-sizing: border-box;
-  font-family: var(--inter);
-}
-
-::-webkit-scrollbar {
-  display: none;
 }

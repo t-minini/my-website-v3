@@ -1,26 +1,25 @@
-import { useRef, useState, useEffect  } from 'react';
 import style from './Projects.module.css';
 import projectsJSON from '../../projects.json';
+import { useRef, useState, useEffect } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
 const ProjectCard = ({ projectsJSON }) => {
   const [isHovered, setIsHovered] = useState(false);
   const [animationValues, setAnimationValues] = useState([-400, 400]);
 
-
   const ref = useRef();
 
   const { scrollYProgress } = useScroll({
     target: ref,
   });
-  
+
   useEffect(() => {
     // Update animation values based on screen size
     const updateAnimationValues = () => {
       const screenWidth = window.innerWidth;
 
-      // Adjust these values based on your requirements
-      if (screenWidth <= 1024 || screenWidth <= 1179 ) {
+      // Adjust these values based on requirements
+      if (screenWidth <= 1024 || screenWidth <= 1179) {
         setAnimationValues([-0, 0]);
       } else {
         setAnimationValues([-400, 400]);
@@ -53,18 +52,17 @@ const ProjectCard = ({ projectsJSON }) => {
         <div className={style.topWrapper}>
           <h2>{projectsJSON.project}</h2>
           <a
-            href={projectsJSON.github}
-            target={'_blank'}
             rel="noreferrer"
-            k
+            target={'_blank'}
+            href={projectsJSON.github}
             className={`hoverable ${isHovered ? style.hovered : ''}`}
           >
             Github
           </a>
           <a
-            href={projectsJSON.website}
-            target={'_blank'}
             rel="noreferrer"
+            target={'_blank'}
+            href={projectsJSON.website}
             className={`hoverable ${isHovered ? style.hovered : ''}`}
           >
             Website
@@ -78,7 +76,7 @@ const ProjectCard = ({ projectsJSON }) => {
 
 export function Projects() {
   return (
-    <div className={style.portfolio} id="projects">
+    <div className={style.projects} id="projects">
       {projectsJSON.toReversed().map((projectsJSON) => (
         <ProjectCard projectsJSON={projectsJSON} key={projectsJSON.id} />
       ))}

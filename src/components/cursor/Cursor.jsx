@@ -53,12 +53,12 @@ export function Cursor() {
     document.body.addEventListener('mousemove', updateCursorPosition);
 
     hoverables.forEach((element) => {
-      element.addEventListener('mouseenter', handleHover(2.5));
       element.addEventListener('mouseleave', handleHover(1));
+      element.addEventListener('mouseenter', handleHover(2.5));
 
       return () => {
-        element.removeEventListener('mouseenter', handleHover(2.5));
         element.removeEventListener('mouseleave', handleHover(1));
+        element.removeEventListener('mouseenter', handleHover(2.5));
       };
     });
 

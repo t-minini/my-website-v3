@@ -1,8 +1,8 @@
 .navbar {
   left: 0;
   right: 0;
-  z-index: 1000;
   height: 6rem;
+  z-index: 1000;
   display: flex;
   position: fixed;
   align-items: center;
