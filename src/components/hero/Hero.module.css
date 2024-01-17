@@ -52,9 +52,9 @@
 /* SMARTPHONES - SHORTER SCREENS (PORTRAIT) */
 @media only screen and (max-width: 480px) and (orientation: portrait) {
   .hero__text h1 {
-    /* background-color: red; */
-    font-size: 7.1rem;
+    font-size: 8.5rem;
     line-height: 5.3rem;
+    padding-left: 2%;
   }
 
   .hero__text p {
@@ -73,8 +73,7 @@
 /* SMARTPHONES - SHORTER SCREENS (LANDSCAPE) */
 @media only screen and (min-width: 665px) and (orientation: landscape) {
   .hero__text h1 {
-    /* background-color: coral; */
-    font-size: 12rem;
+    font-size: 14rem;
     line-height: 9rem;
   }
 
