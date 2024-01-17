@@ -1,8 +1,8 @@
 .portfolio {
-  background-color: var(--gray-lighter);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: var(--gray-lighter);
 }
 
 .container {
@@ -35,9 +35,9 @@
 }
 
 .topWrapper a {
-  font-weight: var(--light-300);
-  color: var(--gray-darker);
   text-decoration: none;
+  color: var(--gray-darker);
+  font-weight: var(--light-300);
 }
 
 .topWrapper a:hover {
@@ -48,16 +48,16 @@
 /* SMARTPHONES - SHORTER SCREENS (PORTRAIT) */
 @media only screen and (max-width: 480px) and (orientation: portrait) {
   .portfolio {
+    padding-top: var(--padding-l);
     padding-left: var(--padding-s);
     padding-right: var(--padding-s);
-    padding-top: var(--padding-l);
     padding-bottom: var(--padding-s);
   }
 
   .container {
     height: fit-content;
-    flex-direction: column;
     padding-bottom: 2rem;
+    flex-direction: column;
   }
 
   .container:last-child {
@@ -92,16 +92,16 @@
 /* SMARTPHONES - SHORTER SCREENS (LANDSCAPE) */
 @media only screen and (min-width: 665px) and (orientation: landscape) {
   .portfolio {
+    padding-top: var(--padding-l);
     padding-left: var(--padding-s);
     padding-right: var(--padding-s);
-    padding-top: var(--padding-l);
     padding-bottom: var(--padding-s);
   }
 
   .container {
     height: fit-content;
-    flex-direction: column;
     padding-bottom: 2rem;
+    flex-direction: column;
   }
 
   .container:last-child {
@@ -145,16 +145,16 @@
 /* IPAD MINI (PORTRAIT) */
 @media only screen and (min-width: 767px) and (orientation: portrait) {
   .portfolio {
+    padding-top: var(--padding-l);
     padding-left: var(--padding-m);
     padding-right: var(--padding-m);
-    padding-top: var(--padding-l);
     padding-bottom: var(--padding-m);
   }
 
   .container {
     height: fit-content;
-    flex-direction: column;
     padding-bottom: 2rem;
+    flex-direction: column;
   }
 
   .container:last-child {
@@ -189,9 +189,9 @@
 /* IPAD MINI (LANDSCAPE) */
 @media only screen and (min-width: 1023px) and (orientation: landscape) {
   .portfolio {
+    padding-top: var(--padding-l);
     padding-left: var(--padding-m);
     padding-right: var(--padding-m);
-    padding-top: var(--padding-l);
     padding-bottom: var(--padding-m);
   }
 
@@ -222,8 +222,8 @@
 /* IPAD AIR (LANDSCAPE) */
 @media only screen and (min-width: 1179px) and (orientation: landscape) {
   .container {
-    min-height: 100dvh;
     display: flex;
+    min-height: 100dvh;
     align-items: center;
     flex-direction: row;
   }
