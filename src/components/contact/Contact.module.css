@@ -5,8 +5,8 @@
 
 .contact__tm {
   color: var(--orange);
-  font-family: 'Dr Sugiyama', cursive;
   text-transform: uppercase;
+  font-family: 'Dr Sugiyama', cursive;
 }
 
 .contact__text {
@@ -18,14 +18,14 @@
 
 .text__container {
   display: flex;
-  justify-content: space-between;
   align-items: flex-end;
+  justify-content: space-between;
 }
 
 .text__container h2 {
-  font-weight: var(--semiBold-600);
-  color: var(--gray-lighter);
   z-index: 1;
+  color: var(--gray-lighter);
+  font-weight: var(--semiBold-600);
 }
 
 .text__container p {
@@ -41,11 +41,11 @@
 }
 
 .contact__links a {
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 1s ease;
   color: var(--gray-darker);
   font-weight: var(--light-300);
-  transition: color 1s ease;
-  text-decoration: none;
-  cursor: pointer;
 }
 
 .contact__links a:hover {
@@ -54,9 +54,9 @@
 
 .copyright {
   display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
   text-align: right;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .copyright p {
@@ -71,9 +71,9 @@
 /* SMARTPHONES - SHORTER SCREENS (PORTRAIT) */
 @media only screen and (max-width: 480px) and (orientation: portrait) {
   .contact {
+    padding-top: var(--padding-l);
     padding-left: var(--padding-s);
     padding-right: var(--padding-s);
-    padding-top: var(--padding-l);
     padding-bottom: var(--padding-s);
   }
 
@@ -83,25 +83,25 @@
   }
 
   .text__container {
-    flex-direction: column-reverse;
     align-items: flex-start;
+    flex-direction: column-reverse;
   }
 
   .text__container p:first-of-type {
+    z-index: 2;
     width: 100%;
     font-size: 1.4rem;
     line-height: 1.4rem;
     margin-bottom: 16rem;
     justify-content: flex-start;
-    z-index: 2;
   }
 
   .contact__tm {
-    font-size: 20rem;
-    position: relative;
-    line-height: 10rem;
-    top: 22rem;
     left: 6%;
+    top: 22rem;
+    font-size: 20rem;
+    line-height: 10rem;
+    position: relative;
   }
 
   .contact__links {
@@ -125,9 +125,9 @@
 /* SMARTPHONES - SHORTER SCREENS (LANDSCAPE) */
 @media only screen and (min-width: 665px) and (orientation: landscape) {
   .contact {
+    padding-top: var(--padding-l);
     padding-left: var(--padding-s);
     padding-right: var(--padding-s);
-    padding-top: var(--padding-l);
     padding-bottom: var(--padding-s);
   }
 
@@ -138,20 +138,20 @@
 
   .contact__tm {
     font-size: 20rem;
-    line-height: 10rem;
     padding-left: 4%;
+    line-height: 10rem;
   }
 
   .text__container p {
+    z-index: 2;
     width: 50%;
     font-size: 1.1rem;
     padding-right: 5%;
-    z-index: 2;
   }
 
   .contact__links {
-    margin-left: 0.2rem;
     padding-bottom: 2%;
+    margin-left: 0.2rem;
   }
 
   .contact__links a {
@@ -181,9 +181,9 @@
 /* IPAD MINI (PORTRAIT) */
 @media only screen and (min-width: 767px) and (orientation: portrait) {
   .contact {
+    padding-top: var(--padding-l);
     padding-left: var(--padding-m);
     padding-right: var(--padding-m);
-    padding-top: var(--padding-l);
     padding-bottom: var(--padding-m);
   }
 
@@ -193,26 +193,26 @@
   }
 
   .text__container {
-    flex-direction: column-reverse;
     align-items: flex-start;
+    flex-direction: column-reverse;
   }
 
   .text__container p {
+    z-index: 2;
     width: 100%;
     font-size: 1.6rem;
     line-height: 1.9rem;
     margin-bottom: 26rem;
     justify-content: flex-start;
-    z-index: 2;
   }
 
   .contact__tm {
-    width: fit-content;
-    font-size: 30rem;
-    position: relative;
-    line-height: 8rem;
-    top: 33rem;
     left: 6%;
+    top: 33rem;
+    font-size: 30rem;
+    line-height: 8rem;
+    width: fit-content;
+    position: relative;
   }
 
   .contact__links {
@@ -236,9 +236,9 @@
 /* IPAD MINI (LANDSCAPE) */
 @media only screen and (min-width: 1023px) and (orientation: landscape) {
   .contact {
+    padding-top: var(--padding-l);
     padding-left: var(--padding-m);
     padding-right: var(--padding-m);
-    padding-top: var(--padding-l);
     padding-bottom: var(--padding-m);
   }
 
@@ -254,28 +254,28 @@
   }
 
   .text__container p {
-    width: 100%;
-    font-size: 1.8rem;
-    line-height: 2.1rem;
-    justify-content: flex-start;
     z-index: 2;
-    padding-right: 3%;
+    width: 100%;
     margin-bottom: 0;
+    font-size: 1.8rem;
+    padding-right: 3%;
+    line-height: 2.1rem;
     justify-content: flex-end;
+    justify-content: flex-start;
   }
 
   .contact__tm {
-    width: fit-content;
-    font-size: 30rem;
-    position: relative;
-    line-height: 8rem;
     top: 0;
     left: 2%;
+    font-size: 30rem;
+    line-height: 8rem;
+    width: fit-content;
+    position: relative;
   }
 
   .contact__links {
-    margin-left: 0.2rem;
     padding-bottom: 8%;
+    margin-left: 0.2rem;
   }
 
   .contact__links a {
@@ -315,8 +315,8 @@
   }
 
   .text__container p {
-    padding-right: 3%;
     margin-bottom: 0;
+    padding-right: 3%;
     justify-content: flex-end;
   }
 }
@@ -344,8 +344,8 @@
   }
 
   .text__container p {
-    padding-right: 3%;
     margin-bottom: 0;
+    padding-right: 3%;
     justify-content: flex-end;
   }
 
