@@ -1,10 +1,10 @@
 .about {
-  min-height: 100dvh;
-  background-color: var(--black);
   display: flex;
-  flex-direction: column;
+  min-height: 100dvh;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
+  background-color: var(--black);
 }
 
 .container {
@@ -32,7 +32,6 @@
   }
 
   .about span.word {
-    /* background-color: aquamarine; */
     font-size: 2.2rem;
     line-height: 2.8rem;
     margin-right: 0.6rem;
@@ -47,7 +46,6 @@
   }
 
   .about span.word {
-    /* background-color: aquamarine; */
     font-size: 2.2rem;
     line-height: 2.8rem;
     margin-right: 0.6rem;
@@ -62,7 +60,6 @@
   }
 
   .about span.word {
-    /* background-color: blueviolet; */
     font-size: 2.4rem;
     line-height: 3rem;
     margin-right: 0.8rem;
@@ -72,7 +69,6 @@
 /* SMARTPHONES - TALLER SCREENS (LANDSCAPE) */
 @media only screen and (min-width: 843px) and (orientation: landscape) {
   .about span.word {
-    /* background-color: blueviolet; */
     font-size: 2.4rem;
     line-height: 3rem;
     margin-right: 0.8rem;
@@ -87,17 +83,15 @@
   }
 
   .about span.word {
-    /* background-color: chartreuse; */
     font-size: 4rem;
-    line-height: 5.2rem;
     margin-right: 1rem;
+    line-height: 5.2rem;
   }
 }
 
 /* IPAD MINI (LANDSCAPE) */
 @media only screen and (min-width: 1023px) and (orientation: landscape) {
   .about span.word {
-    /* background-color: chartreuse; */
     font-size: 4rem;
     line-height: 5rem;
     margin-right: 0.8rem;
@@ -106,23 +100,21 @@
 
 /* IPAD AIR (PORTRAIT) */
 @media only screen and (min-width: 769px) and (orientation: portrait) {
-
+  /* not needed */
 }
 
 /* IPAD AIR (LANDSCAPE) */
 @media only screen and (min-width: 1179px) and (orientation: landscape) {
   .about span.word {
-    /* background-color:deeppink; */
     font-size: 4.4rem;
-    line-height: 5.2rem;
     margin-right: 1rem;
+    line-height: 5.2rem;
   }
 }
 
 /* IPAD PRO (PORTRAIT) */
 @media only screen and (min-width: 1023px) and (orientation: portrait) {
   .about span.word {
-    /* background-color:goldenrod; */
     font-size: 4.6rem;
     line-height: 5.8rem;
     margin-right: 1.4rem;
@@ -132,7 +124,6 @@
 /* IPAD PRO and MACBOOK PRO 14" (LANDSCAPE) */
 @media only screen and (min-width: 1365px) and (orientation: landscape) {
   .about span.word {
-    /* background-color:goldenrod; */
     font-size: 5rem;
     line-height: 5.2rem;
     margin-right: 1.2rem;
@@ -142,7 +133,6 @@
 /* MONITORS (LANDSCAPE) */
 @media only screen and (min-width: 1520px) and (orientation: landscape) {
   .about span.word {
-    /* background-color:plum; */
     font-size: 5rem;
     line-height: 5.2rem;
     margin-right: 1.2rem;
