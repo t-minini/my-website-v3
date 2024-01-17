@@ -1,7 +1,69 @@
 .cursor {
   z-index: 1000;
   position: fixed;
-  pointer-events: none;
   fill: var(--orange);
+  pointer-events: none;
   opacity: 0.5 !important;
+}
+
+/* SMARTPHONES - SHORTER SCREENS (PORTRAIT) */
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+  .cursor {
+    display: none;
+  }
+}
+
+/* SMARTPHONES - SHORTER SCREENS (LANDSCAPE) */
+@media only screen and (min-width: 665px) and (orientation: landscape) {
+  .cursor {
+    display: none;
+  }
+}
+
+/* SMARTPHONES - TALLER SCREENS (PORTRAIT) */
+@media only screen and (min-width: 390px) and (orientation: portrait) {
+  /* not needed */
+}
+
+/* SMARTPHONES - TALLER SCREENS (LANDSCAPE) */
+@media only screen and (min-width: 843px) and (orientation: landscape) {
+  /* not needed */
+}
+
+/* IPAD MINI (PORTRAIT) */
+@media only screen and (min-width: 767px) and (orientation: portrait) {
+  .cursor {
+    display: none;
+  }
+}
+
+/* IPAD MINI (LANDSCAPE) */
+@media only screen and (min-width: 1023px) and (orientation: landscape) {
+  /* not needed */
+}
+
+/* IPAD AIR (PORTRAIT) */
+@media only screen and (min-width: 769px) and (orientation: portrait) {
+  /* not needed */
+}
+
+/* IPAD AIR (LANDSCAPE) */
+@media only screen and (min-width: 1179px) and (orientation: landscape) {
+}
+
+/* IPAD PRO (PORTRAIT) */
+@media only screen and (min-width: 1023px) and (orientation: portrait) {
+  /* not needed */
+}
+
+/* IPAD PRO and MACBOOK PRO 14" (LANDSCAPE) */
+@media only screen and (min-width: 1365px) and (orientation: landscape) {
+  .cursor {
+    display: block;
+  }
+}
+
+/* MONITORS (LANDSCAPE) */
+@media only screen and (min-width: 1520px) and (orientation: landscape) {
+  /* not needed */
 }
