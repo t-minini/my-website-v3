@@ -1,44 +1,44 @@
 .hero {
-  min-height: 100dvh;
-  min-width: 100vw;
-  background-color: var(--black);
-  position: relative;
   z-index: -1;
+  min-width: 100vw;
+  min-height: 100dvh;
+  position: relative;
+  background-color: var(--black);
 }
 
 .hero__text {
-  min-height: 100dvh;
-  min-width: 100vw;
   display: flex;
-  flex-direction: column;
+  min-width: 100vw;
+  min-height: 100dvh;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
 }
 
 .hero__text h1 {
-  width: 100%;
-  color: var(--orange);
-  font-family: 'Dr Sugiyama', cursive;
-  font-weight: var(--regular-400);
   z-index: 2;
+  width: 100%;
   text-align: center;
+  color: var(--orange);
+  font-weight: var(--regular-400);
+  font-family: 'Dr Sugiyama', cursive;
 }
 
 .hero__text p {
+  z-index: 4;
   width: 100%;
   text-align: center;
   color: var(--gray-lighter);
   font-weight: var(--thin-100);
-  z-index: 4;
 }
 
 .img__container {
-  position: absolute;
-  min-width: 100vw;
   height: 100%;
   display: flex;
-  justify-content: center;
+  min-width: 100vw;
+  position: absolute;
   align-items: center;
+  justify-content: center;
 }
 
 .img__back {
@@ -52,9 +52,9 @@
 /* SMARTPHONES - SHORTER SCREENS (PORTRAIT) */
 @media only screen and (max-width: 480px) and (orientation: portrait) {
   .hero__text h1 {
+    padding-left: 2%;
     font-size: 8.5rem;
     line-height: 5.3rem;
-    padding-left: 2%;
   }
 
   .hero__text p {
@@ -78,7 +78,7 @@
   }
 
   .hero__text p {
-    font-size: 2.3rem;
+    font-size: 2.2rem;
   }
 
   .img__back {
@@ -93,8 +93,7 @@
 /* SMARTPHONES - TALLER SCREENS (PORTRAIT) */
 @media only screen and (min-width: 390px) and (orientation: portrait) {
   .hero__text h1 {
-    font-size: 7.5rem;
-    /* background-color: aquamarine; */
+    font-size: 9rem;
     line-height: 6rem;
   }
 
@@ -105,14 +104,13 @@
 
 /* SMARTPHONES - TALLER SCREENS (LANDSCAPE) */
 @media only screen and (min-width: 843px) and (orientation: landscape) {
-
+  /* not needed */
 }
 
 /* IPAD MINI (PORTRAIT) */
 @media only screen and (min-width: 767px) and (orientation: portrait) {
   .hero__text h1 {
-    /* background-color: yellowgreen; */
-    font-size: 13rem;
+    font-size: 16.5rem;
     line-height: 11rem;
   }
 
@@ -132,21 +130,20 @@
 /* IPAD MINI (LANDSCAPE) */
 @media only screen and (min-width: 1023px) and (orientation: landscape) {
   .hero__text h1 {
-    /* background-color: brown; */
-    font-size: 18rem;
+    font-size: 20rem;
     line-height: 16rem;
   }
 
   .hero__text p {
-    font-size: 3.8rem;
+    font-size: 3.4rem;
   }
 }
 
 /* IPAD AIR (PORTRAIT) */
 @media only screen and (min-width: 769px) and (orientation: portrait) {
   .hero__text h1 {
-    /* background-color: yellow; */
-    font-size: 15rem;
+    font-size: 18rem;
+    padding-left: 2%;
     line-height: 12rem;
   }
 
@@ -166,26 +163,24 @@
 /* IPAD AIR (LANDSCAPE) */
 @media only screen and (min-width: 1179px) and (orientation: landscape) {
   .hero__text h1 {
-    /* background-color: blueviolet; */
-    font-size: 21rem;
+    font-size: 24rem;
     line-height: 19rem;
   }
 
   .hero__text p {
-    font-size: 4rem;
+    font-size: 3.8rem;
   }
 }
 
 /* IPAD PRO (PORTRAIT) */
 @media only screen and (min-width: 1023px) and (orientation: portrait) {
   .hero__text h1 {
-    /* background-color: cadetblue; */
-    font-size: 19rem;
+    font-size: 22rem;
     line-height: 16rem;
   }
 
   .hero__text p {
-    font-size: 4rem;
+    font-size: 3.8rem;
   }
 
   .img__back {
@@ -200,20 +195,18 @@
 /* IPAD PRO and MACBOOK PRO 14" (LANDSCAPE) */
 @media only screen and (min-width: 1365px) and (orientation: landscape) {
   .hero__text h1 {
-    /* background-color: darkolivegreen; */
-    font-size: 24rem;
+    font-size: 28rem;
     line-height: 19rem;
   }
 
   .hero__text p {
-    font-size: 4.5rem;
+    font-size: 4.4rem;
   }
 }
 
 /* MONITORS (LANDSCAPE) */
 @media only screen and (min-width: 1520px) and (orientation: landscape) {
   .hero__text h1 {
-    /* background-color: beige; */
     font-size: 32rem;
     line-height: 25rem;
   }
