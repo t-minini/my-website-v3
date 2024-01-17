@@ -1,14 +1,14 @@
 .skills {
-  min-height: 100dvh;
-  background-color: var(--gray-lighter);
   display: flex;
+  min-height: 100dvh;
   align-items: center;
   justify-content: center;
+  background-color: var(--gray-lighter);
 }
 
 .container {
-  max-width: var(--content-width);
   columns: 4;
+  max-width: var(--content-width);
 }
 
 .container ul {
@@ -24,37 +24,37 @@
 }
 
 .skills a {
-  color: var(--gray-darker);
   text-decoration: none;
+  color: var(--gray-darker);
   transition: color 0.5s ease, stroke 0.5s ease, fill 0.5s ease;
 }
 
 .container svg {
-  position: relative;
   margin: 0;
   padding: 0;
-  stroke: var(--gray-dark);
+  position: relative;
   fill: var(--gray-dark);
+  stroke: var(--gray-dark);
   transition: color 0.5s ease, stroke 0.5s ease, fill 0.5s ease;
 }
 
 .container .link:hover a,
 .container .link:hover svg {
+  fill: var(--orange);
   color: var(--orange);
   stroke: var(--orange);
-  fill: var(--orange);
   transition: color 0.5s ease, stroke 0.5s ease, fill 0.5s ease;
 }
 
 /* SMARTPHONES - SHORTER SCREENS (PORTRAIT) */
 @media only screen and (max-width: 480px) and (orientation: portrait) {
   .skills {
-    min-height: fit-content;
     align-items: flex-end;
+    min-height: fit-content;
     justify-content: flex-start;
+    padding-top: var(--padding-l);
     padding-left: var(--padding-s);
     padding-right: var(--padding-s);
-    padding-top: var(--padding-l);
     padding-bottom: var(--padding-s);
   }
   .container {
@@ -89,9 +89,9 @@
 /* SMARTPHONES - SHORTER SCREENS (LANDSCAPE) */
 @media only screen and (min-width: 665px) and (orientation: landscape) {
   .skills {
+    padding-top: var(--padding-l);
     padding-left: var(--padding-s);
     padding-right: var(--padding-s);
-    padding-top: var(--padding-l);
     padding-bottom: var(--padding-s);
   }
 
@@ -141,9 +141,9 @@
 /* IPAD MINI (PORTRAIT) */
 @media only screen and (min-width: 767px) and (orientation: portrait) {
   .skills {
+    padding-top: var(--padding-l);
     padding-left: var(--padding-m);
     padding-right: var(--padding-m);
-    padding-top: var(--padding-l);
     padding-bottom: var(--padding-m);
   }
 
@@ -173,9 +173,9 @@
 /* IPAD MINI (LANDSCAPE) */
 @media only screen and (min-width: 1023px) and (orientation: landscape) {
   .skills {
+    padding-top: var(--padding-l);
     padding-left: var(--padding-m);
     padding-right: var(--padding-m);
-    padding-top: var(--padding-l);
     padding-bottom: var(--padding-m);
   }
 
