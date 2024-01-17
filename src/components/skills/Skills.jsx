@@ -14,8 +14,8 @@ export function Skills() {
       x: 0,
       opacity: 1,
       transition: {
-        duration: 0.5,
         delay: 0.5,
+        duration: 0.5,
         staggerChildren: 1,
       },
     },
@@ -32,8 +32,8 @@ export function Skills() {
       transition: {
         delay: 0.5,
         duration: 1,
-        staggerChildren: 5,
         type: 'spring',
+        staggerChildren: 5,
       },
     },
   };
@@ -42,101 +42,101 @@ export function Skills() {
 
   return (
     <section
+      ref={ref}
       id="skills"
       className={style.skills}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      ref={ref}
     >
       <motion.div
-        className={style.container}
-        variants={titleVariants}
         initial="initial"
         whileInView="animate"
+        variants={titleVariants}
+        className={style.container}
       >
         <ul>
           <li className={style.topLi}>Using Now</li>
           <motion.li
-            variants={itemVariants}
             initial="initial"
             whileInView="animate"
+            variants={itemVariants}
           >
             HTML
           </motion.li>
           <motion.li
-            variants={itemVariants}
             initial="initial"
             whileInView="animate"
+            variants={itemVariants}
           >
             CSS
           </motion.li>
           <motion.li
-            variants={itemVariants}
             initial="initial"
             whileInView="animate"
+            variants={itemVariants}
           >
             JavaScript
           </motion.li>
           <motion.li
-            variants={itemVariants}
             initial="initial"
             whileInView="animate"
+            variants={itemVariants}
           >
             React
           </motion.li>
           <motion.li
-            variants={itemVariants}
             initial="initial"
             whileInView="animate"
+            variants={itemVariants}
           >
             Framer Motion
           </motion.li>
           <motion.li
-            variants={itemVariants}
             initial="initial"
             whileInView="animate"
+            variants={itemVariants}
           >
             Pixel Perfect
           </motion.li>
           <motion.li
-            variants={itemVariants}
             initial="initial"
             whileInView="animate"
+            variants={itemVariants}
           >
             Responsive design
           </motion.li>
           <motion.li
-            variants={itemVariants}
             initial="initial"
             whileInView="animate"
+            variants={itemVariants}
           >
             Flexbox & Grid
           </motion.li>
           <motion.li
-            variants={itemVariants}
             initial="initial"
             whileInView="animate"
+            variants={itemVariants}
           >
             Bootstrap / Material UI
           </motion.li>
           <motion.li
-            variants={itemVariants}
             initial="initial"
             whileInView="animate"
+            variants={itemVariants}
           >
             Figma / Sketch
           </motion.li>
           <motion.li
-            variants={itemVariants}
             initial="initial"
             whileInView="animate"
+            variants={itemVariants}
           >
             Github
           </motion.li>
           <motion.li
-            variants={itemVariants}
             initial="initial"
             whileInView="animate"
+            variants={itemVariants}
           >
             Git
           </motion.li>
@@ -144,86 +144,86 @@ export function Skills() {
         <ul>
           <li className={style.topLi2}>Interests</li>
           <motion.li
-            variants={itemVariants}
             initial="initial"
             whileInView="animate"
+            variants={itemVariants}
           >
             AWS
           </motion.li>
           <motion.li
-            variants={itemVariants}
             initial="initial"
             whileInView="animate"
+            variants={itemVariants}
           >
             C# / Python
           </motion.li>
           <motion.li
-            variants={itemVariants}
             initial="initial"
             whileInView="animate"
+            variants={itemVariants}
           >
             SQL
           </motion.li>
           <motion.li
-            variants={itemVariants}
             initial="initial"
             whileInView="animate"
+            variants={itemVariants}
           >
             SASS
           </motion.li>
           <motion.li
-            variants={itemVariants}
             initial="initial"
             whileInView="animate"
+            variants={itemVariants}
           >
             TypeScript
           </motion.li>
           <motion.li
-            variants={itemVariants}
             initial="initial"
             whileInView="animate"
+            variants={itemVariants}
           >
             React Native
           </motion.li>
           <motion.li
-            variants={itemVariants}
             initial="initial"
             whileInView="animate"
+            variants={itemVariants}
           >
             Redux
           </motion.li>
           <motion.li
-            variants={itemVariants}
             initial="initial"
             whileInView="animate"
+            variants={itemVariants}
           >
             Docker
           </motion.li>
           <motion.li
-            variants={itemVariants}
             initial="initial"
             whileInView="animate"
+            variants={itemVariants}
           >
             Vue / Angular
           </motion.li>
           <motion.li
-            variants={itemVariants}
             initial="initial"
             whileInView="animate"
+            variants={itemVariants}
           >
             Swift
           </motion.li>
           <motion.li
-            variants={itemVariants}
             initial="initial"
             whileInView="animate"
+            variants={itemVariants}
           >
             Jest
           </motion.li>
           <motion.li
-            variants={itemVariants}
             initial="initial"
             whileInView="animate"
+            variants={itemVariants}
           >
             Firebase
           </motion.li>
@@ -231,49 +231,49 @@ export function Skills() {
         <ul>
           <li>Other Skills</li>
           <motion.li
-            variants={itemVariants}
             initial="initial"
             whileInView="animate"
+            variants={itemVariants}
           >
             Node.js
           </motion.li>
           <motion.li
-            variants={itemVariants}
             initial="initial"
             whileInView="animate"
+            variants={itemVariants}
           >
             Restful API
           </motion.li>
           <motion.li
-            variants={itemVariants}
             initial="initial"
             whileInView="animate"
+            variants={itemVariants}
           >
             Node.js
           </motion.li>
           <motion.li
-            variants={itemVariants}
             initial="initial"
             whileInView="animate"
+            variants={itemVariants}
           >
             MongoDB
           </motion.li>
           <motion.li
-            variants={itemVariants}
             initial="initial"
             whileInView="animate"
+            variants={itemVariants}
           >
             Portuguese (Native)
           </motion.li>
           <motion.li
-            variants={itemVariants}
             initial="initial"
             whileInView="animate"
             className={style.link}
+            variants={itemVariants}
           >
             <a
-              href="https://efset.org/cert/Eb2p3J"
               target="blank_"
+              href="https://efset.org/cert/Eb2p3J"
               className={`hoverable ${isHovered ? style.hovered : ''}`}
             >
               English C2 Proficient
@@ -286,15 +286,15 @@ export function Skills() {
         <ul>
           <li>Courses</li>
           <motion.li
-            variants={itemVariants}
             initial="initial"
             whileInView="animate"
             className={style.link}
+            variants={itemVariants}
           >
             <a
-              href="https://coursera.org/share/5c8cb91e75313572a018a9f5e5183fda"
               target="blank_"
               className={`hoverable ${isHovered ? style.hovered : ''}`}
+              href="https://coursera.org/share/5c8cb91e75313572a018a9f5e5183fda"
             >
               AWS Cloud Practitioner Essentials
               <svg viewBox="0 0 34 32" width="27" height="19">
@@ -303,14 +303,14 @@ export function Skills() {
             </a>
           </motion.li>
           <motion.li
-            variants={itemVariants}
             initial="initial"
             whileInView="animate"
             className={style.link}
+            variants={itemVariants}
           >
             <a
-              href="https://efset.org/cert/Eb2p3J"
               target="blank_"
+              href="https://efset.org/cert/Eb2p3J"
               className={`hoverable ${isHovered ? style.hovered : ''}`}
             >
               Full-stack JavaScript Development
@@ -320,15 +320,15 @@ export function Skills() {
             </a>
           </motion.li>
           <motion.li
-            variants={itemVariants}
             initial="initial"
             whileInView="animate"
             className={style.link}
+            variants={itemVariants}
           >
             <a
-              href="https://www.udemy.com/certificate/UC-86814eae-d518-4c57-93ff-c64288d47b97/"
               target="blank_"
               className={`hoverable ${isHovered ? style.hovered : ''}`}
+              href="https://www.udemy.com/certificate/UC-86814eae-d518-4c57-93ff-c64288d47b97/"
             >
               Figma UI/UX Essentials
               <svg viewBox="0 0 34 32" width="27" height="19">
@@ -337,15 +337,15 @@ export function Skills() {
             </a>
           </motion.li>
           <motion.li
-            variants={itemVariants}
             initial="initial"
             whileInView="animate"
             className={style.link}
+            variants={itemVariants}
           >
             <a
-              href="https://www.freecodecamp.org/certification/t-minini/responsive-web-design"
               target="blank_"
               className={`hoverable ${isHovered ? style.hovered : ''}`}
+              href="https://www.freecodecamp.org/certification/t-minini/responsive-web-design"
             >
               Responsive Web Design
               <svg viewBox="0 0 34 32" width="27" height="19">
@@ -354,15 +354,15 @@ export function Skills() {
             </a>
           </motion.li>
           <motion.li
-            variants={itemVariants}
             initial="initial"
             whileInView="animate"
             className={style.link}
+            variants={itemVariants}
           >
             <a
-              href="https://www.linkedin.com/learning/certificates/567d1edbfb7acba640d7b71b4b726d36999ee080348525520cf921f9ab934347"
               target="blank_"
               className={`hoverable ${isHovered ? style.hovered : ''}`}
+              href="https://www.linkedin.com/learning/certificates/567d1edbfb7acba640d7b71b4b726d36999ee080348525520cf921f9ab934347"
             >
               Scrum:&nbsp;Advanced
               <svg viewBox="0 0 34 32" width="27" height="19">
@@ -371,15 +371,15 @@ export function Skills() {
             </a>
           </motion.li>
           <motion.li
-            variants={itemVariants}
             initial="initial"
             whileInView="animate"
             className={style.link}
+            variants={itemVariants}
           >
             <a
-              href="https://www.linkedin.com/learning/certificates/129dc8ada303f031204e1e858baff07d42873992df4e54bbcf8da9ca27cfd128"
               target="blank_"
               className={`hoverable ${isHovered ? style.hovered : ''}`}
+              href="https://www.linkedin.com/learning/certificates/129dc8ada303f031204e1e858baff07d42873992df4e54bbcf8da9ca27cfd128"
             >
               Scrum:&nbsp;The Basics
               <svg viewBox="0 0 34 32" width="27" height="19">

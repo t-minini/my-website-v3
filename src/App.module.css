@@ -1,64 +1,57 @@
 :root {
-  --gray-lighter: #eff1ed; /* used */
-  --gray-light: #dce0d9;
-  --gray-medium: #d2d2c8;
   --gray-dark: #b6b7b2;
-  --gray-dark-transparent: rgba(182, 183, 179, 0.25);
+  --gray-light: #dce0d9;
   --gray-darker: #9b9b9b;
+  --gray-medium: #d2d2c8;
+  --gray-lighter: #eff1ed;
   --gray-darker-inactive: rgba(182, 183, 179, 0.4);
-
-  --black: #232f3e;
-  --orange: #ff9900;
-  --peach-fuzz: rgb(255, 190, 152);
+  --gray-dark-transparent: rgba(182, 183, 179, 0.25);
 
   --black: #252525;
   --orange: #ffb270;
 
   --thin-100: 100;
-  --light-300: 300; /* used */
-  --regular-400: 400;
+  --light-300: 300;
   --medium-500: 500;
+  --regular-400: 400;
   --semiBold-600: 600;
 
   --inter: 'Inter', sans-serif;
   --sugiyama: 'Dr Sugiyama', cursive;
 
-  --content-width: 1024px;
   --padding-s: 2rem;
   --padding-m: 3rem;
   --padding-l: 6rem;
+  --content-width: 1024px;
 }
 
 html {
   height: 100vh;
   width: 100vw;
   cursor: default;
+  overflow-y: scroll;
   color: var(--black);
   scroll-behavior: smooth;
-  overflow-y: scroll;
-  /* scroll-snap-type: y mandatory;  */
+  scroll-snap-type: y mandatory; /* Standard property */
+  background-color: var(--black);
   -ms-scroll-snap-type: y mandatory; /* IE 10 and 11 */
   -webkit-scroll-snap-type: y mandatory; /* Safari, Chrome, and newer versions of Opera */
-  scroll-snap-type: y mandatory; /* Standard property */
-  /* background-color: red; */
 }
 
 section,
 footer {
+  scroll-snap-align: center; /* Standard property */
   -ms-scroll-snap-align: unset; /* IE 10 and 11 */
   -webkit-scroll-snap-align: unset; /* Safari, Chrome, and newer versions of Opera */
-  scroll-snap-align: center; /* Standard property */
-  /* -ms-scroll-chaining: none; */
 }
 
 /* SMARTPHONES - SHORTER SCREENS (PORTRAIT) */
 @media only screen and (max-width: 480px) and (orientation: portrait) {
   section,
   footer {
+    scroll-snap-align: unset; /* Standard property */
     -ms-scroll-snap-align: unset; /* IE 10 and 11 */
     -webkit-scroll-snap-align: unset; /* Safari, Chrome, and newer versions of Opera */
-    scroll-snap-align: unset; /* Standard property */
-    /* -ms-scroll-chaining: none; */
   }
 }
 
@@ -66,9 +59,9 @@ footer {
 @media only screen and (min-width: 665px) and (orientation: landscape) {
   section,
   footer {
+    scroll-snap-align: unset; /* Standard property */
     -ms-scroll-snap-align: unset; /* IE 10 and 11 */
     -webkit-scroll-snap-align: unset; /* Safari, Chrome, and newer versions of Opera */
-    scroll-snap-align: unset; /* Standard property */
     /* -ms-scroll-chaining: none; */
   }
 }
@@ -77,9 +70,9 @@ footer {
 @media only screen and (min-width: 767px) and (orientation: portrait) {
   section,
   footer {
+    scroll-snap-align: unset; /* Standard property */
     -ms-scroll-snap-align: unset; /* IE 10 and 11 */
     -webkit-scroll-snap-align: unset; /* Safari, Chrome, and newer versions of Opera */
-    scroll-snap-align: unset; /* Standard property */
     /* -ms-scroll-chaining: none; */
   }
 }
@@ -88,10 +81,9 @@ footer {
 @media only screen and (min-width: 1023px) and (orientation: landscape) {
   section,
   footer {
+    scroll-snap-align: unset; /* Standard property */
     -ms-scroll-snap-align: unset; /* IE 10 and 11 */
     -webkit-scroll-snap-align: unset; /* Safari, Chrome, and newer versions of Opera */
-    scroll-snap-align: unset; /* Standard property */
-    /* -ms-scroll-chaining: none; */
   }
 }
 
@@ -99,31 +91,22 @@ footer {
 @media only screen and (min-width: 1179px) and (orientation: landscape) {
   section,
   footer {
+    scroll-snap-align: center; /* Standard property */
     -ms-scroll-snap-align: unset; /* IE 10 and 11 */
     -webkit-scroll-snap-align: unset; /* Safari, Chrome, and newer versions of Opera */
-    scroll-snap-align: center; /* Standard property */
-    /* -ms-scroll-chaining: none; */
   }
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-size: 62.5%; /* base font size to 10px, to facilitate using REM unit */
+  box-sizing: border-box;
   font-family: var(--inter);
 }
 
 ::-webkit-scrollbar {
   display: none;
 }
-
-/* iPhone 11 Pro Max / XR 414 x 896  */
-/* @media only screen and (max-width: 414px) {
-  html {
-    scroll-snap-type: unset;
-    scroll-snap-align: unset;
-  }
-} */

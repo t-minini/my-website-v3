@@ -48,24 +48,24 @@ export function Cursor() {
       });
     };
 
-    document.body.addEventListener('mousemove', updateCursorPosition);
     document.body.addEventListener('mouseleave', handleMouseLeave);
     document.body.addEventListener('mouseenter', handleMouseEnter);
+    document.body.addEventListener('mousemove', updateCursorPosition);
 
     hoverables.forEach((element) => {
-      element.addEventListener('mouseenter', handleHover(4));
+      element.addEventListener('mouseenter', handleHover(2.5));
       element.addEventListener('mouseleave', handleHover(1));
 
       return () => {
-        element.removeEventListener('mouseenter', handleHover(4));
+        element.removeEventListener('mouseenter', handleHover(2.5));
         element.removeEventListener('mouseleave', handleHover(1));
       };
     });
 
     return () => {
-      document.body.removeEventListener('mousemove', updateCursorPosition);
       document.body.removeEventListener('mouseleave', handleMouseLeave);
       document.body.removeEventListener('mouseenter', handleMouseEnter);
+      document.body.removeEventListener('mousemove', updateCursorPosition);
     };
   }, [controls, handleHover, updateCursorPosition]);
 

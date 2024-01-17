@@ -1,16 +1,81 @@
 .vertical {
-  position: fixed;
-  bottom: 50%;
-  right: -7rem;
-  display: flex;
   gap: 2rem;
+  z-index: 1;
+  bottom: 50%;
+  right: -8rem;
+  display: flex;
+  position: fixed;
   transform: rotate(-90deg);
 }
 
 .vertical h3 {
-  font-size: 1.8rem;
-  font-weight: var(--light-300);
+  font-size: 1.6rem;
   color: var(--black);
-  letter-spacing: 0.3rem;
-  z-index: 1;
+  letter-spacing: 0.4rem;
+  font-weight: var(--light-300);
+}
+
+.vertical img {
+  margin-left: -1rem;
+}
+
+/* SMARTPHONES - SHORTER SCREENS (PORTRAIT) */
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+  .vertical {
+    display: none;
+  }
+}
+
+/* SMARTPHONES - SHORTER SCREENS (LANDSCAPE) */
+@media only screen and (min-width: 665px) and (orientation: landscape) {
+  .vertical {
+    display: none;
+  }
+}
+
+/* SMARTPHONES - TALLER SCREENS (PORTRAIT) */
+@media only screen and (min-width: 390px) and (orientation: portrait) {
+}
+
+/* SMARTPHONES - TALLER SCREENS (LANDSCAPE) */
+@media only screen and (min-width: 843px) and (orientation: landscape) {
+  /* not needed */
+}
+
+/* IPAD MINI (PORTRAIT) */
+@media only screen and (min-width: 767px) and (orientation: portrait) {
+  .vertical {
+    display: none;
+  }
+}
+
+/* IPAD MINI (LANDSCAPE) */
+@media only screen and (min-width: 1023px) and (orientation: landscape) {
+  /* not needed */
+}
+
+/* IPAD AIR (PORTRAIT) */
+@media only screen and (min-width: 769px) and (orientation: portrait) {
+  /* not needed */
+}
+
+/* IPAD AIR (LANDSCAPE) */
+@media only screen and (min-width: 1179px) and (orientation: landscape) {
+}
+
+/* IPAD PRO (PORTRAIT) */
+@media only screen and (min-width: 1023px) and (orientation: portrait) {
+  /* not needed */
+}
+
+/* IPAD PRO and MACBOOK PRO 14" (LANDSCAPE) */
+@media only screen and (min-width: 1365px) and (orientation: landscape) {
+  .vertical {
+    display: flex;
+  }
+}
+
+/* MONITORS (LANDSCAPE) */
+@media only screen and (min-width: 1520px) and (orientation: landscape) {
+  /* not needed */
 }
