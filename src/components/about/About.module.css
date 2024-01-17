@@ -27,8 +27,10 @@
 /* SMARTPHONES - SHORTER SCREENS (PORTRAIT) */
 @media only screen and (max-width: 480px) and (orientation: portrait) {
   .about {
+    padding-top: var(--padding-l);
     padding-left: var(--padding-s);
     padding-right: var(--padding-s);
+    padding-bottom: var(--padding-s);
   }
 
   .about span.word {
@@ -41,8 +43,10 @@
 /* SMARTPHONES - SHORTER SCREENS (LANDSCAPE) */
 @media only screen and (min-width: 665px) and (orientation: landscape) {
   .about {
+    padding-top: var(--padding-l);
     padding-left: var(--padding-s);
     padding-right: var(--padding-s);
+    padding-bottom: var(--padding-s);
   }
 
   .about span.word {
@@ -55,8 +59,10 @@
 /* SMARTPHONES - TALLER SCREENS (PORTRAIT) */
 @media only screen and (min-width: 390px) and (orientation: portrait) {
   .about {
+    padding-top: var(--padding-l);
     padding-left: var(--padding-s);
     padding-right: var(--padding-s);
+    padding-bottom: var(--padding-s);
   }
 
   .about span.word {
@@ -78,8 +84,10 @@
 /* IPAD MINI (PORTRAIT) */
 @media only screen and (min-width: 767px) and (orientation: portrait) {
   .about {
+    padding-top: var(--padding-l);
     padding-left: var(--padding-m);
     padding-right: var(--padding-m);
+    padding-bottom: var(--padding-m);
   }
 
   .about span.word {

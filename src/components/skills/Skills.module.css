@@ -76,6 +76,9 @@
     font-size: 1.6rem;
     padding-top: 1.2rem;
   }
+  .topLi {
+    padding-top: 0rem !important;
+  }
 
   .skills a {
     font-size: 1.6rem;
@@ -119,6 +122,14 @@
     padding-top: 1rem;
   }
 
+  .topLi {
+    padding-top: 0rem !important;
+  }
+
+  .topLi2 {
+    padding-top: 0rem !important;
+  }
+
   .skills a {
     font-size: 1.6rem;
   }
@@ -135,7 +146,7 @@
 
 /* SMARTPHONES - TALLER SCREENS (LANDSCAPE) */
 @media only screen and (min-width: 843px) and (orientation: landscape) {
- /* not needed */
+  /* not needed */
 }
 
 /* IPAD MINI (PORTRAIT) */
@@ -198,12 +209,12 @@
 
 /* IPAD AIR (PORTRAIT) */
 @media only screen and (min-width: 769px) and (orientation: portrait) {
- /* not needed */
+  /* not needed */
 }
 
 /* IPAD AIR (LANDSCAPE) */
 @media only screen and (min-width: 1179px) and (orientation: landscape) {
-/* not needed */
+  /* not needed */
 }
 
 /* IPAD PRO (PORTRAIT) */
@@ -218,5 +229,5 @@
 
 /* MONITORS (LANDSCAPE) */
 @media only screen and (min-width: 1520px) and (orientation: landscape) {
-/* not needed */
+  /* not needed */
 }

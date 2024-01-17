@@ -27,27 +27,27 @@ export function Navbar() {
 
   const navVariants = {
     initial: {
-      y: '-100vh',
       opacity: 0,
+      y: '-100vh',
     },
     animate: {
       y: 0,
       opacity: 1,
       transition: {
-        type: 'spring',
         stiffness: 40,
+        type: 'spring',
       },
     },
   };
 
   return (
     <motion.nav
-      variants={navVariants}
       initial="initial"
-      animate={showNav ? 'animate' : 'initial'}
+      variants={navVariants}
       className={style.navbar}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
+      animate={showNav ? 'animate' : 'initial'}
     >
       <ul>
         <Link
@@ -55,31 +55,34 @@ export function Navbar() {
           spy={true}
           smooth={true}
           activeClass={style.navbar__active}
-          className={`hoverable ${isHovered ? style.hovered : ''}`}
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
+          className={`hoverable ${isHovered ? style.hovered : ''}`}
         >
           <li>About,&nbsp;</li>
         </Link>
         <Link
-          to="skills"
           spy={true}
+          to="skills"
+          smooth={true}
           activeClass={style.navbar__active}
           className={`hoverable ${isHovered ? style.hovered : ''}`}
         >
           <li>Skills,&nbsp;</li>
         </Link>
         <Link
-          to="projects"
           spy={true}
+          to="projects"
+          smooth={true}
           activeClass={style.navbar__active}
           className={`hoverable ${isHovered ? style.hovered : ''}`}
         >
           <li>Projects,&nbsp;</li>
         </Link>
         <Link
-          to="contact"
           spy={true}
+          to="contact"
+          smooth={true}
           activeClass={style.navbar__active}
           className={`hoverable ${isHovered ? style.hovered : ''}`}
         >

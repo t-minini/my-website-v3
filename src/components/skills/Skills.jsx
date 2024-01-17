@@ -55,7 +55,7 @@ export function Skills() {
         whileInView="animate"
       >
         <ul>
-          <li>Using Now</li>
+          <li className={style.topLi}>Using Now</li>
           <motion.li
             variants={itemVariants}
             initial="initial"
@@ -142,7 +142,7 @@ export function Skills() {
           </motion.li>
         </ul>
         <ul>
-          <li>Interests</li>
+          <li className={style.topLi2}>Interests</li>
           <motion.li
             variants={itemVariants}
             initial="initial"
