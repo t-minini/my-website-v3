@@ -23,9 +23,9 @@
 }
 
 .navbar li {
-  opacity: unset;
+  /* opacity: unset; */
   cursor: pointer;
-  font-size: 1.8rem;
+  font-size: 2rem;
   transition: color 1.5s ease;
 }
 
