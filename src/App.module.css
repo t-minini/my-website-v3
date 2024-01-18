@@ -4,7 +4,7 @@
   --gray-darker: #9b9b9b;
   --gray-medium: #d2d2c8;
   --gray-lighter: #eff1ed;
-  --gray-darker-inactive: rgba(182, 183, 179, 0.7);
+  --gray-darker-inactive: rgba(182, 183, 179, 0.5);
   /* --gray-dark-transparent: inset 0 0 2000px rgba(255, 255, 255, .5); */
 
   --black: #252525;
