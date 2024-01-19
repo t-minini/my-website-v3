@@ -1,5 +1,13 @@
+footer {
+  z-index: 1;
+  position: fixed;
+  bottom: 0;
+  
+}
+
 .contact {
   height: 100dvh;
+  width: 100vw;
   background-color: var(--black);
 }
 
@@ -26,6 +34,7 @@
   z-index: 1;
   color: var(--gray-lighter);
   font-weight: var(--semiBold-600);
+
 }
 
 .text__container p {
@@ -36,8 +45,8 @@
 }
 
 .contact__links {
-  z-index: 2;
   padding-bottom: 10%;
+  z-index: 1;
 }
 
 .contact__links a {

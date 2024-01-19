@@ -4,6 +4,8 @@
   min-height: 100dvh;
   position: relative;
   background-color: var(--black);
+  position: relative;
+  z-index: 2;
 }
 
 .hero__text {

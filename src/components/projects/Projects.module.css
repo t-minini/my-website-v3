@@ -3,6 +3,8 @@
   flex-wrap: wrap;
   justify-content: center;
   background-color: var(--gray-lighter);
+  position: relative;
+  z-index: 2;
 }
 
 .container {

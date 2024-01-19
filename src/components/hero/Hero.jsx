@@ -9,7 +9,7 @@ export function Hero() {
 
   const { scrollYProgress } = useScroll({
     target: parallaxRef,
-    offset: ['start start', 'end start'],
+    offset: ['end end', 'end start'],
   });
 
   const textY = useTransform(scrollYProgress, [0, 1], ['0%', '100%']);
