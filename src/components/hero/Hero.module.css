@@ -4,6 +4,9 @@
   min-height: 100dvh;
   position: relative;
   background-color: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero__text {
@@ -33,19 +36,21 @@
 }
 
 .img__container {
-  height: 100%;
+  /* height: 100%; */
   display: flex;
-  min-width: 100vw;
+  /* min-width: 100vw; */
   position: absolute;
   align-items: center;
   justify-content: center;
 }
 
 .img__back {
+  width: 60%;
   z-index: 1;
 }
 
 .img__front {
+  width: 60%;
   z-index: 3;
 }
 
@@ -62,31 +67,31 @@
   }
 
   .img__back {
-    width: 63%;
+    width: 60%;
   }
 
   .img__front {
-    width: 63%;
+    width: 60%;
   }
 }
 
 /* SMARTPHONES - SHORTER SCREENS (LANDSCAPE) */
 @media only screen and (min-width: 665px) and (orientation: landscape) {
   .hero__text h1 {
-    font-size: 14rem;
-    line-height: 9rem;
+    font-size: 11rem;
+    line-height: 8rem;
   }
 
   .hero__text p {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   .img__back {
-    height: 100%;
+    width: 30%;
   }
 
   .img__front {
-    height: 100%;
+    width: 30%;
   }
 }
 
@@ -99,6 +104,14 @@
 
   .hero__text p {
     font-size: 1.6rem;
+  }
+
+  .img__back {
+    width: 55%;
+  }
+
+  .img__front {
+    width: 55%;
   }
 }
 
@@ -119,11 +132,11 @@
   }
 
   .img__back {
-    width: 65%;
+    width: 60%;
   }
 
   .img__front {
-    width: 65%;
+    width: 60%;
   }
 }
 
@@ -136,6 +149,14 @@
 
   .hero__text p {
     font-size: 3.4rem;
+  }
+
+  .img__back {
+    width: 50%;
+  }
+
+  .img__front {
+    width: 50%;
   }
 }
 
@@ -163,12 +184,12 @@
 /* IPAD AIR (LANDSCAPE) */
 @media only screen and (min-width: 1179px) and (orientation: landscape) {
   .hero__text h1 {
-    font-size: 24rem;
-    line-height: 19rem;
+    font-size: 22rem;
+    line-height: 14rem;
   }
 
   .hero__text p {
-    font-size: 3.8rem;
+    font-size: 3.6rem;
   }
 }
 
@@ -192,7 +213,7 @@
   }
 }
 
-/* IPAD PRO and MACBOOK PRO 14" (LANDSCAPE) */
+/* MACBOOK PRO 14" and IPAD PRO  (LANDSCAPE) */
 @media only screen and (min-width: 1365px) and (orientation: landscape) {
   .hero__text h1 {
     font-size: 28rem;
@@ -202,16 +223,24 @@
   .hero__text p {
     font-size: 4.4rem;
   }
+
+  .img__back {
+    width: 60%;
+  }
+
+  .img__front {
+    width: 60%;
+  }
 }
 
 /* MONITORS (LANDSCAPE) */
 @media only screen and (min-width: 1520px) and (orientation: landscape) {
-  .hero__text h1 {
-    font-size: 32rem;
-    line-height: 21rem;
+  /* .hero__text h1 {
+    font-size: 28rem;
+    line-height: 19rem;
   }
 
   .hero__text p {
-    font-size: 5.2rem;
-  }
+    font-size: 4.4rem;
+  } */
 }
