@@ -1,18 +1,15 @@
 :root {
   --gray-dark: #b6b7b2;
-  --gray-light: #dce0d9;
   --gray-darker: #9b9b9b;
-  --gray-medium: #d2d2c8;
   --gray-lighter: #eff1ed;
   --gray-darker-inactive: rgba(182, 183, 179, 0.5);
-  /* --gray-dark-transparent: inset 0 0 2000px rgba(255, 255, 255, .5); */
+  --gray-navbar-background: rgb(228 228 228 / 45%);
 
   --black: #252525;
   --orange: #ffb270;
 
   --thin-100: 100;
   --light-300: 300;
-  --medium-500: 500;
   --regular-400: 400;
   --semiBold-600: 600;
 
@@ -26,8 +23,8 @@
 }
 
 html {
-  height: 100vh;
   width: 100vw;
+  height: 100vh;
   cursor: default;
   overflow-y: scroll;
   color: var(--black);

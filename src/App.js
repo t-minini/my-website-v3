@@ -7,7 +7,7 @@ import { Cursor } from './components/cursor/Cursor';
 import { Contact } from './components/contact/Contact';
 import { Projects } from './components/projects/Projects';
 import { Vertical } from './components/vertical/Vertical';
-import { HelperContact } from './components/helper-contact/Helper';
+import { HelperContact } from './components/helper/Helper';
 
 function App() {
   return (

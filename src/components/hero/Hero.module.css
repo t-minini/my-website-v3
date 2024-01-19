@@ -1,11 +1,9 @@
 .hero {
-  z-index: -1;
+  z-index: 2;
   min-width: 100vw;
   min-height: 100dvh;
   position: relative;
   background-color: var(--black);
-  position: relative;
-  z-index: 2;
 }
 
 .hero__text {
@@ -210,7 +208,7 @@
 @media only screen and (min-width: 1520px) and (orientation: landscape) {
   .hero__text h1 {
     font-size: 32rem;
-    line-height: 25rem;
+    line-height: 21rem;
   }
 
   .hero__text p {
