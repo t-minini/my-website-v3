@@ -52,7 +52,7 @@
     "img": "/images/portfolio-imgs/tulio-minini-website-2023.jpg",
     "project": "My Website 2023",
     "github": "https://github.com/t-minini/my-website-v2",
-    "website": "https://tuliominini.com/",
+    "website": "https://tulio-minini-v2.netlify.app/",
     "description": "The second version of my website/portfolio was created with CSS, HTML, and React. It was also the project where I had my first experience using Figma for design practice."
   },
   {
