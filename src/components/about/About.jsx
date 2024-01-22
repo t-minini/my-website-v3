@@ -38,6 +38,7 @@ export function About() {
             custom={index}
             initial="initial"
             whileInView="animate"
+            viewport={{ once: true }}
             className={style.word}
             whileHover={aboutHover}
             variants={aboutVariants}

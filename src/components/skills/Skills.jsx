@@ -51,6 +51,7 @@ export function Skills() {
       <motion.div
         initial="initial"
         whileInView="animate"
+        viewport={{ once: true }}
         variants={titleVariants}
         className={style.container}
       >
@@ -60,6 +61,7 @@ export function Skills() {
             initial="initial"
             whileInView="animate"
             variants={itemVariants}
+            viewport={{ once: true }}
           >
             HTML
           </motion.li>
@@ -67,6 +69,7 @@ export function Skills() {
             initial="initial"
             whileInView="animate"
             variants={itemVariants}
+            viewport={{ once: true }}
           >
             CSS
           </motion.li>
@@ -74,6 +77,7 @@ export function Skills() {
             initial="initial"
             whileInView="animate"
             variants={itemVariants}
+            viewport={{ once: true }}
           >
             JavaScript
           </motion.li>
@@ -81,6 +85,7 @@ export function Skills() {
             initial="initial"
             whileInView="animate"
             variants={itemVariants}
+            viewport={{ once: true }}
           >
             React
           </motion.li>
@@ -88,6 +93,7 @@ export function Skills() {
             initial="initial"
             whileInView="animate"
             variants={itemVariants}
+            viewport={{ once: true }}
           >
             Framer Motion
           </motion.li>
@@ -95,6 +101,7 @@ export function Skills() {
             initial="initial"
             whileInView="animate"
             variants={itemVariants}
+            viewport={{ once: true }}
           >
             Pixel Perfect
           </motion.li>
@@ -102,6 +109,7 @@ export function Skills() {
             initial="initial"
             whileInView="animate"
             variants={itemVariants}
+            viewport={{ once: true }}
           >
             Responsive design
           </motion.li>
@@ -109,6 +117,7 @@ export function Skills() {
             initial="initial"
             whileInView="animate"
             variants={itemVariants}
+            viewport={{ once: true }}
           >
             Flexbox & Grid
           </motion.li>
@@ -116,6 +125,7 @@ export function Skills() {
             initial="initial"
             whileInView="animate"
             variants={itemVariants}
+            viewport={{ once: true }}
           >
             Bootstrap / Material UI
           </motion.li>
@@ -123,6 +133,7 @@ export function Skills() {
             initial="initial"
             whileInView="animate"
             variants={itemVariants}
+            viewport={{ once: true }}
           >
             Figma / Sketch
           </motion.li>
@@ -130,6 +141,7 @@ export function Skills() {
             initial="initial"
             whileInView="animate"
             variants={itemVariants}
+            viewport={{ once: true }}
           >
             Github
           </motion.li>
@@ -137,6 +149,7 @@ export function Skills() {
             initial="initial"
             whileInView="animate"
             variants={itemVariants}
+            viewport={{ once: true }}
           >
             Git
           </motion.li>
@@ -147,6 +160,7 @@ export function Skills() {
             initial="initial"
             whileInView="animate"
             variants={itemVariants}
+            viewport={{ once: true }}
           >
             AWS
           </motion.li>
@@ -154,6 +168,7 @@ export function Skills() {
             initial="initial"
             whileInView="animate"
             variants={itemVariants}
+            viewport={{ once: true }}
           >
             C# / Python
           </motion.li>
@@ -161,6 +176,7 @@ export function Skills() {
             initial="initial"
             whileInView="animate"
             variants={itemVariants}
+            viewport={{ once: true }}
           >
             SQL
           </motion.li>
@@ -168,6 +184,7 @@ export function Skills() {
             initial="initial"
             whileInView="animate"
             variants={itemVariants}
+            viewport={{ once: true }}
           >
             SASS
           </motion.li>
@@ -175,6 +192,7 @@ export function Skills() {
             initial="initial"
             whileInView="animate"
             variants={itemVariants}
+            viewport={{ once: true }}
           >
             TypeScript
           </motion.li>
@@ -182,6 +200,7 @@ export function Skills() {
             initial="initial"
             whileInView="animate"
             variants={itemVariants}
+            viewport={{ once: true }}
           >
             React Native
           </motion.li>
@@ -189,6 +208,7 @@ export function Skills() {
             initial="initial"
             whileInView="animate"
             variants={itemVariants}
+            viewport={{ once: true }}
           >
             Redux
           </motion.li>
@@ -196,6 +216,7 @@ export function Skills() {
             initial="initial"
             whileInView="animate"
             variants={itemVariants}
+            viewport={{ once: true }}
           >
             Docker
           </motion.li>
@@ -203,6 +224,7 @@ export function Skills() {
             initial="initial"
             whileInView="animate"
             variants={itemVariants}
+            viewport={{ once: true }}
           >
             Vue / Angular
           </motion.li>
@@ -210,6 +232,7 @@ export function Skills() {
             initial="initial"
             whileInView="animate"
             variants={itemVariants}
+            viewport={{ once: true }}
           >
             Swift
           </motion.li>
@@ -217,6 +240,7 @@ export function Skills() {
             initial="initial"
             whileInView="animate"
             variants={itemVariants}
+            viewport={{ once: true }}
           >
             Jest
           </motion.li>
@@ -224,6 +248,7 @@ export function Skills() {
             initial="initial"
             whileInView="animate"
             variants={itemVariants}
+            viewport={{ once: true }}
           >
             Firebase
           </motion.li>
@@ -234,6 +259,7 @@ export function Skills() {
             initial="initial"
             whileInView="animate"
             variants={itemVariants}
+            viewport={{ once: true }}
           >
             Node.js
           </motion.li>
@@ -241,6 +267,7 @@ export function Skills() {
             initial="initial"
             whileInView="animate"
             variants={itemVariants}
+            viewport={{ once: true }}
           >
             Restful API
           </motion.li>
@@ -248,6 +275,7 @@ export function Skills() {
             initial="initial"
             whileInView="animate"
             variants={itemVariants}
+            viewport={{ once: true }}
           >
             Node.js
           </motion.li>
@@ -255,6 +283,7 @@ export function Skills() {
             initial="initial"
             whileInView="animate"
             variants={itemVariants}
+            viewport={{ once: true }}
           >
             MongoDB
           </motion.li>
@@ -262,6 +291,7 @@ export function Skills() {
             initial="initial"
             whileInView="animate"
             variants={itemVariants}
+            viewport={{ once: true }}
           >
             Portuguese (Native)
           </motion.li>
@@ -270,6 +300,7 @@ export function Skills() {
             whileInView="animate"
             className={style.link}
             variants={itemVariants}
+            viewport={{ once: true }}
           >
             <a
               target="blank_"
@@ -277,10 +308,7 @@ export function Skills() {
               className={`hoverable ${isHovered ? style.hovered : ''}`}
             >
               English C2 Proficient
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="2 2 20 20"
-              >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="2 2 20 20">
                 <path d="M10 6V8H5V19H16V14H18V20C18 20.5523 17.5523 21 17 21H4C3.44772 21 3 20.5523 3 20V7C3 6.44772 3.44772 6 4 6H10ZM21 3V11H19L18.9999 6.413L11.2071 14.2071L9.79289 12.7929L17.5849 5H13V3H21Z"></path>
               </svg>
             </a>
@@ -293,6 +321,7 @@ export function Skills() {
             whileInView="animate"
             className={style.link}
             variants={itemVariants}
+            viewport={{ once: true }}
           >
             <a
               target="blank_"
@@ -300,10 +329,7 @@ export function Skills() {
               href="https://coursera.org/share/5c8cb91e75313572a018a9f5e5183fda"
             >
               AWS Cloud Practitioner Essentials
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="2 2 20 20"
-              >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="2 2 20 20">
                 <path d="M10 6V8H5V19H16V14H18V20C18 20.5523 17.5523 21 17 21H4C3.44772 21 3 20.5523 3 20V7C3 6.44772 3.44772 6 4 6H10ZM21 3V11H19L18.9999 6.413L11.2071 14.2071L9.79289 12.7929L17.5849 5H13V3H21Z"></path>
               </svg>
             </a>
@@ -313,6 +339,7 @@ export function Skills() {
             whileInView="animate"
             className={style.link}
             variants={itemVariants}
+            viewport={{ once: true }}
           >
             <a
               target="blank_"
@@ -320,10 +347,7 @@ export function Skills() {
               className={`hoverable ${isHovered ? style.hovered : ''}`}
             >
               Full-stack JavaScript Development
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="2 2 20 20"
-              >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="2 2 20 20">
                 <path d="M10 6V8H5V19H16V14H18V20C18 20.5523 17.5523 21 17 21H4C3.44772 21 3 20.5523 3 20V7C3 6.44772 3.44772 6 4 6H10ZM21 3V11H19L18.9999 6.413L11.2071 14.2071L9.79289 12.7929L17.5849 5H13V3H21Z"></path>
               </svg>
             </a>
@@ -333,6 +357,7 @@ export function Skills() {
             whileInView="animate"
             className={style.link}
             variants={itemVariants}
+            viewport={{ once: true }}
           >
             <a
               target="blank_"
@@ -340,10 +365,7 @@ export function Skills() {
               href="https://www.udemy.com/certificate/UC-86814eae-d518-4c57-93ff-c64288d47b97/"
             >
               Figma UI/UX Essentials
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="2 2 20 20"
-              >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="2 2 20 20">
                 <path d="M10 6V8H5V19H16V14H18V20C18 20.5523 17.5523 21 17 21H4C3.44772 21 3 20.5523 3 20V7C3 6.44772 3.44772 6 4 6H10ZM21 3V11H19L18.9999 6.413L11.2071 14.2071L9.79289 12.7929L17.5849 5H13V3H21Z"></path>
               </svg>
             </a>
@@ -353,6 +375,7 @@ export function Skills() {
             whileInView="animate"
             className={style.link}
             variants={itemVariants}
+            viewport={{ once: true }}
           >
             <a
               target="blank_"
@@ -360,10 +383,7 @@ export function Skills() {
               href="https://www.freecodecamp.org/certification/t-minini/responsive-web-design"
             >
               Responsive Web Design
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="2 2 20 20"
-              >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="2 2 20 20">
                 <path d="M10 6V8H5V19H16V14H18V20C18 20.5523 17.5523 21 17 21H4C3.44772 21 3 20.5523 3 20V7C3 6.44772 3.44772 6 4 6H10ZM21 3V11H19L18.9999 6.413L11.2071 14.2071L9.79289 12.7929L17.5849 5H13V3H21Z"></path>
               </svg>
             </a>
@@ -373,6 +393,7 @@ export function Skills() {
             whileInView="animate"
             className={style.link}
             variants={itemVariants}
+            viewport={{ once: true }}
           >
             <a
               target="blank_"
@@ -380,10 +401,7 @@ export function Skills() {
               href="https://www.linkedin.com/learning/certificates/567d1edbfb7acba640d7b71b4b726d36999ee080348525520cf921f9ab934347"
             >
               Scrum:&nbsp;Advanced
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="2 2 20 20"
-              >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="2 2 20 20">
                 <path d="M10 6V8H5V19H16V14H18V20C18 20.5523 17.5523 21 17 21H4C3.44772 21 3 20.5523 3 20V7C3 6.44772 3.44772 6 4 6H10ZM21 3V11H19L18.9999 6.413L11.2071 14.2071L9.79289 12.7929L17.5849 5H13V3H21Z"></path>
               </svg>
             </a>
@@ -393,6 +411,7 @@ export function Skills() {
             whileInView="animate"
             className={style.link}
             variants={itemVariants}
+            viewport={{ once: true }}
           >
             <a
               target="blank_"
@@ -400,10 +419,7 @@ export function Skills() {
               href="https://www.linkedin.com/learning/certificates/129dc8ada303f031204e1e858baff07d42873992df4e54bbcf8da9ca27cfd128"
             >
               Scrum:&nbsp;The Basics
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="2 2 20 20"
-              >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="2 2 20 20">
                 <path d="M10 6V8H5V19H16V14H18V20C18 20.5523 17.5523 21 17 21H4C3.44772 21 3 20.5523 3 20V7C3 6.44772 3.44772 6 4 6H10ZM21 3V11H19L18.9999 6.413L11.2071 14.2071L9.79289 12.7929L17.5849 5H13V3H21Z"></path>
               </svg>
             </a>
