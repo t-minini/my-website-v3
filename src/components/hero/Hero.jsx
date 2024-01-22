@@ -83,7 +83,7 @@ export function Hero() {
         <motion.img
           src={imgBack}
           loading="lazy"
-          viewport={{ once: true }}
+          viewport={{ once: true }} // animation happening only one
           style={{ y: backgroundY }}
           className={style.img__back}
           onLoad={() => setIsLoaded(true)}
