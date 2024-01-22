@@ -4,7 +4,7 @@
 
 Welcome to my website, a platform where I showcase my professional information. Learn more about me, explore my skills, view projects I've developed, and find links to my social media profiles and contact information.
 
-You can access the website through this <a href="https://tuliominini.com/" target="_blank">link!</a>
+You can access the website through this [link!](https://tuliominini.com/)
 
 ## Tools Used 🛠
 
