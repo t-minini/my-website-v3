@@ -343,6 +343,24 @@ export function Skills() {
           >
             <a
               target="blank_"
+              className={`hoverable ${isHovered ? style.hovered : ''}`}
+              href="https://www.freecodecamp.org/certification/t-minini/foundational-c-sharp-with-microsoft"
+            >
+              Foundational C# with Microsoft
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="2 2 20 20">
+                <path d="M10 6V8H5V19H16V14H18V20C18 20.5523 17.5523 21 17 21H4C3.44772 21 3 20.5523 3 20V7C3 6.44772 3.44772 6 4 6H10ZM21 3V11H19L18.9999 6.413L11.2071 14.2071L9.79289 12.7929L17.5849 5H13V3H21Z"></path>
+              </svg>
+            </a>
+          </motion.li>
+          <motion.li
+            initial="initial"
+            whileInView="animate"
+            className={style.link}
+            variants={itemVariants}
+            viewport={{ once: true }}
+          >
+            <a
+              target="blank_"
               href="https://efset.org/cert/Eb2p3J"
               className={`hoverable ${isHovered ? style.hovered : ''}`}
             >
@@ -364,7 +382,7 @@ export function Skills() {
               className={`hoverable ${isHovered ? style.hovered : ''}`}
               href="https://www.udemy.com/certificate/UC-86814eae-d518-4c57-93ff-c64288d47b97/"
             >
-              Figma UI/UX Essentials
+              Figma UI/UX Design Essentials
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="2 2 20 20">
                 <path d="M10 6V8H5V19H16V14H18V20C18 20.5523 17.5523 21 17 21H4C3.44772 21 3 20.5523 3 20V7C3 6.44772 3.44772 6 4 6H10ZM21 3V11H19L18.9999 6.413L11.2071 14.2071L9.79289 12.7929L17.5849 5H13V3H21Z"></path>
               </svg>
