@@ -69,6 +69,14 @@
     "project": "My Website 2024",
     "github": "https://github.com/t-minini/my-website-v3",
     "website": "https://tuliominini.com/",
-    "description": "My website new design for 2024, created using ReactJs, CSS, HTML, Flexbox, CSS Variables and JSON. This represents a fusion of the skills I acquired in 2023, including some cool animations using Framer Motion."
+    "description": "My website new design for 2024. Designed and built by my, using ReactJs, CSS, HTML, Flexbox, CSS Variables, JSON and Figma. This represents a fusion of the skills I acquired in 2023, including some cool animations using Framer Motion."
+  },
+  {
+    "id": "010",
+    "img": "/images/portfolio-imgs/devforge.jpg",
+    "project": "DevForge.ie Redesign ",
+    "github": "https://github.com/t-minini/devforge",
+    "website": "https://www.devforge.ie/",
+    "description": "The goal of this project is to enhance user experience, improve functionality, and modernize the visual aesthetics of the existing website, keeping the previous color palette. (PROJECT UNDER CONSTRUCTION)"
   }
 ]
