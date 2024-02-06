@@ -74,9 +74,17 @@
   {
     "id": "010",
     "img": "/images/portfolio-imgs/devforge.jpg",
-    "project": "DevForge.ie Redesign ",
+    "project": "DevForge.ie Redesign",
     "github": "https://github.com/t-minini/devforge",
     "website": "https://www.devforge.ie/",
-    "description": "The goal of this project is to enhance user experience, improve functionality, and modernize the visual aesthetics of the existing website, keeping the previous color palette. (UNDER DEVELOPMENT)"
+    "description": "The goal of this project is to enhance user experience, improve functionality, and modernize the visual aesthetics of the existing website. (COMING SOON)"
+  },
+  {
+    "id": "011",
+    "img": "/images/portfolio-imgs/concerts-nostalgia.JPg",
+    "project": "Concerts Nostalgia",
+    "github": "https://github.com/t-minini/concerts-nostalgia-front-end",
+    "website": "https://github.com/t-minini/concerts-nostalgia-front-end",
+    "description": "Revised version of my previous web application called \"Concerts Database\", originally developed in 2022. (COMING SOON)"
   }
 ]
