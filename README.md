@@ -1,10 +1,20 @@
-# Welcome to the 2024 Design of My Website
+# Welcome to the new design of my website for 2024
 
-## About the Project 💭
+## About 💭
 
-Welcome to my website, a platform where I showcase my professional information. Learn more about me, explore my skills, view projects I've developed, and find links to my social media profiles and contact information.
+I'm excited to share the fresh look of my website for 2024!
 
-You can access the website through this [link!](https://tuliominini.com/)
+Every new year, I challenge myself to roll out an upgraded version of the website, and I'm thrilled to unveil my latest design.
+
+Take a moment to explore, and I hope you find it as appealing as I do. 
+
+For an optimal experience, I recommend checking it out through your PC's web browser.
+
+[2024 (and current) version here!](https://tuliominini.com/)
+
+[2023 version here!](https://tulio-minini-v2.netlify.app/)
+
+[2022 version here!](https://tulio-minini-v1.netlify.app/)
 
 ## Tools Used 🛠
 
