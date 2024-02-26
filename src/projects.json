@@ -76,8 +76,8 @@
     "img": "/images/portfolio-imgs/devforge.jpg",
     "project": "DevForge.ie Redesign",
     "github": "https://github.com/t-minini/devforge",
-    "website": "https://www.devforge.ie/",
-    "description": "The goal of this project is to enhance user experience, improve functionality, and modernize the visual aesthetics of the existing website. (COMING SOON)"
+    "website": "https://devforge-ie.netlify.app/",
+    "description": "The goal of this project is to enhance user experience, improve functionality, modernize the visual aesthetics of the existing website, implement the new company logo and keep the current color pallet."
   },
   {
     "id": "011",
