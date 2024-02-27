@@ -63,6 +63,14 @@ export function Skills() {
             variants={itemVariants}
             viewport={{ once: true }}
           >
+            JavaScript
+          </motion.li>
+          <motion.li
+            initial="initial"
+            whileInView="animate"
+            variants={itemVariants}
+            viewport={{ once: true }}
+          >
             HTML
           </motion.li>
           <motion.li
@@ -73,14 +81,7 @@ export function Skills() {
           >
             CSS
           </motion.li>
-          <motion.li
-            initial="initial"
-            whileInView="animate"
-            variants={itemVariants}
-            viewport={{ once: true }}
-          >
-            JavaScript
-          </motion.li>
+
           <motion.li
             initial="initial"
             whileInView="animate"
@@ -88,6 +89,14 @@ export function Skills() {
             viewport={{ once: true }}
           >
             React
+          </motion.li>
+          <motion.li
+            initial="initial"
+            whileInView="animate"
+            variants={itemVariants}
+            viewport={{ once: true }}
+          >
+            BEM Methodology
           </motion.li>
           <motion.li
             initial="initial"
