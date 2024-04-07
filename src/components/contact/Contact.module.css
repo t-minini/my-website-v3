@@ -2,7 +2,6 @@ footer {
   bottom: 0;
   z-index: 1;
   position: fixed;
-  
 }
 
 .contact {
@@ -12,6 +11,7 @@ footer {
 }
 
 .contact__tm {
+  cursor: pointer;
   color: var(--orange);
   text-transform: uppercase;
   font-family: 'Dr Sugiyama', cursive;
@@ -34,7 +34,6 @@ footer {
   z-index: 1;
   color: var(--gray-lighter);
   font-weight: var(--semiBold-600);
-
 }
 
 .text__container p {

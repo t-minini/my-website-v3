@@ -81,7 +81,6 @@ export function Skills() {
           >
             CSS
           </motion.li>
-
           <motion.li
             initial="initial"
             whileInView="animate"
@@ -96,7 +95,39 @@ export function Skills() {
             variants={itemVariants}
             viewport={{ once: true }}
           >
-            BEM Methodology
+            Node.js
+          </motion.li>
+          <motion.li
+            initial="initial"
+            whileInView="animate"
+            variants={itemVariants}
+            viewport={{ once: true }}
+          >
+            Restful API
+          </motion.li>
+          <motion.li
+            initial="initial"
+            whileInView="animate"
+            variants={itemVariants}
+            viewport={{ once: true }}
+          >
+            Node.js
+          </motion.li>
+          <motion.li
+            initial="initial"
+            whileInView="animate"
+            variants={itemVariants}
+            viewport={{ once: true }}
+          >
+            MongoDB
+          </motion.li>
+          <motion.li
+            initial="initial"
+            whileInView="animate"
+            variants={itemVariants}
+            viewport={{ once: true }}
+          >
+            Express.js
           </motion.li>
           <motion.li
             initial="initial"
@@ -105,30 +136,6 @@ export function Skills() {
             viewport={{ once: true }}
           >
             Framer Motion
-          </motion.li>
-          <motion.li
-            initial="initial"
-            whileInView="animate"
-            variants={itemVariants}
-            viewport={{ once: true }}
-          >
-            Pixel Perfect
-          </motion.li>
-          <motion.li
-            initial="initial"
-            whileInView="animate"
-            variants={itemVariants}
-            viewport={{ once: true }}
-          >
-            Responsive design
-          </motion.li>
-          <motion.li
-            initial="initial"
-            whileInView="animate"
-            variants={itemVariants}
-            viewport={{ once: true }}
-          >
-            Flexbox & Grid
           </motion.li>
           <motion.li
             initial="initial"
@@ -145,22 +152,6 @@ export function Skills() {
             viewport={{ once: true }}
           >
             Figma / Sketch
-          </motion.li>
-          <motion.li
-            initial="initial"
-            whileInView="animate"
-            variants={itemVariants}
-            viewport={{ once: true }}
-          >
-            Github
-          </motion.li>
-          <motion.li
-            initial="initial"
-            whileInView="animate"
-            variants={itemVariants}
-            viewport={{ once: true }}
-          >
-            Git
           </motion.li>
         </ul>
         <ul>
@@ -270,7 +261,16 @@ export function Skills() {
             variants={itemVariants}
             viewport={{ once: true }}
           >
-            Node.js
+            BEM Methodology
+          </motion.li>
+
+          <motion.li
+            initial="initial"
+            whileInView="animate"
+            variants={itemVariants}
+            viewport={{ once: true }}
+          >
+            Pixel Perfect
           </motion.li>
           <motion.li
             initial="initial"
@@ -278,7 +278,7 @@ export function Skills() {
             variants={itemVariants}
             viewport={{ once: true }}
           >
-            Restful API
+            Responsive design
           </motion.li>
           <motion.li
             initial="initial"
@@ -286,7 +286,7 @@ export function Skills() {
             variants={itemVariants}
             viewport={{ once: true }}
           >
-            Node.js
+            Flexbox & Grid
           </motion.li>
           <motion.li
             initial="initial"
@@ -294,7 +294,15 @@ export function Skills() {
             variants={itemVariants}
             viewport={{ once: true }}
           >
-            MongoDB
+            Github
+          </motion.li>
+          <motion.li
+            initial="initial"
+            whileInView="animate"
+            variants={itemVariants}
+            viewport={{ once: true }}
+          >
+            Git
           </motion.li>
           <motion.li
             initial="initial"

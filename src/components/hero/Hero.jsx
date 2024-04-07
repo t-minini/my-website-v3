@@ -83,7 +83,7 @@ export function Hero() {
         <motion.img
           src={imgBack}
           loading="lazy"
-          viewport={{ once: true }} // animation happening only one
+          viewport={{ once: true }}
           style={{ y: backgroundY }}
           className={style.img__back}
           onLoad={() => setIsLoaded(true)}
@@ -107,8 +107,8 @@ export function Hero() {
           tulio&#xa0;minini
         </motion.h1>
         <motion.p initial="initial" whileInView="animate" variants={pVariants}>
-          a former designer who found his passion for <br />
-          front-end development.
+          a former designer who found his passion <br />
+          for web development.
         </motion.p>
       </div>
     </section>
