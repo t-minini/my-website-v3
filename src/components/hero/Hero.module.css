@@ -1,12 +1,12 @@
 .hero {
   z-index: 2;
+  display: flex;
   min-width: 100vw;
   min-height: 100dvh;
   position: relative;
-  background-color: var(--black);
-  display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--black);
 }
 
 .hero__text {
@@ -36,9 +36,7 @@
 }
 
 .img__container {
-  /* height: 100%; */
   display: flex;
-  /* min-width: 100vw; */
   position: absolute;
   align-items: center;
   justify-content: center;
