@@ -1,12 +1,12 @@
 .about {
+  z-index: 2;
   display: flex;
+  position: relative;
   min-height: 100dvh;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   background-color: var(--black);
-  position: relative;
-  z-index: 2;
 }
 
 .container {

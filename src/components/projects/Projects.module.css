@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   position: relative;
   justify-content: center;
-  background-color: var(--gray-lighter);
+  background-color: var(--black);
 }
 
 .container {
@@ -17,6 +17,7 @@
 
 .imageContainer img {
   width: 100%;
+  border: 2px solid var(--gray-darker);
 }
 
 .textContainer {
@@ -24,7 +25,8 @@
 }
 
 .textContainer p {
-  font-weight: var(--light-300);
+  color: var(--gray-lighter);
+  font-weight: var(--thin-100);
 }
 
 .topWrapper {
@@ -33,6 +35,7 @@
 }
 
 .topWrapper h2 {
+  color: var(--gray-lighter);
   font-weight: var(--semiBold-600);
 }
 
