@@ -13,7 +13,7 @@
     "project": "Concerts Database",
     "github": "https://github.com/t-minini/concert-database",
     "website": "https://concert-database.netlify.app/",
-    "description": "Driven by my love for live music experiences, I designed this website to capture memories of the concerts I've attended. Crafted with a blend of React, HTML, CSS, Material UI and Express.js, it's a digital diary of my musical journey."
+    "description": "Driven by my love for live music experiences, I designed this website to capture memories of the concerts I've attended. Crafted with a blend of React, HTML, CSS, Material UI, MongoDG and Express.js, it's a digital diary of my musical journey."
   },
   {
     "id": "003",
@@ -85,6 +85,6 @@
     "project": "Concerts Nostalgia",
     "github": "https://github.com/t-minini/concerts-nostalgia-front-end",
     "website": "https://github.com/t-minini/concerts-nostalgia-front-end",
-    "description": "A MERN Stack revised version of my previous web application called \"Concerts Database\", originally developed in 2022. (COMING SOON)"
+    "description": "Introducing the enhanced iteration of my prior web project, 'Concerts Database,' built on the robust MERN Stack framework. Originally crafted in 2022, this updated version is on its way! Stay tuned for the unveiling. (COMING SOON)"
   }
 ]
