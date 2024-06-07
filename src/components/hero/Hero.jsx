@@ -1,7 +1,7 @@
 import style from './Hero.module.css';
 import { useRef, useState } from 'react';
-import imgBack from './../../assets/images/back.jpg';
-import imgFront from './../../assets/images/front.png';
+import imgBack from './../../assets/images/hero-back-img.webp';
+import imgFront from './../../assets/images/hero-front-img.webp';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
 export function Hero() {
