@@ -1,7 +1,7 @@
 [
   {
     "id": "001",
-    "img": "/images/portfolio-imgs/quiz-game.jpg",
+    "img": "/images/portfolio-imgs/quiz-game.webp",
     "project": "Quiz Game",
     "github": "https://github.com/t-minini/project-one-the-game",
     "website": "https://t-minini.github.io/quiz-game/",
@@ -9,7 +9,7 @@
   },
   {
     "id": "002",
-    "img": "/images/portfolio-imgs/concerts-database.jpg",
+    "img": "/images/portfolio-imgs/concerts-database.webp",
     "project": "Concerts Database",
     "github": "https://github.com/t-minini/concert-database",
     "website": "https://concert-database.netlify.app/",
@@ -17,7 +17,7 @@
   },
   {
     "id": "003",
-    "img": "/images/portfolio-imgs/where-to-go.jpg",
+    "img": "/images/portfolio-imgs/where-to-go.webp",
     "project": "Where to Go?",
     "github": "https://github.com/t-minini/where-to-go-front",
     "website": "https://wheretogo-tm.netlify.app/",
@@ -25,7 +25,7 @@
   },
   {
     "id": "004",
-    "img": "/images/portfolio-imgs/tulio-minini-website-2022.jpg",
+    "img": "/images/portfolio-imgs/tulio-minini-website-2022.webp",
     "project": "My Website 2022",
     "github": "https://github.com/t-minini/my-website",
     "website": "https://tulio-minini-v1.netlify.app/",
@@ -33,7 +33,7 @@
   },
   {
     "id": "005",
-    "img": "/images/portfolio-imgs/skilled.jpg",
+    "img": "/images/portfolio-imgs/skilled.webp",
     "project": "Skilled e-learning",
     "github": "https://github.com/t-minini/skilled-elearning-landing-page",
     "website": "https://t-minini.github.io/skilled-elearning-landing-page/",
@@ -41,7 +41,7 @@
   },
   {
     "id": "006",
-    "img": "/images/portfolio-imgs/modern-art-gallery.jpg",
+    "img": "/images/portfolio-imgs/modern-art-gallery.webp",
     "project": "Modern Art Gallery",
     "github": "https://github.com/t-minini/art-gallery-website",
     "website": "https://modern-art-gallery-tm.netlify.app/",
@@ -49,7 +49,7 @@
   },
   {
     "id": "007",
-    "img": "/images/portfolio-imgs/tulio-minini-website-2023.jpg",
+    "img": "/images/portfolio-imgs/tulio-minini-website-2023.webp",
     "project": "My Website 2023",
     "github": "https://github.com/t-minini/my-website-v2",
     "website": "https://tulio-minini-v2.netlify.app/",
@@ -57,7 +57,7 @@
   },
   {
     "id": "008",
-    "img": "/images/portfolio-imgs/calculator-app.jpg",
+    "img": "/images/portfolio-imgs/calculator-app.webp",
     "project": "Calculator App",
     "github": "https://github.com/t-minini/calculator-app",
     "website": "https://calculator-app-tm.netlify.app/",
@@ -65,7 +65,7 @@
   },
   {
     "id": "009",
-    "img": "/images/portfolio-imgs/tulio-minini-website-2024.jpg",
+    "img": "/images/portfolio-imgs/tulio-minini-website-2024.webp",
     "project": "My Website 2024",
     "github": "https://github.com/t-minini/my-website-v3",
     "website": "https://tuliominini.com/",
@@ -73,7 +73,7 @@
   },
   {
     "id": "010",
-    "img": "/images/portfolio-imgs/devforge.jpg",
+    "img": "/images/portfolio-imgs/devforge.webp",
     "project": "DevForge.ie Redesign",
     "github": "https://github.com/t-minini/devforge",
     "website": "https://devforge-ie.netlify.app/",
@@ -81,7 +81,7 @@
   },
   {
     "id": "011",
-    "img": "/images/portfolio-imgs/concerts-nostalgia.JPg",
+    "img": "/images/portfolio-imgs/concerts-nostalgia.webp",
     "project": "Concerts Nostalgia",
     "github": "https://github.com/t-minini/concerts-nostalgia-front-end",
     "website": "https://github.com/t-minini/concerts-nostalgia-front-end",
