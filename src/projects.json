@@ -88,6 +88,14 @@
     "description": "Introducing the enhanced iteration of my prior web project, 'Concerts Database,' built on the robust MERN Stack framework. Originally crafted in 2022, this updated version is on its way! Stay tuned for the unveiling. (COMING SOON)"
   },
   {
+    "id": "013",
+    "img": "/images/portfolio-imgs/star-wars-classic-quiz.webp",
+    "project": "Star Wars Classic Quiz",
+    "github": "https://github.com/Thomas-Tomo/the_fork_awakens",
+    "website": "https://theforkawakens.netlify.app/",
+    "description": "Test your knowledge of the classic Star Wars movies with this quiz! This interactive game challenges you to answer questions about the original Star Wars trilogy. Choose a movie, answer questions, and see your score. This project won first place at the Code Institute May 2024 Hackathon."
+  },
+  {
     "id": "012",
     "img": "/images/portfolio-imgs/devon-rex.webp",
     "project": "Devon Rex",
