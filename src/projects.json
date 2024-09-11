@@ -106,7 +106,7 @@
   {
     "id": "013",
     "img": "/images/portfolio-imgs/simon-game.webp",
-    "project": "Devon Rex",
+    "project": "Simon Game",
     "github": "https://github.com/t-minini/simon-game-pp2-ci",
     "website": "https://simon-game-pp2-ci.netlify.app/",
     "description": "Second project for the Code Institute Diploma in Full Stack Software Development. The goal is to create a Simon game using HTML, CSS, JavaScript, and Sass, demonstrating the skills and concepts learned throughout the course. The project emphasizes user interaction, game logic, and efficient styling. For a detailed breakdown, check out the GitHub README."
