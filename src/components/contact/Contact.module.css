@@ -7,7 +7,7 @@ footer {
 .contact {
   width: 100vw;
   height: 100dvh;
-  background-color: var(--black);
+  background-color: var(--gray-lighter);
 }
 
 .contact__tm {
@@ -32,14 +32,12 @@ footer {
 
 .text__container h2 {
   z-index: 1;
-  color: var(--gray-lighter);
   font-weight: var(--semiBold-600);
 }
 
 .text__container p {
   display: flex;
   justify-content: flex-end;
-  color: var(--gray-lighter);
   font-weight: var(--thin-100);
 }
 

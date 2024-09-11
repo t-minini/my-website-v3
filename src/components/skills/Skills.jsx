@@ -71,6 +71,14 @@ export function Skills() {
             variants={itemVariants}
             viewport={{ once: true }}
           >
+            React
+          </motion.li>
+          <motion.li
+            initial="initial"
+            whileInView="animate"
+            variants={itemVariants}
+            viewport={{ once: true }}
+          >
             HTML
           </motion.li>
           <motion.li
@@ -87,7 +95,7 @@ export function Skills() {
             variants={itemVariants}
             viewport={{ once: true }}
           >
-            React
+            SASS / SCSS
           </motion.li>
           <motion.li
             initial="initial"
@@ -151,7 +159,7 @@ export function Skills() {
             variants={itemVariants}
             viewport={{ once: true }}
           >
-            Figma / Sketch
+            Figma
           </motion.li>
         </ul>
         <ul>
@@ -179,14 +187,6 @@ export function Skills() {
             viewport={{ once: true }}
           >
             SQL
-          </motion.li>
-          <motion.li
-            initial="initial"
-            whileInView="animate"
-            variants={itemVariants}
-            viewport={{ once: true }}
-          >
-            SASS
           </motion.li>
           <motion.li
             initial="initial"

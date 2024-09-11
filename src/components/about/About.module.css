@@ -143,7 +143,7 @@
 /* MONITORS (LANDSCAPE) */
 @media only screen and (min-width: 1520px) and (orientation: landscape) {
   .about span.word {
-    font-size: 5rem;
+    font-size: 4.4rem;
     line-height: 5.2rem;
     margin-right: 1.2rem;
   }
