@@ -1,5 +1,7 @@
 # Welcome to the new design of my website for 2024
 
+## THIS README WILL BE UPDATED!
+
 ## About 💭
 
 I'm excited to share the fresh look of my website for 2024!
