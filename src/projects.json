@@ -80,14 +80,6 @@
     "description": "The goal of this project is to enhance user experience, improve functionality, modernize the visual aesthetics of the existing website, implement the new company logo and keep the current colour pallet."
   },
   {
-    "id": "011",
-    "img": "/images/portfolio-imgs/concerts-nostalgia.webp",
-    "project": "Concerts Nostalgia",
-    "github": "https://github.com/t-minini/concerts-nostalgia-front-end",
-    "website": "https://github.com/t-minini/concerts-nostalgia-front-end",
-    "description": "Introducing the enhanced iteration of my prior web project, 'Concerts Database,' built on the robust MERN Stack framework. Originally crafted in 2022, this updated version is on its way! Stay tuned for the unveiling. (COMING SOON)"
-  },
-  {
     "id": "013",
     "img": "/images/portfolio-imgs/star-wars-classic-quiz.webp",
     "project": "Star Wars Classic Quiz",
@@ -110,5 +102,13 @@
     "github": "https://github.com/t-minini/simon-game-pp2-ci",
     "website": "https://simon-game-pp2-ci.netlify.app/",
     "description": "Second project for the Code Institute Diploma in Full Stack Software Development. The goal is to create a Simon game using HTML, CSS, JavaScript, and Sass, demonstrating the skills and concepts learned throughout the course. The project emphasizes user interaction, game logic, and efficient styling. For a detailed breakdown, check out the GitHub README."
+  },
+  {
+    "id": "011",
+    "img": "/images/portfolio-imgs/concerts-nostalgia.webp",
+    "project": "Concerts Nostalgia",
+    "github": "https://github.com/t-minini/concerts-nostalgia-frontend",
+    "website": "https://concerts-nostalgia.netlify.app",
+    "description": "A personal app for logging my live concerts journey, revisited. Enhanced iteration of my prior project, 'Concerts Database,' built on the MERN stack. Originally crafted in 2022, this version is now live."
   }
 ]

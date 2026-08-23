@@ -1,36 +1,22 @@
-# Welcome to the new design of my website for 2024
+# Tulio Minini — Portfolio Website (2024)
 
-## THIS README WILL BE UPDATED!
+Personal portfolio site, built as a single-page React application. Live at [tuliominini.com](https://tuliominini.com/).
 
-## About 💭
+Every year I rebuild my portfolio from scratch as a way to practice new skills. This iteration ("v3") focuses on scroll-driven animation with Framer Motion, a data-driven projects section, and a custom cursor.
 
-I'm excited to share the fresh look of my website for 2024!
+The design and the code are entirely my own work — no AI was used in the core development.
 
-Every new year, I challenge myself to roll out an upgraded version of the website, and I'm thrilled to unveil my latest design.
+## Tech Stack
 
-Take a moment to explore, and I hope you find it as appealing as I do. 
+HTML, CSS, JavaScript, [React](https://react.dev/), [Framer Motion](https://www.framer.com/motion/), JSON, [Figma](https://www.figma.com/).
 
-For an optimal experience, I recommend checking it out through your PC's web browser.
+Built with [Create React App](https://create-react-app.dev/) (`react-scripts`), CSS Modules for component styling, and `@react-spring/parallax` for parallax effects.
 
-[2024 (and current) version here!](https://tuliominini.com/)
+## Previous Versions
 
-[2023 version here!](https://tulio-minini-v2.netlify.app/)
+- [2023 version](https://tulio-minini-v2.netlify.app/)
+- [2022 version](https://tulio-minini-v1.netlify.app/)
 
-[2022 version here!](https://tulio-minini-v1.netlify.app/)
+## Contact
 
-## Tools Used 🛠
-
-![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
-![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![JSON](https://img.shields.io/badge/json-5E5C5C?style=for-the-badge&logo=json&logoColor=white)
-![Visual Studio Code](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
-
-## Contact or Connect with me! ✉️
-
-### Tulio Minini
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tulio-minini/)
-<a href = "mailto:tulio.mminini@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+[LinkedIn](https://www.linkedin.com/in/tulio-minini/) · [tulio.mminini@gmail.com](mailto:tulio.mminini@gmail.com)
