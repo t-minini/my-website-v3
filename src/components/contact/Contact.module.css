@@ -43,11 +43,13 @@ footer {
 
 .contact__links {
   z-index: 1;
+  margin-top: 1rem;
   padding-bottom: 10%;
 }
 
 .contact__links a {
   cursor: pointer;
+  font-size: 1.6rem;
   text-decoration: none;
   transition: color 1s ease;
   color: var(--gray-darker);
@@ -367,10 +369,16 @@ footer {
 
 /* IPAD PRO and MACBOOK PRO 14" (LANDSCAPE) */
 @media only screen and (min-width: 1365px) and (orientation: landscape) {
-  /* not needed */
+  .contact__links a {
+    font-size: 1.8rem;
+    padding-right: 1.8rem;
+  }
 }
 
 /* MONITORS (LANDSCAPE) */
 @media only screen and (min-width: 1520px) and (orientation: landscape) {
-  /* not needed */
+  .contact__links a {
+    font-size: 2rem;
+    padding-right: 2rem;
+  }
 }

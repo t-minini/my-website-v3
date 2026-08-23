@@ -11,6 +11,7 @@
 
 .container {
   max-width: var(--content-width);
+  text-align: center;
 }
 
 .about span.word {

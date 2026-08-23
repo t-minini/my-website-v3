@@ -10,6 +10,7 @@
 
 .container {
   columns: 4;
+  text-align: center;
   max-width: var(--content-width);
 }
 
